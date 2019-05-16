@@ -1,0 +1,39 @@
+'use strict';require('ts-jest').install();"use strict";
+var __extends = this && this.__extends || function () {
+    var extendStatics = Object.setPrototypeOf ||
+    { __proto__: [] } instanceof Array && function (d, b) {d.__proto__ = b;} ||
+    function (d, b) {for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];};
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() {this.constructor = d;}
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+}();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var react_router_dom_1 = require("react-router-dom");
+var react_redux_1 = require("react-redux");
+var history_1 = require("./history");
+var store_1 = require("./store");
+var connected_react_router_1 = require("connected-react-router");
+var Dashboard_1 = require("./containers/Dashboard");
+var Home_1 = require("./containers/Home");
+var NotFound_1 = require("./components/NotFound");
+var helper_1 = require("./helper");
+var AppRouter = /** @class */function (_super) {
+    __extends(AppRouter, _super);
+    function AppRouter() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    AppRouter.prototype.render = function () {
+        return React.createElement(react_redux_1.Provider, { store: store_1.default },
+        React.createElement(connected_react_router_1.ConnectedRouter, { history: history_1.default },
+        React.createElement(react_router_dom_1.Switch, null,
+        React.createElement(react_router_dom_1.Route, { exact: true, path: helper_1.default('/'), component: Home_1.default }),
+        React.createElement(react_router_dom_1.Route, { exact: true, path: helper_1.default('/dashboard'), component: Dashboard_1.default }),
+        React.createElement(react_router_dom_1.Route, { component: NotFound_1.default }))));
+    };
+    return AppRouter;
+}(React.Component);
+exports.default = AppRouter;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicm91dGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsicm91dGVyLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7QUFBQSxvQkFBK0I7QUFDL0IsaUNBQWdEO0FBQ2hELDRCQUF1QztBQUN2Qyx3QkFBZ0M7QUFDaEMsc0JBQTRCO0FBQzVCLHVDQUF5RDtBQUV6RCwwQkFBK0M7QUFDL0MscUJBQXFDO0FBQ3JDLHlCQUE2QztBQUM3Qyx1QkFBOEI7QUFFOUI7QUFBd0IseUJBQWU7QUFBdkM7bUVBZUE7QUFBQztBQWJBLHdCQUFNLFNBQU47QUFDRSxBQUFNLEFBQUMsZUFDTixvQkFBQyxjQUFRLFlBQUMsQUFBSyxPQUFFLFFBQUs7QUFDcEIsNEJBQUMseUJBQWUsbUJBQUMsQUFBTyxTQUFFLFVBQU87QUFDaEMsNEJBQUMsbUJBQU07QUFDTiw0QkFBQyxtQkFBSyxTQUFDLEFBQUssT0FBRSxBQUFJLE1BQUUsQUFBSSxNQUFFLFNBQU0sUUFBQyxBQUFHLEFBQUMsTUFBRSxBQUFTLFdBQUUsT0FBSSxBQUFHO0FBQ3pELDRCQUFDLG1CQUFLLFNBQUMsQUFBSyxPQUFFLEFBQUksTUFBRSxBQUFJLE1BQUUsU0FBTSxRQUFDLEFBQVksQUFBQyxlQUFFLEFBQVMsV0FBRSxZQUFTLEFBQUc7QUFDdkUsNEJBQUMsbUJBQUssU0FBQyxBQUFTLFdBQUUsV0FBUSxBQUFHLEFBQ3JCLEFBQ1EsQUFDVCxBQUNYLEFBQUMsQUFDSjtBQUFDO0FBQ0YsV0FBQyxBQUFEO0FBZkEsQUFlQyxFQWZ1QixBQUFLLE1BQUMsQUFBUyxBQWV0QztBQUVELGtCQUFlLEFBQVMsQUFBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAqIGFzIFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IFN3aXRjaCwgUm91dGV9IGZyb20gJ3JlYWN0LXJvdXRlci1kb20nO1xuaW1wb3J0IHsgUHJvdmlkZXIgfSBmcm9tICdyZWFjdC1yZWR1eCc7XG5pbXBvcnQgaGlzdG9yeSBmcm9tICcuL2hpc3RvcnknO1xuaW1wb3J0IHN0b3JlIGZyb20gJy4vc3RvcmUnO1xuaW1wb3J0IHsgQ29ubmVjdGVkUm91dGVyIH0gZnJvbSAnY29ubmVjdGVkLXJlYWN0LXJvdXRlcic7XG5cbmltcG9ydCBEYXNoYm9hcmQgZnJvbSAnLi9jb250YWluZXJzL0Rhc2hib2FyZCc7XG5pbXBvcnQgSG9tZSBmcm9tICcuL2NvbnRhaW5lcnMvSG9tZSc7XG5pbXBvcnQgTm90Rm91bmQgZnJvbSAnLi9jb21wb25lbnRzL05vdEZvdW5kJztcbmltcG9ydCBhcHBVcmwgZnJvbSAnLi9oZWxwZXInO1xuXG5jbGFzcyBBcHBSb3V0ZXIgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xuXG4gcmVuZGVyKCkge1xuICAgcmV0dXJuIChcbiAgICA8UHJvdmlkZXIgc3RvcmU9e3N0b3JlfT5cbiAgICAgIDxDb25uZWN0ZWRSb3V0ZXIgaGlzdG9yeT17aGlzdG9yeX0+XG4gICAgICAgPFN3aXRjaD5cbiAgICAgICAgPFJvdXRlIGV4YWN0PXt0cnVlfSBwYXRoPXthcHBVcmwoJy8nKX0gY29tcG9uZW50PXtIb21lfS8+XG4gICAgICAgIDxSb3V0ZSBleGFjdD17dHJ1ZX0gcGF0aD17YXBwVXJsKCcvZGFzaGJvYXJkJyl9IGNvbXBvbmVudD17RGFzaGJvYXJkfS8+XG4gICAgICAgIDxSb3V0ZSBjb21wb25lbnQ9e05vdEZvdW5kfS8+XG4gICAgICAgPC9Td2l0Y2g+XG4gICAgICA8L0Nvbm5lY3RlZFJvdXRlcj5cbiAgICA8L1Byb3ZpZGVyPlxuICAgKTtcbiB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IEFwcFJvdXRlcjsiXX0=

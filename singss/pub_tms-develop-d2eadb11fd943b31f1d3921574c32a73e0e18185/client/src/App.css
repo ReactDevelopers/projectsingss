@@ -1,0 +1,35 @@
+
+.header_wrap{
+	background: #fff;
+}
+
+.open>.dropdown-menu {
+    display: block;
+}
+.dcxGMi:before {
+	z-index: 999;
+}
+.ktHroX {
+    position: static !important;
+    height: auto;
+}
+
+.react-bs-table {
+	height: auto !important;
+}
+
+.react-bs-table-container .react-bs-table-pagination .pagination ,
+.react-bs-table-container .react-bs-table-pagination  .page-count-info,
+.react-bs-table + div.react-bs-table-pagination .react-bs-table-sizePerPage-dropdown{
+	display: none;
+}
+
+.react-bs-table + div.react-bs-table-pagination .pagination ,
+.react-bs-table + div.react-bs-table-pagination  .page-count-info
+{
+    display: block;
+}
+
+td.remove_overflow {
+    overflow: inherit !important;
+}

@@ -1,0 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var config_1 = require("./constants/config");
+function appUrl(url) {
+    return config_1.BASE_URL + url;
+}
+exports.default = appUrl;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaGVscGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiaGVscGVyLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLHVCQUE0QztBQUU1QyxnQkFBK0IsQUFBVTtBQUN4QyxBQUFNLFdBQUMsU0FBUSxXQUFDLEFBQUcsQUFBQyxBQUNyQjtBQUFDO0FBRkQsa0JBRUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge0JBU0VfVVJMfSBmcm9tICcuL2NvbnN0YW50cy9jb25maWcnO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBhcHBVcmwodXJsOnN0cmluZyk6IHN0cmluZ3tcblx0cmV0dXJuIEJBU0VfVVJMK3VybDtcbn0iXX0=

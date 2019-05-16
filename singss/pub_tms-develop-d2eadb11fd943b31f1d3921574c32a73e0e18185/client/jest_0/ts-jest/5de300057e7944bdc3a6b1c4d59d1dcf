@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var ReactDOM = require("react-dom");
+var App_1 = require("./App");
+it('renders without crashing', function () {
+    var div = document.createElement('div');
+    ReactDOM.render(React.createElement(App_1.default, null), div);
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnRlc3QuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJBcHAudGVzdC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxvQkFBK0I7QUFDL0IsdUJBQXNDO0FBQ3RDLG9CQUF3QjtBQUV4QixBQUFFLEdBQUMsQUFBMEIsNEJBQUU7QUFDN0IsUUFBTSxBQUFHLE1BQUcsQUFBUSxTQUFDLEFBQWEsY0FBQyxBQUFLLEFBQUMsQUFBQztBQUMxQyxBQUFRLGFBQUMsQUFBTSxPQUFDLG9CQUFDLE1BQUcsU0FBRyxPQUFFLEFBQUcsQUFBQyxBQUFDLEFBQ2hDO0FBQUMsQUFBQyxBQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICogYXMgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0ICogYXMgUmVhY3RET00gZnJvbSAncmVhY3QtZG9tJztcbmltcG9ydCBBcHAgZnJvbSAnLi9BcHAnO1xuXG5pdCgncmVuZGVycyB3aXRob3V0IGNyYXNoaW5nJywgKCkgPT4ge1xuICBjb25zdCBkaXYgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdkaXYnKTtcbiAgUmVhY3RET00ucmVuZGVyKDxBcHAgLz4sIGRpdik7XG59KTtcbiJdfQ==

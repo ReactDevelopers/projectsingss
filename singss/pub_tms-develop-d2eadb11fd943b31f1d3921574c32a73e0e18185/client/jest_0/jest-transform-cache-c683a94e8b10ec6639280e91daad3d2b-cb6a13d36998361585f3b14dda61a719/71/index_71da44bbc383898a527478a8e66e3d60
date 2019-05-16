@@ -1,0 +1,29 @@
+'use strict';require('ts-jest').install();"use strict";
+var __assign = this && this.__assign || Object.assign || function (t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+        t[p] = s[p];
+    }
+    return t;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+// import {combineReducers } from 'redux';
+// import {  routerReducer } from 'react-router-redux';
+var index_1 = require("../constants/index");
+function appReducers(state, action) {
+    switch (action.type) {
+        case index_1.LOGIN_SUCCESS:
+            return __assign({}, state, { user: action.user, isError: false, isRequesting: false, message: action.message, token: action.token });
+        case index_1.LOGIN_FAIL:
+            return __assign({}, state, { user: action.user, isError: true, isRequesting: false, message: action.message, errors: action.errors });
+        case index_1.REQUESTING_TO_SERVER:
+            return __assign({}, state, { isRequesting: true, message: 'reqiesting to serevr' });
+        default:
+            return state;}
+
+}
+//const rootReducer = combineReducers({appReducers, routing:routerReducer });
+var rootReducer = appReducers;
+exports.default = rootReducer;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUdBLEFBQTBDO0FBQzFDLEFBQXVEO0FBRXZELHNCQUFtRjtBQUVuRixxQkFBcUIsQUFBYyxPQUFHLEFBQWdCO0FBR3JELEFBQU0sQUFBQyxZQUFDLEFBQU0sT0FBQyxBQUFJLEFBQUMsQUFBQyxBQUFDO0FBRWxCLGFBQUssUUFBYTtBQUVqQixBQUFNLGdDQUFNLEFBQUssU0FBQyxBQUFJLE1BQUMsQUFBTSxPQUFDLEFBQUksTUFBQyxBQUFPLFNBQUMsQUFBSyxPQUFFLEFBQVksY0FBQyxBQUFLLE9BQUMsQUFBTyxTQUFFLEFBQU0sT0FBQyxBQUFPLFNBQUMsQUFBSyxPQUFFLEFBQU0sT0FBQyxBQUFLLEFBQUM7QUFFbEgsYUFBSyxRQUFVO0FBRWQsQUFBTSxnQ0FBTSxBQUFLLFNBQUMsQUFBSSxNQUFDLEFBQU0sT0FBQyxBQUFJLE1BQUMsQUFBTyxTQUFDLEFBQUksTUFBRSxBQUFZLGNBQUMsQUFBSyxPQUFDLEFBQU8sU0FBRSxBQUFNLE9BQUMsQUFBTyxTQUFDLEFBQU0sUUFBQyxBQUFNLE9BQUMsQUFBTSxBQUFDO0FBQ2xILGFBQUssUUFBb0I7QUFFekIsQUFBTSxnQ0FBSyxBQUFLLFNBQUMsQUFBWSxjQUFDLEFBQUksTUFBQyxBQUFPLFNBQUMsQUFBc0IsQUFBQztBQUNqRTtBQUVFLEFBQU0sbUJBQUMsQUFBSyxBQUNqQixBQUFDLEFBRUo7O0FBQUM7QUFFRCxBQUE2RTtBQUM3RSxJQUFNLEFBQVcsY0FBRyxBQUFXLEFBQUM7QUFHaEMsa0JBQWUsQUFBVyxBQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQXBwQWN0aW9uIH0gZnJvbSAnLi4vYWN0aW9ucyc7XG5pbXBvcnQge0FwcFN0YXRlfSBmcm9tICcuLi9hcHAtaW50ZXJmYWNlJztcblxuLy8gaW1wb3J0IHtjb21iaW5lUmVkdWNlcnMgfSBmcm9tICdyZWR1eCc7XG4vLyBpbXBvcnQgeyAgcm91dGVyUmVkdWNlciB9IGZyb20gJ3JlYWN0LXJvdXRlci1yZWR1eCc7XG5cbmltcG9ydCB7IExPR0lOX1NVQ0NFU1MsTE9HSU5fRkFJTCAsUkVRVUVTVElOR19UT19TRVJWRVJ9IGZyb20gJy4uL2NvbnN0YW50cy9pbmRleCc7XG5cbmZ1bmN0aW9uIGFwcFJlZHVjZXJzKHN0YXRlOkFwcFN0YXRlICwgYWN0aW9uOkFwcEFjdGlvbiApOiBBcHBTdGF0ZSB7XG5cblxuXHRzd2l0Y2ggKGFjdGlvbi50eXBlKSB7XG5cbiAgICBcdGNhc2UgTE9HSU5fU1VDQ0VTUzpcbiAgICBcdFxuICAgIFx0XHRyZXR1cm4geyAuLi5zdGF0ZSx1c2VyOmFjdGlvbi51c2VyLGlzRXJyb3I6ZmFsc2UsIGlzUmVxdWVzdGluZzpmYWxzZSxtZXNzYWdlOiBhY3Rpb24ubWVzc2FnZSx0b2tlbjogYWN0aW9uLnRva2VufVxuICAgIFx0XG4gICAgXHRjYXNlIExPR0lOX0ZBSUw6XG4gICAgXHRcdFxuICAgIFx0XHRyZXR1cm4geyAuLi5zdGF0ZSx1c2VyOmFjdGlvbi51c2VyLGlzRXJyb3I6dHJ1ZSwgaXNSZXF1ZXN0aW5nOmZhbHNlLG1lc3NhZ2U6IGFjdGlvbi5tZXNzYWdlLGVycm9yczphY3Rpb24uZXJyb3JzfVxuICAgIFx0Y2FzZSBSRVFVRVNUSU5HX1RPX1NFUlZFUjpcblxuXHRcdFx0ICByZXR1cm4gey4uLnN0YXRlLGlzUmVxdWVzdGluZzp0cnVlLG1lc3NhZ2U6J3JlcWllc3RpbmcgdG8gc2VyZXZyJ31cbiAgICAgIGRlZmF1bHQ6XG5cbiAgICAgICAgcmV0dXJuIHN0YXRlXG4gIFx0fVxuICBcdFxufVxuXG4vL2NvbnN0IHJvb3RSZWR1Y2VyID0gY29tYmluZVJlZHVjZXJzKHthcHBSZWR1Y2Vycywgcm91dGluZzpyb3V0ZXJSZWR1Y2VyIH0pO1xuY29uc3Qgcm9vdFJlZHVjZXIgPSBhcHBSZWR1Y2VycztcblxuXG5leHBvcnQgZGVmYXVsdCByb290UmVkdWNlcjsiXX0=

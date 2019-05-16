@@ -1,0 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.API_URL = 'http://127.1.1.1/tms/api/public/';
+// export const BASE_URL = '/tms/my-app/build';
+exports.BASE_URL = '';
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiY29uZmlnLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQWEsUUFBQSxBQUFPLFVBQUcsQUFBa0MsQUFBQztBQUMxRCxBQUErQztBQUNsQyxRQUFBLEFBQVEsV0FBRyxBQUFFLEFBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY29uc3QgQVBJX1VSTCA9ICdodHRwOi8vMTI3LjEuMS4xL3Rtcy9hcGkvcHVibGljLyc7XG4vLyBleHBvcnQgY29uc3QgQkFTRV9VUkwgPSAnL3Rtcy9teS1hcHAvYnVpbGQnO1xuZXhwb3J0IGNvbnN0IEJBU0VfVVJMID0gJyc7XG4iXX0=

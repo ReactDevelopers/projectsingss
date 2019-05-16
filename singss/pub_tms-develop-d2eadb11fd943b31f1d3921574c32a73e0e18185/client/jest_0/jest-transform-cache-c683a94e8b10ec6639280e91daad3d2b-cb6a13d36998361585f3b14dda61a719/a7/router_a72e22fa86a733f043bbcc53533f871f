@@ -1,0 +1,36 @@
+'use strict';require('ts-jest').install();"use strict";
+var __extends = this && this.__extends || function () {
+    var extendStatics = Object.setPrototypeOf ||
+    { __proto__: [] } instanceof Array && function (d, b) {d.__proto__ = b;} ||
+    function (d, b) {for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];};
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() {this.constructor = d;}
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+}();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var react_router_dom_1 = require("react-router-dom");
+var react_redux_1 = require("react-redux");
+var history_1 = require("./history");
+var store_1 = require("./store");
+var connected_react_router_1 = require("connected-react-router");
+var Dashboard_1 = require("./components/Dashboard");
+var Home_1 = require("./containers/Home");
+var AppRouter = /** @class */function (_super) {
+    __extends(AppRouter, _super);
+    function AppRouter() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    AppRouter.prototype.render = function () {
+        return React.createElement(react_redux_1.Provider, { store: store_1.default },
+        React.createElement(connected_react_router_1.ConnectedRouter, { history: history_1.default },
+        React.createElement(react_router_dom_1.Switch, null,
+        React.createElement(react_router_dom_1.Route, { exact: true, path: "/", component: Home_1.default }),
+        React.createElement(react_router_dom_1.Route, { exact: true, path: "/dashboard", component: Dashboard_1.default }))));
+    };
+    return AppRouter;
+}(React.Component);
+exports.default = AppRouter;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicm91dGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsicm91dGVyLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7QUFBQSxvQkFBK0I7QUFDL0IsaUNBQWlEO0FBQ2pELDRCQUF1QztBQUN2Qyx3QkFBZ0M7QUFDaEMsc0JBQTRCO0FBQzVCLHVDQUF5RDtBQUV6RCwwQkFBK0M7QUFDL0MscUJBQXFDO0FBRXJDO0FBQXdCLHlCQUFlO0FBQXZDO21FQWNBO0FBQUM7QUFaQSx3QkFBTSxTQUFOO0FBQ0UsQUFBTSxBQUFDLGVBQ04sb0JBQUMsY0FBUSxZQUFDLEFBQUssT0FBRSxRQUFLO0FBQ3ZCLDRCQUFDLHlCQUFlLG1CQUFDLEFBQU8sU0FBRSxVQUFPO0FBQ2hDLDRCQUFDLG1CQUFNO0FBQ04sNEJBQUMsbUJBQUssU0FBQyxBQUFLLE9BQUUsQUFBSSxNQUFFLEFBQUksTUFBQyxBQUFHLEtBQUMsQUFBUyxXQUFFLE9BQUksQUFBRztBQUMvQyw0QkFBQyxtQkFBSyxTQUFDLEFBQUssT0FBRSxBQUFJLE1BQUUsQUFBSSxNQUFDLEFBQVksY0FBQyxBQUFTLFdBQUUsWUFBUyxBQUFHLEFBQ3JELEFBQ1EsQUFDVCxBQUNSLEFBQUMsQUFDSjtBQUFDO0FBQ0YsV0FBQyxBQUFEO0FBZEEsQUFjQyxFQWR1QixBQUFLLE1BQUMsQUFBUyxBQWN0QztBQUVELGtCQUFlLEFBQVMsQUFBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAqIGFzIFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IFN3aXRjaCwgUm91dGUgfSBmcm9tICdyZWFjdC1yb3V0ZXItZG9tJztcbmltcG9ydCB7IFByb3ZpZGVyIH0gZnJvbSAncmVhY3QtcmVkdXgnO1xuaW1wb3J0IGhpc3RvcnkgZnJvbSAnLi9oaXN0b3J5JztcbmltcG9ydCBzdG9yZSBmcm9tICcuL3N0b3JlJztcbmltcG9ydCB7IENvbm5lY3RlZFJvdXRlciB9IGZyb20gJ2Nvbm5lY3RlZC1yZWFjdC1yb3V0ZXInO1xuXG5pbXBvcnQgRGFzaGJvYXJkIGZyb20gJy4vY29tcG9uZW50cy9EYXNoYm9hcmQnO1xuaW1wb3J0IEhvbWUgZnJvbSAnLi9jb250YWluZXJzL0hvbWUnO1xuXG5jbGFzcyBBcHBSb3V0ZXIgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xuXG4gcmVuZGVyKCkge1xuICAgcmV0dXJuIChcbiAgICA8UHJvdmlkZXIgc3RvcmU9e3N0b3JlfT5cblx0ICA8Q29ubmVjdGVkUm91dGVyIGhpc3Rvcnk9e2hpc3Rvcnl9PlxuXHQgICA8U3dpdGNoPlxuXHQgICAgPFJvdXRlIGV4YWN0PXt0cnVlfSBwYXRoPVwiL1wiIGNvbXBvbmVudD17SG9tZX0vPlxuXHQgICAgPFJvdXRlIGV4YWN0PXt0cnVlfSBwYXRoPVwiL2Rhc2hib2FyZFwiIGNvbXBvbmVudD17RGFzaGJvYXJkfS8+XG5cdCAgIDwvU3dpdGNoPlxuXHQgIDwvQ29ubmVjdGVkUm91dGVyPlxuXHQ8L1Byb3ZpZGVyPlxuICAgKTtcbiB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IEFwcFJvdXRlcjsiXX0=

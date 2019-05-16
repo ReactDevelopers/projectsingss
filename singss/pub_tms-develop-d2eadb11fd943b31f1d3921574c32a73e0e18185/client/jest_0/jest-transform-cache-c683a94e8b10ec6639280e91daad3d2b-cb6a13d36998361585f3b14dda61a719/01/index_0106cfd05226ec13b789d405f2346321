@@ -1,0 +1,86 @@
+'use strict';require('ts-jest').install();"use strict";
+var __awaiter = this && this.__awaiter || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) {try {step(generator.next(value));} catch (e) {reject(e);}}
+        function rejected(value) {try {step(generator["throw"](value));} catch (e) {reject(e);}}
+        function step(result) {result.done ? resolve(result.value) : new P(function (resolve) {resolve(result.value);}).then(fulfilled, rejected);}
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = this && this.__generator || function (thisArg, body) {
+    var _ = { label: 0, sent: function () {if (t[0] & 1) throw t[1];return t[1];}, trys: [], ops: [] },f,y,t,g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function () {return this;}), g;
+    function verb(n) {return function (v) {return step([n, v]);};}
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0:case 1:t = op;break;
+                case 4:_.label++;return { value: op[1], done: false };
+                case 5:_.label++;y = op[1];op = [0];continue;
+                case 7:op = _.ops.pop();_.trys.pop();continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {_ = 0;continue;}
+                    if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {_.label = op[1];break;}
+                    if (op[0] === 6 && _.label < t[1]) {_.label = t[1];t = op;break;}
+                    if (t && _.label < t[2]) {_.label = t[2];_.ops.push(op);break;}
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop();continue;}
+
+            op = body.call(thisArg, _);
+        } catch (e) {op = [6, e];y = 0;} finally {f = t = 0;}
+        if (op[0] & 5) throw op[1];return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var _this = this;
+Object.defineProperty(exports, "__esModule", { value: true });
+var constants = require("../constants");
+var Api_1 = require("../api/Api");
+exports.doLogin = function (username, password) {
+    return function (dispatch, getState) {return __awaiter(_this, void 0, void 0, function () {
+            var api;
+            return __generator(this, function (_a) {
+                dispatch(requestingToServer());
+                api = new Api_1.default(getState, dispatch);
+                api.getFetch('', { username: username, password: password }).
+                then(function (response) {
+                    dispatch(loginSuccess({ name: 'hitesh', id: 1 }, 'Login Success', false, 'sadsadas'));
+                }).catch(function (response) {
+                    dispatch(loginFail({}, 'Login fail', true, []));
+                    console.log('TEST');
+                    ///dispatch("push('')");
+                    ///dispatch(push('/dashboard'));
+                });
+                return [2 /*return*/];
+            });
+        });};
+};
+function loginSuccess(user, message, isError, token) {
+    return {
+        type: constants.LOGIN_SUCCESS,
+        user: user,
+        isError: isError,
+        message: message,
+        token: token };
+
+}
+exports.loginSuccess = loginSuccess;
+function loginFail(user, message, isError, errors) {
+    return {
+        type: constants.LOGIN_FAIL,
+        user: user,
+        isError: isError,
+        message: message,
+        errors: errors };
+
+}
+exports.loginFail = loginFail;
+function requestingToServer() {
+    return {
+        type: constants.REQUESTING_TO_SERVER };
+
+}
+exports.requestingToServer = requestingToServer;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsWUF3SHFGOztBQXhIckYsd0JBQTBDO0FBQzFDLG9CQUE2QjtBQWlDZCxRQUFBLEFBQU8sVUFBRyxVQUFDLEFBQWUsVUFBQyxBQUFlO0FBQ3ZELEFBQU0sV0FBRSxVQUFPLEFBQWlCLFVBQUUsQUFBaUI7OztBQUc3QyxBQUFRLHlCQUFDLEFBQWtCLEFBQUUsQUFBQyxBQUFDO0FBRTNCLEFBQUcsc0JBQUcsSUFBSSxNQUFHLFFBQUMsQUFBUSxVQUFDLEFBQVEsQUFBQyxBQUFDO0FBRXRDLEFBQUcsb0JBQUMsQUFBUSxTQUFDLEFBQUUsSUFBQyxFQUFDLEFBQVEsVUFBQyxBQUFRLFVBQUMsQUFBUSxVQUFDLEFBQVEsQUFBQyxBQUFDO0FBQ25ELEFBQUkscUJBQUMsVUFBUyxBQUFZO0FBRzdCLEFBQVEsNkJBQUMsQUFBWSxhQUFDLEVBQUMsQUFBSSxNQUFDLEFBQVEsVUFBQyxBQUFFLElBQUMsQUFBQyxBQUFDLEtBQUMsQUFBZSxpQkFBQyxBQUFLLE9BQUMsQUFBVSxBQUFDLEFBQUMsQUFBQyxBQUUvRTtBQUFDLEFBQUMsbUJBQUMsQUFBSyxNQUFDLFVBQVMsQUFBWTtBQUU3QixBQUFRLDZCQUFDLEFBQVMsVUFBQyxBQUFFLElBQUMsQUFBWSxjQUFDLEFBQUksTUFBQyxBQUFFLEFBQUMsQUFBQyxBQUFDO0FBQzFDLEFBQU8sNEJBQUMsQUFBRyxJQUFDLEFBQU0sQUFBQyxBQUFDO0FBQ3BCLEFBQXdCO0FBQ3pCLEFBQWdDLEFBRW5DO0FBQUMsQUFBQyxBQUFDOzs7V0FFTixBQUNIO0FBQUM7QUFZRCxzQkFBNkIsQUFBVyxNQUFDLEFBQWMsU0FBQyxBQUFlLFNBQUMsQUFBWTtBQUVoRixBQUFNLFdBQUM7QUFDSCxBQUFJLGNBQUUsQUFBUyxVQUFDLEFBQWE7QUFDN0IsQUFBSSxjQUFDLEFBQUk7QUFDVCxBQUFPLGlCQUFDLEFBQU87QUFDZixBQUFPLGlCQUFDLEFBQU87QUFDZixBQUFLLGVBQUMsQUFBSyxBQUNkLEFBQ0w7O0FBQUM7QUFURCx1QkFTQztBQVdELG1CQUEwQixBQUFXLE1BQUMsQUFBYyxTQUFDLEFBQWUsU0FBQyxBQUFvQjtBQUVyRixBQUFNLFdBQUM7QUFDSCxBQUFJLGNBQUUsQUFBUyxVQUFDLEFBQVU7QUFDMUIsQUFBSSxjQUFDLEFBQUk7QUFDVCxBQUFPLGlCQUFDLEFBQU87QUFDZixBQUFPLGlCQUFDLEFBQU87QUFDZixBQUFNLGdCQUFDLEFBQU0sQUFDaEIsQUFDTDs7QUFBQztBQVRELG9CQVNDO0FBVUQ7QUFFQyxBQUFNLFdBQUM7QUFFTixBQUFJLGNBQUMsQUFBUyxVQUFDLEFBQW9CLEFBQ25DLEFBQ0Y7O0FBQUM7QUFORCw2QkFNQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAqIGFzIGNvbnN0YW50cyBmcm9tICcuLi9jb25zdGFudHMnO1xuaW1wb3J0IEFwaSBmcm9tICcuLi9hcGkvQXBpJztcbi8vIGltcG9ydCB7cHVzaH0gZnJvbSAnY29ubmVjdGVkLXJlYWN0LXJvdXRlcic7XG5cbi8vIGltcG9ydCB7IEFjdGlvbkNyZWF0b3IgfSBmcm9tICdyZWR1eCc7XG5cbi8vIGV4cG9ydCBpbnRlcmZhY2UgSW5jcmVtZW50RW50aHVzaWFzbSB7XG4vLyAgICAgdHlwZTogY29uc3RhbnRzLklOQ1JFTUVOVF9FTlRIVVNJQVNNO1xuLy8gfVxuXG4vLyBleHBvcnQgaW50ZXJmYWNlIERlY3JlbWVudEVudGh1c2lhc20ge1xuLy8gICAgIHR5cGU6IGNvbnN0YW50cy5ERUNSRU1FTlRfRU5USFVTSUFTTTtcbi8vIH1cblxuLy8gZXhwb3J0IHR5cGUgRW50aHVzaWFzbUFjdGlvbiA9IEluY3JlbWVudEVudGh1c2lhc20gfCBEZWNyZW1lbnRFbnRodXNpYXNtO1xuXG4vLyBleHBvcnQgZnVuY3Rpb24gaW5jcmVtZW50RW50aHVzaWFzbSgpOiBJbmNyZW1lbnRFbnRodXNpYXNtIHtcbi8vICAgICByZXR1cm4ge1xuLy8gICAgICAgICB0eXBlOiBjb25zdGFudHMuSU5DUkVNRU5UX0VOVEhVU0lBU01cbi8vICAgICB9XG4vLyB9XG5cbi8vIGV4cG9ydCBmdW5jdGlvbiBkZWNyZW1lbnRFbnRodXNpYXNtKCk6IERlY3JlbWVudEVudGh1c2lhc20ge1xuLy8gICAgIHJldHVybiB7XG4vLyAgICAgICAgIHR5cGU6IGNvbnN0YW50cy5ERUNSRU1FTlRfRU5USFVTSUFTTVxuLy8gICAgIH1cbi8vIH1cblxuZXhwb3J0IGludGVyZmFjZSBMb2dpblJlcXVlc3Qge1xuXG5cdHR5cGU6Y29uc3RhbnRzLkxPR0lOX1JFUVVFU1Rcbn1cblxuXG5leHBvcnQgIGNvbnN0ICBkb0xvZ2luID0gKHVzZXJuYW1lOnN0cmluZyxwYXNzd29yZDpzdHJpbmcpOiBhbnkgPT4ge1xuICByZXR1cm4gIGFzeW5jIChkaXNwYXRjaDpGdW5jdGlvbiwgZ2V0U3RhdGU6RnVuY3Rpb24pID0+IHtcblxuXG4gICAgICAgIGRpc3BhdGNoKHJlcXVlc3RpbmdUb1NlcnZlcigpKTtcblxuICAgICAgICBsZXQgYXBpID0gbmV3IEFwaShnZXRTdGF0ZSxkaXNwYXRjaCk7XG4gICAgICBcdFx0XG4gICAgICBcdGFwaS5nZXRGZXRjaCgnJyx7dXNlcm5hbWU6dXNlcm5hbWUscGFzc3dvcmQ6cGFzc3dvcmR9KVxuICAgICAgXHRcdFx0LnRoZW4oZnVuY3Rpb24ocmVzcG9uc2U6YW55KXtcblxuICAgIFx0XHRcbiAgICBcdFx0XHRkaXNwYXRjaChsb2dpblN1Y2Nlc3Moe25hbWU6J2hpdGVzaCcsaWQ6MX0sJ0xvZ2luIFN1Y2Nlc3MnLGZhbHNlLCdzYWRzYWRhcycpKTtcblxuICAgIFx0XHR9KS5jYXRjaChmdW5jdGlvbihyZXNwb25zZTphbnkpe1xuXG4gICAgXHRcdFx0ZGlzcGF0Y2gobG9naW5GYWlsKHt9LCdMb2dpbiBmYWlsJyx0cnVlLFtdKSk7XG4gICAgICAgICAgY29uc29sZS5sb2coJ1RFU1QnKTtcbiAgICAgICAgICAvLy9kaXNwYXRjaChcInB1c2goJycpXCIpO1xuICAgICAgICAgLy8vZGlzcGF0Y2gocHVzaCgnL2Rhc2hib2FyZCcpKTtcblxuICAgIFx0XHR9KTtcblxuICB9XG59XG5cblxuZXhwb3J0IGludGVyZmFjZSBMb2dpblN1Y2Nlc3Mge1xuXG5cdHR5cGU6Y29uc3RhbnRzLkxPR0lOX1NVQ0NFU1M7XG5cdHVzZXI6T2JqZWN0O1xuXHRpc0Vycm9yOmJvb2xlYW47XG5cdG1lc3NhZ2U6c3RyaW5nO1xuXHR0b2tlbjpzdHJpbmc7XG59XG5cbmV4cG9ydCBmdW5jdGlvbiBsb2dpblN1Y2Nlc3ModXNlcjpPYmplY3QsbWVzc2FnZTpzdHJpbmcsaXNFcnJvcjpib29sZWFuLHRva2VuOnN0cmluZyk6IExvZ2luU3VjY2VzcyB7XG4gICAgXG4gICAgcmV0dXJuIHtcbiAgICAgICAgdHlwZTogY29uc3RhbnRzLkxPR0lOX1NVQ0NFU1MsXG4gICAgICAgIHVzZXI6dXNlcixcbiAgICAgICAgaXNFcnJvcjppc0Vycm9yLFxuICAgICAgICBtZXNzYWdlOm1lc3NhZ2UsXG4gICAgICAgIHRva2VuOnRva2VuXG4gICAgfVxufVxuXG5leHBvcnQgaW50ZXJmYWNlIExvZ2luRmFpbCB7XG5cblx0dHlwZTpjb25zdGFudHMuTE9HSU5fRkFJTDtcblx0dXNlcjpPYmplY3Q7XG5cdGlzRXJyb3I6Ym9vbGVhbjtcblx0bWVzc2FnZTpzdHJpbmc7XG5cdGVycm9yczpBcnJheTxPYmplY3Q+O1xufVxuXG5leHBvcnQgZnVuY3Rpb24gbG9naW5GYWlsKHVzZXI6T2JqZWN0LG1lc3NhZ2U6c3RyaW5nLGlzRXJyb3I6Ym9vbGVhbixlcnJvcnM6QXJyYXk8T2JqZWN0Pik6IExvZ2luRmFpbCB7XG4gICAgXG4gICAgcmV0dXJuIHtcbiAgICAgICAgdHlwZTogY29uc3RhbnRzLkxPR0lOX0ZBSUwsXG4gICAgICAgIHVzZXI6dXNlcixcbiAgICAgICAgaXNFcnJvcjppc0Vycm9yLFxuICAgICAgICBtZXNzYWdlOm1lc3NhZ2UsXG4gICAgICAgIGVycm9yczplcnJvcnNcbiAgICB9XG59XG5cbi8vIEdsb2JhbCBBY3Rpb24gZm9yIHRoZSBTZXJ2ZXIgUmVxdWVzdFxuXG5cbmV4cG9ydCBpbnRlcmZhY2UgUmVxdWVzdGluZ1RvU2VydmVyIHtcblxuXHR0eXBlOmNvbnN0YW50cy5SRVFVRVNUSU5HX1RPX1NFUlZFUlxufVxuXG5leHBvcnQgZnVuY3Rpb24gcmVxdWVzdGluZ1RvU2VydmVyKCk6IFJlcXVlc3RpbmdUb1NlcnZlcntcblxuXHRyZXR1cm4ge1xuXG5cdFx0dHlwZTpjb25zdGFudHMuUkVRVUVTVElOR19UT19TRVJWRVJcblx0fVxufVxuXG5cblxuXG5leHBvcnQgdHlwZSBBcHBBY3Rpb24gPSBMb2dpblJlcXVlc3QgfCBMb2dpblN1Y2Nlc3MgfCBMb2dpbkZhaWwgfCBSZXF1ZXN0aW5nVG9TZXJ2ZXI7Il19

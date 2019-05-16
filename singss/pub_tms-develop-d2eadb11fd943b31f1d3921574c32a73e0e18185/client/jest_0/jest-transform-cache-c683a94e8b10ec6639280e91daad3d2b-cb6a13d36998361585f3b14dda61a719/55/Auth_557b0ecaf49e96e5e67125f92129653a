@@ -1,0 +1,112 @@
+'use strict';require('ts-jest').install();"use strict";
+var __awaiter = this && this.__awaiter || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) {try {step(generator.next(value));} catch (e) {reject(e);}}
+        function rejected(value) {try {step(generator["throw"](value));} catch (e) {reject(e);}}
+        function step(result) {result.done ? resolve(result.value) : new P(function (resolve) {resolve(result.value);}).then(fulfilled, rejected);}
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = this && this.__generator || function (thisArg, body) {
+    var _ = { label: 0, sent: function () {if (t[0] & 1) throw t[1];return t[1];}, trys: [], ops: [] },f,y,t,g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function () {return this;}), g;
+    function verb(n) {return function (v) {return step([n, v]);};}
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0:case 1:t = op;break;
+                case 4:_.label++;return { value: op[1], done: false };
+                case 5:_.label++;y = op[1];op = [0];continue;
+                case 7:op = _.ops.pop();_.trys.pop();continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {_ = 0;continue;}
+                    if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {_.label = op[1];break;}
+                    if (op[0] === 6 && _.label < t[1]) {_.label = t[1];t = op;break;}
+                    if (t && _.label < t[2]) {_.label = t[2];_.ops.push(op);break;}
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop();continue;}
+
+            op = body.call(thisArg, _);
+        } catch (e) {op = [6, e];y = 0;} finally {f = t = 0;}
+        if (op[0] & 5) throw op[1];return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var Auth = /** @class */function () {
+    function Auth() {
+        var appAuthData = window.localStorage.getItem('TMS_AUTH');
+        this.appAuthData = appAuthData ? appAuthData : '';
+    }
+    /**
+       * This function is using to store the token and device data into the browser local store.
+       * @param {[string]} token     [auth token]
+       * @param {[string]} device_id [browser id]
+       */
+    Auth.prototype.setToken = function (token, device_id) {
+        var authData = JSON.stringify({ token: token, device_id: device_id });
+        window.localStorage.setItem('TMS_AUTH', authData);
+    };
+    /**
+        * This function is using to retrieve the token from the storage if available.
+        */
+    Auth.prototype.getToken = function () {
+        var authData = this.appAuthData;
+        if (authData) {
+            authData = JSON.parse(authData);
+            return typeof authData['token'] != "undefined" ? authData['token'] : false;
+        }
+        return false;
+    };
+    /**
+        * This function is using to retrieve the browser ID from the storage if available.
+        */
+    Auth.prototype.getDeviceId = function () {
+        var authData = this.appAuthData;
+        if (authData) {
+            authData = JSON.parse(authData);
+            return typeof authData['device_id'] != "undefined" ? authData['device_id'] : false;
+        }
+        return false;
+    };
+    /**
+        * This function is using to get the user login status.
+        */
+    Auth.prototype.isLogin = function () {
+        return this.appAuthData ? true : false;
+    };
+    /**
+        * This function uses to generate the unique id, In this application, we are using to make token secure
+        * @return {string} [Browser id]
+        */
+    Auth.prototype.guid = function () {
+        function s4() {
+            return Math.floor((1 + Math.random()) * 0x10000).
+            toString(16).
+            substring(1);
+        }
+        return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+        s4() + '-' + s4() + s4() + s4();
+    };
+    /**
+        * This function is using to clear the token from the local storage
+        */
+    Auth.prototype.unsetToken = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var clearAuth;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:return [4 /*yield*/, window.localStorage.removeItem('TMS_AUTH')];
+                    case 1:
+                        clearAuth = _a.sent();
+                        return [2 /*return*/, clearAuth];}
+
+            });
+        });
+    };
+    return Auth;
+}();
+exports.default = Auth;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXV0aC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkF1dGgudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUlDO0FBRUMsWUFBSSxBQUFXLGNBQUcsQUFBTSxPQUFDLEFBQVksYUFBQyxBQUFPLFFBQUMsQUFBVSxBQUFDLEFBQUM7QUFDMUQsQUFBSSxhQUFDLEFBQVcsY0FBRyxBQUFXLEFBQUMsY0FBQSxBQUFXLEFBQUMsY0FBQSxBQUFFLEFBQUMsQUFDL0M7QUFBQztBQUVELEFBSUc7Ozs7O0FBQ0gsbUJBQVEsV0FBUixVQUFTLEFBQVksT0FBQyxBQUFnQjtBQUVyQyxZQUFJLEFBQVEsV0FBRyxBQUFJLEtBQUMsQUFBUyxVQUFDLEVBQUMsQUFBSyxPQUFDLEFBQUssT0FBQyxBQUFTLFdBQUMsQUFBUyxBQUFDLEFBQUMsQUFBQztBQUNqRSxBQUFNLGVBQUMsQUFBWSxhQUFDLEFBQU8sUUFBQyxBQUFVLFlBQUMsQUFBUSxBQUFDLEFBQUMsQUFDbEQ7QUFBQztBQUVELEFBRUc7OztBQUNILG1CQUFRLFdBQVI7QUFFQyxZQUFJLEFBQVEsV0FBRyxBQUFJLEtBQUMsQUFBVyxBQUFDO0FBQ2hDLEFBQUUsWUFBQyxBQUFRLEFBQUMsVUFBQSxBQUFDO0FBRVosQUFBUSx1QkFBRyxBQUFJLEtBQUMsQUFBSyxNQUFDLEFBQVEsQUFBQyxBQUFDO0FBRWhDLEFBQU0sbUJBQUUsT0FBTyxBQUFRLFNBQUMsQUFBTyxBQUFDLFlBQUcsQUFBVyxBQUFDLEFBQUMsV0FBekMsR0FBeUMsQUFBUSxTQUFDLEFBQU8sQUFBQyxBQUFDLFdBQUEsQUFBSyxBQUFDLEFBQ3pFO0FBQUM7QUFFRCxBQUFNLGVBQUMsQUFBSyxBQUFDLEFBQ2Q7QUFBQztBQUNELEFBRUc7OztBQUNILG1CQUFXLGNBQVg7QUFFQyxZQUFJLEFBQVEsV0FBRyxBQUFJLEtBQUMsQUFBVyxBQUFDO0FBQ2hDLEFBQUUsWUFBQyxBQUFRLEFBQUMsVUFBQSxBQUFDO0FBRVosQUFBUSx1QkFBRyxBQUFJLEtBQUMsQUFBSyxNQUFDLEFBQVEsQUFBQyxBQUFDO0FBRWhDLEFBQU0sbUJBQUUsT0FBTyxBQUFRLFNBQUMsQUFBVyxBQUFDLGdCQUFHLEFBQVcsQUFBQyxBQUFDLFdBQTdDLEdBQTZDLEFBQVEsU0FBQyxBQUFXLEFBQUMsQUFBQyxlQUFBLEFBQUssQUFBQyxBQUNqRjtBQUFDO0FBQ0QsQUFBTSxlQUFDLEFBQUssQUFBQyxBQUNkO0FBQUM7QUFDRCxBQUVHOzs7QUFDSCxtQkFBTyxVQUFQO0FBRUMsQUFBTSxlQUFDLEFBQUksS0FBQyxBQUFXLEFBQUMsY0FBQSxBQUFJLEFBQUMsT0FBQSxBQUFLLEFBQUMsQUFDcEM7QUFBQztBQUVELEFBR0c7Ozs7QUFFSCxtQkFBSSxPQUFKO0FBRUU7QUFDRSxBQUFNLG1CQUFDLEFBQUksS0FBQyxBQUFLLE1BQUMsQ0FBQyxBQUFDLElBQUcsQUFBSSxLQUFDLEFBQU0sQUFBRSxBQUFDLFlBQUcsQUFBTyxBQUFDO0FBQzdDLEFBQVEscUJBQUMsQUFBRSxBQUFDO0FBQ1osQUFBUyxzQkFBQyxBQUFDLEFBQUMsQUFBQyxBQUNsQjtBQUFDO0FBQ0QsQUFBTSxzQkFBUSxBQUFFLEFBQUUsT0FBRyxBQUFHLE1BQUcsQUFBRSxBQUFFLE9BQUcsQUFBRyxNQUFHLEFBQUUsQUFBRSxPQUFHLEFBQUc7QUFDaEQsQUFBRSxBQUFFLFlBREMsQUFBRSxBQUFFLEdBQ0YsQUFBRyxNQUFHLEFBQUUsQUFBRSxPQUFHLEFBQUUsQUFBRSxPQUFHLEFBQUUsQUFBRSxBQUFDLEFBQ3BDO0FBQUM7QUFFRCxBQUVHOzs7QUFFRyxtQkFBVSxhQUFoQjs7Ozs7MkJBRWlCLHFCQUFNLEFBQU0sT0FBQyxBQUFZLGFBQUMsQUFBVSxXQUFDLEFBQVUsQUFBQzs7QUFBNUQsQUFBUyxvQ0FBRyxHQUFnRDtBQUNoRSw4Q0FBTyxBQUFTLEFBQUM7Ozs7QUFDakI7QUFDRixXQUFBLEFBQUM7QUFuRkQsQUFtRkMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBjbGFzcyBBdXRoe1xuXG5cdGFwcEF1dGhEYXRhOnN0cmluZztcblxuXHRjb25zdHJ1Y3RvcigpIHtcblxuXHRcdGxldCBhcHBBdXRoRGF0YSA9IHdpbmRvdy5sb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnVE1TX0FVVEgnKTtcblx0XHR0aGlzLmFwcEF1dGhEYXRhID0gYXBwQXV0aERhdGE/YXBwQXV0aERhdGE6Jyc7XG5cdH1cblxuXHQvKipcblx0ICogVGhpcyBmdW5jdGlvbiBpcyB1c2luZyB0byBzdG9yZSB0aGUgdG9rZW4gYW5kIGRldmljZSBkYXRhIGludG8gdGhlIGJyb3dzZXIgbG9jYWwgc3RvcmUuXG5cdCAqIEBwYXJhbSB7W3N0cmluZ119IHRva2VuICAgICBbYXV0aCB0b2tlbl1cblx0ICogQHBhcmFtIHtbc3RyaW5nXX0gZGV2aWNlX2lkIFticm93c2VyIGlkXVxuXHQgKi9cblx0c2V0VG9rZW4odG9rZW46c3RyaW5nLGRldmljZV9pZDpzdHJpbmcpIDp2b2lke1xuXG5cdFx0bGV0IGF1dGhEYXRhID0gSlNPTi5zdHJpbmdpZnkoe3Rva2VuOnRva2VuLGRldmljZV9pZDpkZXZpY2VfaWR9KTtcblx0XHR3aW5kb3cubG9jYWxTdG9yYWdlLnNldEl0ZW0oJ1RNU19BVVRIJyxhdXRoRGF0YSk7XG5cdH1cblxuXHQvKipcblx0ICogVGhpcyBmdW5jdGlvbiBpcyB1c2luZyB0byByZXRyaWV2ZSB0aGUgdG9rZW4gZnJvbSB0aGUgc3RvcmFnZSBpZiBhdmFpbGFibGUuXG5cdCAqL1xuXHRnZXRUb2tlbigpOiBzdHJpbmd8Ym9vbGVhbiB7XG5cblx0XHRsZXQgYXV0aERhdGEgPSB0aGlzLmFwcEF1dGhEYXRhO1xuXHRcdGlmKGF1dGhEYXRhKXtcblxuXHRcdFx0YXV0aERhdGEgPSBKU09OLnBhcnNlKGF1dGhEYXRhKTtcblxuXHRcdFx0cmV0dXJuICh0eXBlb2YgYXV0aERhdGFbJ3Rva2VuJ10gIT1cInVuZGVmaW5lZFwiKT9hdXRoRGF0YVsndG9rZW4nXTpmYWxzZTtcblx0XHR9XG5cblx0XHRyZXR1cm4gZmFsc2U7XG5cdH1cblx0LyoqXG5cdCAqIFRoaXMgZnVuY3Rpb24gaXMgdXNpbmcgdG8gcmV0cmlldmUgdGhlIGJyb3dzZXIgSUQgZnJvbSB0aGUgc3RvcmFnZSBpZiBhdmFpbGFibGUuXG5cdCAqL1xuXHRnZXREZXZpY2VJZCgpOiBzdHJpbmd8Ym9vbGVhbiB7XG5cblx0XHRsZXQgYXV0aERhdGEgPSB0aGlzLmFwcEF1dGhEYXRhO1xuXHRcdGlmKGF1dGhEYXRhKXtcblxuXHRcdFx0YXV0aERhdGEgPSBKU09OLnBhcnNlKGF1dGhEYXRhKTtcblxuXHRcdFx0cmV0dXJuICh0eXBlb2YgYXV0aERhdGFbJ2RldmljZV9pZCddICE9XCJ1bmRlZmluZWRcIik/YXV0aERhdGFbJ2RldmljZV9pZCddOmZhbHNlO1xuXHRcdH1cblx0XHRyZXR1cm4gZmFsc2U7XG5cdH1cblx0LyoqXG5cdCAqIFRoaXMgZnVuY3Rpb24gaXMgdXNpbmcgdG8gZ2V0IHRoZSB1c2VyIGxvZ2luIHN0YXR1cy5cblx0ICovXG5cdGlzTG9naW4oKTogYm9vbGVhbiB7XG5cblx0XHRyZXR1cm4gdGhpcy5hcHBBdXRoRGF0YT90cnVlOmZhbHNlO1xuXHR9XG5cblx0LyoqXG5cdCAqIFRoaXMgZnVuY3Rpb24gdXNlcyB0byBnZW5lcmF0ZSB0aGUgdW5pcXVlIGlkLCBJbiB0aGlzIGFwcGxpY2F0aW9uLCB3ZSBhcmUgdXNpbmcgdG8gbWFrZSB0b2tlbiBzZWN1cmVcblx0ICogQHJldHVybiB7c3RyaW5nfSBbQnJvd3NlciBpZF1cblx0ICovXG5cblx0Z3VpZCgpOnN0cmluZyB7XG5cdCAgXG5cdCAgZnVuY3Rpb24gczQoKSB7XG5cdCAgICByZXR1cm4gTWF0aC5mbG9vcigoMSArIE1hdGgucmFuZG9tKCkpICogMHgxMDAwMClcblx0ICAgICAgLnRvU3RyaW5nKDE2KVxuXHQgICAgICAuc3Vic3RyaW5nKDEpO1xuXHQgIH1cblx0ICByZXR1cm4gczQoKSArIHM0KCkgKyAnLScgKyBzNCgpICsgJy0nICsgczQoKSArICctJyArXG5cdCAgICBzNCgpICsgJy0nICsgczQoKSArIHM0KCkgKyBzNCgpO1xuXHR9XG5cblx0LyoqXG5cdCAqIFRoaXMgZnVuY3Rpb24gaXMgdXNpbmcgdG8gY2xlYXIgdGhlIHRva2VuIGZyb20gdGhlIGxvY2FsIHN0b3JhZ2Vcblx0ICovXG5cdFxuXHRhc3luYyB1bnNldFRva2VuKCkgOlByb21pc2U8YW55PiB7XG5cblx0XHRsZXQgY2xlYXJBdXRoID0gYXdhaXQgd2luZG93LmxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCdUTVNfQVVUSCcpO1xuXHRcdHJldHVybiBjbGVhckF1dGg7XG5cdH1cbn0iXX0=
