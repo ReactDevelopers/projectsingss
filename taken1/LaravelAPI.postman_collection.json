@@ -1,0 +1,285 @@
+{
+	"id": "08c8ce7c-08e9-f7db-6423-90961e94f06c",
+	"name": "LaravelAPI",
+	"description": "",
+	"order": [
+		"73d45e4c-7133-c6c0-24fb-ae7eaa1a7317",
+		"2fa11bf6-33b4-d48b-b35b-028acaec9560",
+		"976f014c-7484-7cff-91ec-eb41f5a06139",
+		"3dffcaf8-7b2d-5e77-dbe0-a0ac01424117",
+		"3fe8f968-e19f-2c1d-ed77-642401d3b49c",
+		"1f9affb7-d7b1-df8c-fed5-5a17a5abbd67",
+		"bb9770a7-a6cc-5db9-1c52-b39d1eb655e0"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1548783653233,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "1f9affb7-d7b1-df8c-fed5-5a17a5abbd67",
+			"headers": "Accept: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ0Y2Y5NDcyN2M4ZjZiODdlZWIyNzQ2ZjFlZTk5YWFjNDZkNTA1Y2UyNjdmMWMwZjdkYzQ3NzA0MmYxZWM4MDI5OGY1ZjFmNGNkNWYzNWQwIn0.eyJhdWQiOiIxIiwianRpIjoiZDRjZjk0NzI3YzhmNmI4N2VlYjI3NDZmMWVlOTlhYWM0NmQ1MDVjZTI2N2YxYzBmN2RjNDc3MDQyZjFlYzgwMjk4ZjVmMWY0Y2Q1ZjM1ZDAiLCJpYXQiOjE1NDkyMDAxODUsIm5iZiI6MTU0OTIwMDE4NSwiZXhwIjoxNTgwNzM2MTg1LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.wZVO24SIKVdDyOZwlGJfU2MflEnnTA7rJWUvvqlzGrjm5JT-qpa64tm9HLJO5GTD6rmg12U6w9i0CarRZz1ijrmddlQwU_43YE2ITCubN6iMlCNhChTM0RMCF6VZi9-Zg65M21u8DG1qZV60G6uerpDqf9SDDd4EHfaBK5sF4PK5O2PZbmSrNmOxJLqisCRTTDUmsJq_lglcxlaKHg8_PKzqTX4V_cDNB6vHuSyb3k4Y8ywsV1LwJZZ19rvN_ecWL9x8oAkyZa3gjxTyS3_j1KaAZ2fBL3jRkfk80X7e9duZq-i9oBL8T0-Oei_oDT6VlKLCFqtbGzuitimo3uybYpxJJU2ndjIamhSp5UWw5CcwFgpUAGgMGs1M4kMl73UdWxodFp8ucj5pkoM3Matzn0CwARUClG2M-5OhjbKFWavvTySR3It3OCRZyZsPd3Z7ZSf4Oa5sv6ATNuOcg6kHtOmPNc7gAr_iKCcWyzdKXecqLcSKOxj0FtrXq2MbOv82_SctBJNnQOYlZ5NVYmJGPFjYdSq2tw9FGHxU52Lz9O2U5a0eXwgPZl85GUwyvjir7KfU-czDNYY6rH7xbvnL6sXgSZ6sGfqBZJDjZkvH0GRweNnURR2uIk6YOLLL4XIA3dy6If5xDSLBGvy3Sqh7nMvSQrBvaCFo2swyzjhdYPw\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ0Y2Y5NDcyN2M4ZjZiODdlZWIyNzQ2ZjFlZTk5YWFjNDZkNTA1Y2UyNjdmMWMwZjdkYzQ3NzA0MmYxZWM4MDI5OGY1ZjFmNGNkNWYzNWQwIn0.eyJhdWQiOiIxIiwianRpIjoiZDRjZjk0NzI3YzhmNmI4N2VlYjI3NDZmMWVlOTlhYWM0NmQ1MDVjZTI2N2YxYzBmN2RjNDc3MDQyZjFlYzgwMjk4ZjVmMWY0Y2Q1ZjM1ZDAiLCJpYXQiOjE1NDkyMDAxODUsIm5iZiI6MTU0OTIwMDE4NSwiZXhwIjoxNTgwNzM2MTg1LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.wZVO24SIKVdDyOZwlGJfU2MflEnnTA7rJWUvvqlzGrjm5JT-qpa64tm9HLJO5GTD6rmg12U6w9i0CarRZz1ijrmddlQwU_43YE2ITCubN6iMlCNhChTM0RMCF6VZi9-Zg65M21u8DG1qZV60G6uerpDqf9SDDd4EHfaBK5sF4PK5O2PZbmSrNmOxJLqisCRTTDUmsJq_lglcxlaKHg8_PKzqTX4V_cDNB6vHuSyb3k4Y8ywsV1LwJZZ19rvN_ecWL9x8oAkyZa3gjxTyS3_j1KaAZ2fBL3jRkfk80X7e9duZq-i9oBL8T0-Oei_oDT6VlKLCFqtbGzuitimo3uybYpxJJU2ndjIamhSp5UWw5CcwFgpUAGgMGs1M4kMl73UdWxodFp8ucj5pkoM3Matzn0CwARUClG2M-5OhjbKFWavvTySR3It3OCRZyZsPd3Z7ZSf4Oa5sv6ATNuOcg6kHtOmPNc7gAr_iKCcWyzdKXecqLcSKOxj0FtrXq2MbOv82_SctBJNnQOYlZ5NVYmJGPFjYdSq2tw9FGHxU52Lz9O2U5a0eXwgPZl85GUwyvjir7KfU-czDNYY6rH7xbvnL6sXgSZ6sGfqBZJDjZkvH0GRweNnURR2uIk6YOLLL4XIA3dy6If5xDSLBGvy3Sqh7nMvSQrBvaCFo2swyzjhdYPw",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://camerastoreapi.herokuapp.com/api/getProductList",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "08c8ce7c-08e9-f7db-6423-90961e94f06c",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get Product List API",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1549200392879,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "2fa11bf6-33b4-d48b-b35b-028acaec9560",
+			"headers": "",
+			"headerData": [],
+			"url": "https://camerastoreapi.herokuapp.com/api/login",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "08c8ce7c-08e9-f7db-6423-90961e94f06c",
+			"data": [
+				{
+					"key": "email",
+					"value": "info3@api.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Login API",
+			"description": "Required fields email and password",
+			"descriptionFormat": "html",
+			"time": 1549199363966,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "3dffcaf8-7b2d-5e77-dbe0-a0ac01424117",
+			"headers": "Accept: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ0Y2Y5NDcyN2M4ZjZiODdlZWIyNzQ2ZjFlZTk5YWFjNDZkNTA1Y2UyNjdmMWMwZjdkYzQ3NzA0MmYxZWM4MDI5OGY1ZjFmNGNkNWYzNWQwIn0.eyJhdWQiOiIxIiwianRpIjoiZDRjZjk0NzI3YzhmNmI4N2VlYjI3NDZmMWVlOTlhYWM0NmQ1MDVjZTI2N2YxYzBmN2RjNDc3MDQyZjFlYzgwMjk4ZjVmMWY0Y2Q1ZjM1ZDAiLCJpYXQiOjE1NDkyMDAxODUsIm5iZiI6MTU0OTIwMDE4NSwiZXhwIjoxNTgwNzM2MTg1LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.wZVO24SIKVdDyOZwlGJfU2MflEnnTA7rJWUvvqlzGrjm5JT-qpa64tm9HLJO5GTD6rmg12U6w9i0CarRZz1ijrmddlQwU_43YE2ITCubN6iMlCNhChTM0RMCF6VZi9-Zg65M21u8DG1qZV60G6uerpDqf9SDDd4EHfaBK5sF4PK5O2PZbmSrNmOxJLqisCRTTDUmsJq_lglcxlaKHg8_PKzqTX4V_cDNB6vHuSyb3k4Y8ywsV1LwJZZ19rvN_ecWL9x8oAkyZa3gjxTyS3_j1KaAZ2fBL3jRkfk80X7e9duZq-i9oBL8T0-Oei_oDT6VlKLCFqtbGzuitimo3uybYpxJJU2ndjIamhSp5UWw5CcwFgpUAGgMGs1M4kMl73UdWxodFp8ucj5pkoM3Matzn0CwARUClG2M-5OhjbKFWavvTySR3It3OCRZyZsPd3Z7ZSf4Oa5sv6ATNuOcg6kHtOmPNc7gAr_iKCcWyzdKXecqLcSKOxj0FtrXq2MbOv82_SctBJNnQOYlZ5NVYmJGPFjYdSq2tw9FGHxU52Lz9O2U5a0eXwgPZl85GUwyvjir7KfU-czDNYY6rH7xbvnL6sXgSZ6sGfqBZJDjZkvH0GRweNnURR2uIk6YOLLL4XIA3dy6If5xDSLBGvy3Sqh7nMvSQrBvaCFo2swyzjhdYPw\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ0Y2Y5NDcyN2M4ZjZiODdlZWIyNzQ2ZjFlZTk5YWFjNDZkNTA1Y2UyNjdmMWMwZjdkYzQ3NzA0MmYxZWM4MDI5OGY1ZjFmNGNkNWYzNWQwIn0.eyJhdWQiOiIxIiwianRpIjoiZDRjZjk0NzI3YzhmNmI4N2VlYjI3NDZmMWVlOTlhYWM0NmQ1MDVjZTI2N2YxYzBmN2RjNDc3MDQyZjFlYzgwMjk4ZjVmMWY0Y2Q1ZjM1ZDAiLCJpYXQiOjE1NDkyMDAxODUsIm5iZiI6MTU0OTIwMDE4NSwiZXhwIjoxNTgwNzM2MTg1LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.wZVO24SIKVdDyOZwlGJfU2MflEnnTA7rJWUvvqlzGrjm5JT-qpa64tm9HLJO5GTD6rmg12U6w9i0CarRZz1ijrmddlQwU_43YE2ITCubN6iMlCNhChTM0RMCF6VZi9-Zg65M21u8DG1qZV60G6uerpDqf9SDDd4EHfaBK5sF4PK5O2PZbmSrNmOxJLqisCRTTDUmsJq_lglcxlaKHg8_PKzqTX4V_cDNB6vHuSyb3k4Y8ywsV1LwJZZ19rvN_ecWL9x8oAkyZa3gjxTyS3_j1KaAZ2fBL3jRkfk80X7e9duZq-i9oBL8T0-Oei_oDT6VlKLCFqtbGzuitimo3uybYpxJJU2ndjIamhSp5UWw5CcwFgpUAGgMGs1M4kMl73UdWxodFp8ucj5pkoM3Matzn0CwARUClG2M-5OhjbKFWavvTySR3It3OCRZyZsPd3Z7ZSf4Oa5sv6ATNuOcg6kHtOmPNc7gAr_iKCcWyzdKXecqLcSKOxj0FtrXq2MbOv82_SctBJNnQOYlZ5NVYmJGPFjYdSq2tw9FGHxU52Lz9O2U5a0eXwgPZl85GUwyvjir7KfU-czDNYY6rH7xbvnL6sXgSZ6sGfqBZJDjZkvH0GRweNnURR2uIk6YOLLL4XIA3dy6If5xDSLBGvy3Sqh7nMvSQrBvaCFo2swyzjhdYPw",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://camerastoreapi.herokuapp.com/api/getCart",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1549200495258,
+			"name": "Get Cart API",
+			"description": "",
+			"collectionId": "08c8ce7c-08e9-f7db-6423-90961e94f06c",
+			"responses": []
+		},
+		{
+			"id": "3fe8f968-e19f-2c1d-ed77-642401d3b49c",
+			"headers": "Accept: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ0Y2Y5NDcyN2M4ZjZiODdlZWIyNzQ2ZjFlZTk5YWFjNDZkNTA1Y2UyNjdmMWMwZjdkYzQ3NzA0MmYxZWM4MDI5OGY1ZjFmNGNkNWYzNWQwIn0.eyJhdWQiOiIxIiwianRpIjoiZDRjZjk0NzI3YzhmNmI4N2VlYjI3NDZmMWVlOTlhYWM0NmQ1MDVjZTI2N2YxYzBmN2RjNDc3MDQyZjFlYzgwMjk4ZjVmMWY0Y2Q1ZjM1ZDAiLCJpYXQiOjE1NDkyMDAxODUsIm5iZiI6MTU0OTIwMDE4NSwiZXhwIjoxNTgwNzM2MTg1LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.wZVO24SIKVdDyOZwlGJfU2MflEnnTA7rJWUvvqlzGrjm5JT-qpa64tm9HLJO5GTD6rmg12U6w9i0CarRZz1ijrmddlQwU_43YE2ITCubN6iMlCNhChTM0RMCF6VZi9-Zg65M21u8DG1qZV60G6uerpDqf9SDDd4EHfaBK5sF4PK5O2PZbmSrNmOxJLqisCRTTDUmsJq_lglcxlaKHg8_PKzqTX4V_cDNB6vHuSyb3k4Y8ywsV1LwJZZ19rvN_ecWL9x8oAkyZa3gjxTyS3_j1KaAZ2fBL3jRkfk80X7e9duZq-i9oBL8T0-Oei_oDT6VlKLCFqtbGzuitimo3uybYpxJJU2ndjIamhSp5UWw5CcwFgpUAGgMGs1M4kMl73UdWxodFp8ucj5pkoM3Matzn0CwARUClG2M-5OhjbKFWavvTySR3It3OCRZyZsPd3Z7ZSf4Oa5sv6ATNuOcg6kHtOmPNc7gAr_iKCcWyzdKXecqLcSKOxj0FtrXq2MbOv82_SctBJNnQOYlZ5NVYmJGPFjYdSq2tw9FGHxU52Lz9O2U5a0eXwgPZl85GUwyvjir7KfU-czDNYY6rH7xbvnL6sXgSZ6sGfqBZJDjZkvH0GRweNnURR2uIk6YOLLL4XIA3dy6If5xDSLBGvy3Sqh7nMvSQrBvaCFo2swyzjhdYPw\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ0Y2Y5NDcyN2M4ZjZiODdlZWIyNzQ2ZjFlZTk5YWFjNDZkNTA1Y2UyNjdmMWMwZjdkYzQ3NzA0MmYxZWM4MDI5OGY1ZjFmNGNkNWYzNWQwIn0.eyJhdWQiOiIxIiwianRpIjoiZDRjZjk0NzI3YzhmNmI4N2VlYjI3NDZmMWVlOTlhYWM0NmQ1MDVjZTI2N2YxYzBmN2RjNDc3MDQyZjFlYzgwMjk4ZjVmMWY0Y2Q1ZjM1ZDAiLCJpYXQiOjE1NDkyMDAxODUsIm5iZiI6MTU0OTIwMDE4NSwiZXhwIjoxNTgwNzM2MTg1LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.wZVO24SIKVdDyOZwlGJfU2MflEnnTA7rJWUvvqlzGrjm5JT-qpa64tm9HLJO5GTD6rmg12U6w9i0CarRZz1ijrmddlQwU_43YE2ITCubN6iMlCNhChTM0RMCF6VZi9-Zg65M21u8DG1qZV60G6uerpDqf9SDDd4EHfaBK5sF4PK5O2PZbmSrNmOxJLqisCRTTDUmsJq_lglcxlaKHg8_PKzqTX4V_cDNB6vHuSyb3k4Y8ywsV1LwJZZ19rvN_ecWL9x8oAkyZa3gjxTyS3_j1KaAZ2fBL3jRkfk80X7e9duZq-i9oBL8T0-Oei_oDT6VlKLCFqtbGzuitimo3uybYpxJJU2ndjIamhSp5UWw5CcwFgpUAGgMGs1M4kMl73UdWxodFp8ucj5pkoM3Matzn0CwARUClG2M-5OhjbKFWavvTySR3It3OCRZyZsPd3Z7ZSf4Oa5sv6ATNuOcg6kHtOmPNc7gAr_iKCcWyzdKXecqLcSKOxj0FtrXq2MbOv82_SctBJNnQOYlZ5NVYmJGPFjYdSq2tw9FGHxU52Lz9O2U5a0eXwgPZl85GUwyvjir7KfU-czDNYY6rH7xbvnL6sXgSZ6sGfqBZJDjZkvH0GRweNnURR2uIk6YOLLL4XIA3dy6If5xDSLBGvy3Sqh7nMvSQrBvaCFo2swyzjhdYPw",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://camerastoreapi.herokuapp.com/api/getProductListCat/2",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1549200372697,
+			"name": "Get Product on basis of category",
+			"description": "https://camerastoreapi.herokuapp.com/api/getProductListCat/{CATEGORYID}",
+			"collectionId": "08c8ce7c-08e9-f7db-6423-90961e94f06c",
+			"responses": []
+		},
+		{
+			"id": "73d45e4c-7133-c6c0-24fb-ae7eaa1a7317",
+			"headers": "",
+			"headerData": [],
+			"url": "https://camerastoreapi.herokuapp.com/api/register",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "camer",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "info@camera.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1549199996744,
+			"name": "Register API",
+			"description": "Regsite User",
+			"collectionId": "08c8ce7c-08e9-f7db-6423-90961e94f06c",
+			"responses": []
+		},
+		{
+			"id": "976f014c-7484-7cff-91ec-eb41f5a06139",
+			"headers": "Accept: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ0Y2Y5NDcyN2M4ZjZiODdlZWIyNzQ2ZjFlZTk5YWFjNDZkNTA1Y2UyNjdmMWMwZjdkYzQ3NzA0MmYxZWM4MDI5OGY1ZjFmNGNkNWYzNWQwIn0.eyJhdWQiOiIxIiwianRpIjoiZDRjZjk0NzI3YzhmNmI4N2VlYjI3NDZmMWVlOTlhYWM0NmQ1MDVjZTI2N2YxYzBmN2RjNDc3MDQyZjFlYzgwMjk4ZjVmMWY0Y2Q1ZjM1ZDAiLCJpYXQiOjE1NDkyMDAxODUsIm5iZiI6MTU0OTIwMDE4NSwiZXhwIjoxNTgwNzM2MTg1LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.wZVO24SIKVdDyOZwlGJfU2MflEnnTA7rJWUvvqlzGrjm5JT-qpa64tm9HLJO5GTD6rmg12U6w9i0CarRZz1ijrmddlQwU_43YE2ITCubN6iMlCNhChTM0RMCF6VZi9-Zg65M21u8DG1qZV60G6uerpDqf9SDDd4EHfaBK5sF4PK5O2PZbmSrNmOxJLqisCRTTDUmsJq_lglcxlaKHg8_PKzqTX4V_cDNB6vHuSyb3k4Y8ywsV1LwJZZ19rvN_ecWL9x8oAkyZa3gjxTyS3_j1KaAZ2fBL3jRkfk80X7e9duZq-i9oBL8T0-Oei_oDT6VlKLCFqtbGzuitimo3uybYpxJJU2ndjIamhSp5UWw5CcwFgpUAGgMGs1M4kMl73UdWxodFp8ucj5pkoM3Matzn0CwARUClG2M-5OhjbKFWavvTySR3It3OCRZyZsPd3Z7ZSf4Oa5sv6ATNuOcg6kHtOmPNc7gAr_iKCcWyzdKXecqLcSKOxj0FtrXq2MbOv82_SctBJNnQOYlZ5NVYmJGPFjYdSq2tw9FGHxU52Lz9O2U5a0eXwgPZl85GUwyvjir7KfU-czDNYY6rH7xbvnL6sXgSZ6sGfqBZJDjZkvH0GRweNnURR2uIk6YOLLL4XIA3dy6If5xDSLBGvy3Sqh7nMvSQrBvaCFo2swyzjhdYPw\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ0Y2Y5NDcyN2M4ZjZiODdlZWIyNzQ2ZjFlZTk5YWFjNDZkNTA1Y2UyNjdmMWMwZjdkYzQ3NzA0MmYxZWM4MDI5OGY1ZjFmNGNkNWYzNWQwIn0.eyJhdWQiOiIxIiwianRpIjoiZDRjZjk0NzI3YzhmNmI4N2VlYjI3NDZmMWVlOTlhYWM0NmQ1MDVjZTI2N2YxYzBmN2RjNDc3MDQyZjFlYzgwMjk4ZjVmMWY0Y2Q1ZjM1ZDAiLCJpYXQiOjE1NDkyMDAxODUsIm5iZiI6MTU0OTIwMDE4NSwiZXhwIjoxNTgwNzM2MTg1LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.wZVO24SIKVdDyOZwlGJfU2MflEnnTA7rJWUvvqlzGrjm5JT-qpa64tm9HLJO5GTD6rmg12U6w9i0CarRZz1ijrmddlQwU_43YE2ITCubN6iMlCNhChTM0RMCF6VZi9-Zg65M21u8DG1qZV60G6uerpDqf9SDDd4EHfaBK5sF4PK5O2PZbmSrNmOxJLqisCRTTDUmsJq_lglcxlaKHg8_PKzqTX4V_cDNB6vHuSyb3k4Y8ywsV1LwJZZ19rvN_ecWL9x8oAkyZa3gjxTyS3_j1KaAZ2fBL3jRkfk80X7e9duZq-i9oBL8T0-Oei_oDT6VlKLCFqtbGzuitimo3uybYpxJJU2ndjIamhSp5UWw5CcwFgpUAGgMGs1M4kMl73UdWxodFp8ucj5pkoM3Matzn0CwARUClG2M-5OhjbKFWavvTySR3It3OCRZyZsPd3Z7ZSf4Oa5sv6ATNuOcg6kHtOmPNc7gAr_iKCcWyzdKXecqLcSKOxj0FtrXq2MbOv82_SctBJNnQOYlZ5NVYmJGPFjYdSq2tw9FGHxU52Lz9O2U5a0eXwgPZl85GUwyvjir7KfU-czDNYY6rH7xbvnL6sXgSZ6sGfqBZJDjZkvH0GRweNnURR2uIk6YOLLL4XIA3dy6If5xDSLBGvy3Sqh7nMvSQrBvaCFo2swyzjhdYPw",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://camerastoreapi.herokuapp.com/api/addCart/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "quantity",
+					"value": "2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1549200491755,
+			"name": "Add Cart API",
+			"description": "https://camerastoreapi.herokuapp.com/api/addCart/{Product ID}\nRequired field quantity",
+			"collectionId": "08c8ce7c-08e9-f7db-6423-90961e94f06c",
+			"responses": []
+		},
+		{
+			"id": "bb9770a7-a6cc-5db9-1c52-b39d1eb655e0",
+			"headers": "Accept: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ0Y2Y5NDcyN2M4ZjZiODdlZWIyNzQ2ZjFlZTk5YWFjNDZkNTA1Y2UyNjdmMWMwZjdkYzQ3NzA0MmYxZWM4MDI5OGY1ZjFmNGNkNWYzNWQwIn0.eyJhdWQiOiIxIiwianRpIjoiZDRjZjk0NzI3YzhmNmI4N2VlYjI3NDZmMWVlOTlhYWM0NmQ1MDVjZTI2N2YxYzBmN2RjNDc3MDQyZjFlYzgwMjk4ZjVmMWY0Y2Q1ZjM1ZDAiLCJpYXQiOjE1NDkyMDAxODUsIm5iZiI6MTU0OTIwMDE4NSwiZXhwIjoxNTgwNzM2MTg1LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.wZVO24SIKVdDyOZwlGJfU2MflEnnTA7rJWUvvqlzGrjm5JT-qpa64tm9HLJO5GTD6rmg12U6w9i0CarRZz1ijrmddlQwU_43YE2ITCubN6iMlCNhChTM0RMCF6VZi9-Zg65M21u8DG1qZV60G6uerpDqf9SDDd4EHfaBK5sF4PK5O2PZbmSrNmOxJLqisCRTTDUmsJq_lglcxlaKHg8_PKzqTX4V_cDNB6vHuSyb3k4Y8ywsV1LwJZZ19rvN_ecWL9x8oAkyZa3gjxTyS3_j1KaAZ2fBL3jRkfk80X7e9duZq-i9oBL8T0-Oei_oDT6VlKLCFqtbGzuitimo3uybYpxJJU2ndjIamhSp5UWw5CcwFgpUAGgMGs1M4kMl73UdWxodFp8ucj5pkoM3Matzn0CwARUClG2M-5OhjbKFWavvTySR3It3OCRZyZsPd3Z7ZSf4Oa5sv6ATNuOcg6kHtOmPNc7gAr_iKCcWyzdKXecqLcSKOxj0FtrXq2MbOv82_SctBJNnQOYlZ5NVYmJGPFjYdSq2tw9FGHxU52Lz9O2U5a0eXwgPZl85GUwyvjir7KfU-czDNYY6rH7xbvnL6sXgSZ6sGfqBZJDjZkvH0GRweNnURR2uIk6YOLLL4XIA3dy6If5xDSLBGvy3Sqh7nMvSQrBvaCFo2swyzjhdYPw\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ0Y2Y5NDcyN2M4ZjZiODdlZWIyNzQ2ZjFlZTk5YWFjNDZkNTA1Y2UyNjdmMWMwZjdkYzQ3NzA0MmYxZWM4MDI5OGY1ZjFmNGNkNWYzNWQwIn0.eyJhdWQiOiIxIiwianRpIjoiZDRjZjk0NzI3YzhmNmI4N2VlYjI3NDZmMWVlOTlhYWM0NmQ1MDVjZTI2N2YxYzBmN2RjNDc3MDQyZjFlYzgwMjk4ZjVmMWY0Y2Q1ZjM1ZDAiLCJpYXQiOjE1NDkyMDAxODUsIm5iZiI6MTU0OTIwMDE4NSwiZXhwIjoxNTgwNzM2MTg1LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.wZVO24SIKVdDyOZwlGJfU2MflEnnTA7rJWUvvqlzGrjm5JT-qpa64tm9HLJO5GTD6rmg12U6w9i0CarRZz1ijrmddlQwU_43YE2ITCubN6iMlCNhChTM0RMCF6VZi9-Zg65M21u8DG1qZV60G6uerpDqf9SDDd4EHfaBK5sF4PK5O2PZbmSrNmOxJLqisCRTTDUmsJq_lglcxlaKHg8_PKzqTX4V_cDNB6vHuSyb3k4Y8ywsV1LwJZZ19rvN_ecWL9x8oAkyZa3gjxTyS3_j1KaAZ2fBL3jRkfk80X7e9duZq-i9oBL8T0-Oei_oDT6VlKLCFqtbGzuitimo3uybYpxJJU2ndjIamhSp5UWw5CcwFgpUAGgMGs1M4kMl73UdWxodFp8ucj5pkoM3Matzn0CwARUClG2M-5OhjbKFWavvTySR3It3OCRZyZsPd3Z7ZSf4Oa5sv6ATNuOcg6kHtOmPNc7gAr_iKCcWyzdKXecqLcSKOxj0FtrXq2MbOv82_SctBJNnQOYlZ5NVYmJGPFjYdSq2tw9FGHxU52Lz9O2U5a0eXwgPZl85GUwyvjir7KfU-czDNYY6rH7xbvnL6sXgSZ6sGfqBZJDjZkvH0GRweNnURR2uIk6YOLLL4XIA3dy6If5xDSLBGvy3Sqh7nMvSQrBvaCFo2swyzjhdYPw",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://camerastoreapi.herokuapp.com/api/getCategoryList",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1549200416159,
+			"name": "Get Category List API ",
+			"description": "",
+			"collectionId": "08c8ce7c-08e9-f7db-6423-90961e94f06c",
+			"responses": []
+		}
+	]
+}
