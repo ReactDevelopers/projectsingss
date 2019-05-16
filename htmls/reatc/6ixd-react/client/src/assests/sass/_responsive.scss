@@ -1,0 +1,71 @@
+// *
+// [Table of contents]
+
+// 1. @media screen and (min-width:0\0)
+//    - IE
+
+// 2. @media screen and (-webkit-min-device-pixel-ratio:0)
+//    - Chrome/Safari
+
+// 3. @media screen and (min-width: 1780px) and (max-width: 1980px)
+//    - Larger Screens
+
+// 4. @media screen and (min-width: 1500px) and (max-width: 1600px)
+//    - Larger Screens
+
+// 5. @media screen and (max-width : 1280px)
+//    - Macbook and other devices
+
+// 6. @media screen and (max-width : 1024px)
+//    - iPad devices Landscape
+
+// 7. @media screen and (max-width : 980px)
+//    - Tabs and Tablets Landscape
+
+// 8. @media screen and (max-width : 800px)
+//    - iPad Potrait and other devices
+
+// 9. @media screen and (max-width : 767px)
+//    - iPhone 6Plus/Nexus 6 Landscape
+
+// 10. @media screen and (max-width : 680px)
+//    - iPhone 6 Landscape
+
+// 11. @media screen and (max-width : 580px)
+//    - iPhone 5 Landscape
+
+// 12. @media screen and (max-width : 480px)
+//    - iPhone 4 Landscape and iPhone 6/6Plus Potrait
+
+// 13. @media screen and (max-width : 420px)
+//    - iPhone 6/6Plus Potrait/Nexus 5/Samsung Galaxy Potrait
+
+// */
+
+
+/* M E D I A   Q U E R I E S */
+
+@media screen and (max-width : 991px){
+    .landing-panel-wrapper{
+        padding: 40px 15px 55px 15px;
+    }
+}
+
+@media screen and (max-width : 767px){
+    .manual-button {
+        text-align: left;
+        padding-left: 105px;
+        padding-top: 23px;
+    }
+    .form-wrapper-transaction .form-wrapper {
+        padding-left: 0;
+        padding-top: 62px;
+    }
+    .manual-button .btn{
+        min-width: 150px;
+    }
+    .logout-btn-wrapper .logout-btn{
+        font-size: 0;
+        background-position: right;
+    }
+}

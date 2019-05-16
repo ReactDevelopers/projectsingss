@@ -1,0 +1,234 @@
+/*1. @media screen and (min-width:0\0)
+- IE
+
+2. @media screen and (-webkit-min-device-pixel-ratio:0)
+- Chrome/Safari
+
+3. @media screen and (min-width: 1780px) and (max-width: 1980px)
+- Larger Screens
+
+4. @media screen and (min-width: 1500px) and (max-width: 1600px)
+- Larger Screens
+
+5. @media screen and (max-width : 1280px)
+- Macbook and other devices
+
+6. @media screen and (max-width : 1024px)
+- iPad devices Landscape
+
+7. @media screen and (max-width : 991px)
+- Tabs and Tablets Landscape
+
+8. @media screen and (max-width : 800px)
+- iPad Potrait and other devices
+
+9. @media screen and (max-width : 767px)
+- iPhone 6Plus/Nexus 6 Landscape
+
+10. @media screen and (max-width : 680px)
+- iPhone 6 Landscape
+
+11. @media screen and (max-width : 580px)
+- iPhone 5 Landscape
+
+12. @media screen and (max-width : 480px)
+- iPhone 4 Landscape and iPhone 6/6Plus Potrait
+
+13. @media screen and (max-width : 420px)
+- iPhone 6/6Plus Potrait/Nexus 5/Samsung Galaxy Potrait
+
+*/
+
+@media screen and (max-width : 1280px) {}
+
+@media screen and (max-width : 1180px) {}
+
+@media screen and (max-width : 1024px) {
+	header#header-block {
+		padding: 15px;
+	}
+
+	.workwallet-box {
+		padding-bottom: 30px;
+	}
+}
+
+@media screen and (max-width : 991px) {
+
+	.common-content h3 {
+		font-size: 25px;
+	}
+
+	.banner-content h1 {
+		font-size: 28px;
+	}
+
+	.banner-section .section-content {
+		transform: none;
+		bottom: 0;
+		top: auto;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .6));
+		max-width: 100%;
+		width: 100%;
+		padding: 20px;
+	}
+
+	.banner-section .container {
+		width: 100%;
+		padding: 0;
+		max-width: 100%;
+	}
+
+	.footer-nav ul li {
+		padding: 0 5px;
+	}
+
+	.footer-nav ul li a:after {
+		right: -8px;
+	}
+}
+
+
+
+@media screen and (max-width : 767px) {
+
+	.workwallet-section .common-content p,
+	.workwallet-section .common-content h3 {
+		text-align: left;
+	}
+
+	header#header-block {
+		padding: 20px 0;
+	}
+
+	.navbar-nav {
+		float: none;
+		padding-right: 0;
+	}
+
+	div#navbar-collapse-1 {
+		background-color: #ffffff;
+		overflow: hidden;
+		box-shadow: 1px 1px 13px 0 #00000047;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		color: #000000;
+		padding-left: 20px;
+	}
+
+	.navbar-default .navbar-nav>li:last-child {
+		padding: 0 15px;
+	}
+
+	.navbar-default .navbar-collapse,
+	.navbar-default .navbar-form {
+		padding: 10px 0;
+	}
+
+	.navbar-default .navbar-toggle {
+		border-radius: 0;
+	}
+
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #ffffff;
+	}
+
+	.navbar-default .navbar-toggle:focus,
+	.navbar-default .navbar-toggle:hover {
+		background-color: transparent;
+	}
+
+	.workwallet-section .workwallet-box h3 {
+		min-height: 0;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	.common-content h3 {
+		font-size: 20px;
+	}
+
+	.common-content h2 {
+		font-size: 18px;
+	}
+
+	.logo-size {
+		max-width: 80px;
+	}
+
+	.headerBlock {
+		padding-bottom: 20px;
+	}
+
+	.download-section .download-content {
+		padding-left: 0;
+	}
+
+	.copyright p {
+		text-align: left;
+		padding-right: 0;
+	}
+
+	.footer-nav {
+		padding-bottom: 13px;
+	}
+
+	.banner-section .banner-btn li {
+		max-width: 135px;
+	}
+
+	.main-heading h3 {
+    	font-size: 20px;
+    	line-height: 30px;
+	}
+	.about-us-section .main-heading h3 {
+    	padding-left: 0;
+	}
+
+	.panel-group {
+    	padding-left:0
+	}
+}
+
+
+@media screen and (max-width: 680px) {
+	.background-padding {
+		display: block;
+	}
+
+	.common-content {
+		display: block;
+	}
+
+	.common-text {
+		width: auto;
+	}
+
+	.freelance-section {
+		padding-bottom: 60px;
+	}
+
+	
+}
+
+@media screen and (max-width: 580px) {}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 420px) {
+	.download-section .app-btn li {
+		max-width: 140px;
+	}
+}
+
+@media screen and (max-width: 360px) {}
+
+@media screen and (max-width: 320px) {
+
+	.contact-us-section .btn-padding {
+    	padding: 20px 0 0 50px;
+	}
+}

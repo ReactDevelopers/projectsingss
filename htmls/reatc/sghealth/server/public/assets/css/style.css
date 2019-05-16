@@ -1,0 +1,779 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto',
+        sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    transition: all .1s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    color: #000000;
+}
+
+ul,
+ul li,
+ol,
+ol li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px !important;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 0;
+    border-radius: 30px;
+    min-width: 150px;
+    background-color: #ffffff;
+    color: #000;
+    height: 40px;
+}
+
+/* ==== Header Section Style Here ==== */
+
+.header-section {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 15;
+    padding: 20px 0;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.header-section.top-nav-collapse {
+    background-color: #182a34;
+    padding: 15px 0;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+    min-height: inherit;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: transparent;
+    padding: 24px 0;
+}
+
+.navbar-brand {
+    height: 100%;
+    padding: 0px;
+}
+
+.navbar-default .navbar-nav>li {
+    padding: 0 20px;
+}
+
+.navbar-default .navbar-nav>li:last-child {
+    padding: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 0;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.nav.navbar-nav.navbar-right {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-nav {
+    float: right;
+    padding-right: 40px;
+}
+
+.for-mobile {
+    display: none;
+}
+
+.section-content {
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+    transform: translateY(-50%);
+    max-width: 430px;
+}
+
+/* Common CSS*/
+
+.section-padding {
+    padding: 80px 0 0;
+}
+
+.common-content h2 {
+    font-size: 30px;
+    line-height: initial;
+    color: #000000;
+}
+
+.common-content h3 {
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.common-content p {
+    font-size: 14px;
+    color: #000000;
+    line-height: 22px;
+}
+
+.common-text {
+    width: 475px;
+    padding-top: 25px;
+}
+
+.common-text p {
+    padding: 20px 0;
+}
+
+.background-color {
+    background-color: #fff3da;
+    max-width: 280px;
+    height: 40px;
+    border-radius: 3px 3px;
+    position: relative;
+}
+
+.common-content {
+    display: table;
+}
+
+.background-padding {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.background-color p {
+    color: #d3aa55;
+    font-size: 12px;
+    padding: 10px 2px;
+    margin-left: 40px;
+}
+
+.background-color .icon {
+    position: absolute;
+    padding: 5px 15px;
+    top: 5px;
+}
+
+.download-btn,
+.download-btn:hover {
+    color: #3338d4;
+    font-size: 14px;
+    box-shadow: 0px 4px 10px 0px rgba(153, 153, 153, 0.5);
+    font-weight: 600;
+    transition: 0.6s ease-in-out;
+}
+
+/*  Banner Section CSS */
+.banner-section {
+    background-image: url(../images/Banner-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+    z-index: 9;
+    min-height: 645px;
+    background-attachment: fixed;
+}
+
+.banner-mobile {
+    position: relative;
+    overflow: hidden;
+    float: right;
+    width: 695px;
+    height: 500px;
+    margin-top: 65px;
+}
+
+.banner-content h1 {
+    font-size: 34px;
+    color: #ffffff;
+    line-height: 37px;
+    font-weight: 300;
+}
+
+.banner-content h2 {
+    font-size: 30px;
+    color: #ffffff;
+    line-height: 22px;
+
+}
+
+.banner-content p {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 22px;
+    padding: 15px 0 30px 0;
+}
+
+.banner-section .banner-btn li {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+
+/* Mywork wallet Section CSS*/
+
+.workwallet-section .common-content h2 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+section.workwallet-section {
+    background-image: -moz-linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(236, 249, 255) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(236, 249, 255) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(236, 249, 255) 100%);
+}
+
+.workwallet-section .common-content h3 {
+    padding: 30px 0 20px 0;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    min-height: 100px;
+    font-weight: bold;
+}
+
+.freelance-section {
+    padding-bottom: 140px;
+}
+
+/* Download Section CSS*/
+
+.download-section {
+    background-image: url(../images/footer-banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 460px;
+    background-position: center;
+}
+
+.download-section .download-btn li {
+    display: inline-block;
+}
+
+.download-section p {
+    color: #ffffff;
+    padding: 20px 0 30px 0;
+}
+
+.download-section h3 {
+    color: #ffffff;
+}
+
+.download-section .foot-sec {
+    display: table;
+}
+
+.download-section .download-content {
+    padding-left: 127px;
+    max-width: 497px;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.download-section .app-btn li {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.section-images {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*Footer Section CSS*/
+
+.footer-section {
+    padding: 30px 0;
+}
+
+.footer-nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.footer-nav ul li:first-child {
+    padding-left: 0;
+}
+
+.footer-nav ul li a {
+    font-size: 13px;
+    line-height: 14px;
+    color: #999999;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-nav ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: #999999;
+    height: 14px;
+    width: 1px;
+    top: 0px;
+    right: -25px;
+}
+
+.footer-nav ul li:last-child a:after {
+    display: none;
+}
+
+.copyright p {
+    text-align: right;
+    font-size: 13px;
+    line-height: 14px;
+    color: #999999;
+    padding-right: 110px;
+}
+
+.footer-section .icon {
+    float: right;
+    margin: -18px;
+}
+
+.footer-section .icon a {
+    padding-right: 15px;
+}
+
+
+/* Fixes */
+
+ul.download-btn li>a {
+    display: block;
+}
+
+.login-button .download-btn {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.workwallet-section .rounded-image {
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 2.5px 4.33px 10px 0px rgba(153, 153, 153, 0.6);
+}
+
+.workwallet-section .rounded-image>img {
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+
+.headerBlock .navbar-default .navbar-toggle span {
+    background-color: #000000;
+}
+
+section.freelance-section .section-images {
+    max-width: 627px;
+}
+
+.headerBlock img.inner-header-logo {
+    display: block;
+    max-width: 100px;
+}
+
+.headerBlock {
+    padding: 8px 0;
+}
+
+.headerBlock .navbar-default .navbar-collapse,
+.headerBlock .navbar-default .navbar-form {
+    border-color: transparent;
+    padding: 14px 0 10px;
+}
+
+img.inner-header-logo {
+    display: none;
+}
+
+.headerBlock img.top-header-logo {
+    display: none;
+}
+
+.headerBlock {
+    background-image: -moz-linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(236, 249, 255) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(236, 249, 255) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(236, 249, 255) 100%);
+    padding-bottom: 0;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    box-shadow: 0.3px 0.7px 13px 0 #00000042;
+}
+
+section.download-section:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background-image: url('../images/footer-mobile.png');
+    background-repeat: no-repeat;
+}
+
+.headerBlock .navbar-default .navbar-nav>li>a {
+    color: #000000;
+    font-weight: 500;
+}
+
+.workwallet-section .rounded-image>img:hover {
+    transform: rotate(360deg);
+    transition: 0.6s ease-in-out;
+}
+
+.footer-section .icon a img:hover {
+    transform: rotate(360deg);
+    transition: 0.5s ease-in-out;
+}
+
+.footer-section .icon a img {
+    transition: 0.5s ease-in-out;
+}
+
+.download-btn:hover {
+    background-color: #3338d4;
+    color: #ffffff;
+    transition: 0.6s ease-in-out;
+}
+/* End Fixes CSS*/
+
+
+/*FAQ CSS*/
+
+.faq-section .faq-content {
+    margin-bottom: 0;
+}
+
+.faq-content .panel-group .panel {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.faq-content .panel-group .panel+.panel {
+    margin-top: 0;   
+}
+
+.faq-list {
+    padding-top: 12px;
+}
+
+.faq-list+.faq-list.panel {
+    border-top: 1px solid #ccc;
+    padding-top: 25px;
+}
+
+.faq-content .panel-default>.panel-heading {
+    padding: 24px 40px;
+    
+}
+
+.faq-content .panel-group .panel-heading+.panel-collapse>.list-group,
+.faq-content .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: 0; 
+}
+
+.faq-content .panel-body {
+    padding: 0 40px 15px;
+}
+
+.faq-content .panel-body p {
+    font-size: 13px;
+    line-height: 20px;
+    color: #666666;
+}
+
+.faq-content .panel-group .panel-default .panel-heading h4 a:before {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.panel-default>.panel-heading {
+    background-color: transparent;
+    border-color: transparent;
+    position: relative
+}
+
+.panel-default>.panel-heading a,
+.tiny-heading h6 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #231F20;
+}
+
+.faq-content .panel-group .panel-heading h4 a[aria-expanded="true"] {
+   color: #161E33;
+    font-weight: 500;
+}
+
+.faq-content .panel-group .panel-heading h4 a:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 2px;
+    height: 24px;
+    width: 24px;
+    background-image: url(../images/question-icon.svg);
+    background-repeat: no-repeat;
+}
+
+.faq-content .panel-group .panel-heading h4 a:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    background-image: url(../images/accordion-icon-open.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.faq-content .panel-group .panel-default .panel-heading h4 a:before,
+.faq-content .panel-group .panel-default .panel-heading h4 a:after {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.faq-content .panel-group .panel-default .panel-heading h4 a{
+    text-decoration: none;
+}
+
+.faq-content .panel-group .panel-heading h4 a.collapsed:after {
+    background-image: url(../images/accordion-icon.svg);
+}
+
+.main-heading h3 {
+    font-size: 32px;
+    line-height: 40px;
+    padding-top: 10px;
+    font-weight:400;
+    font-family: Helvetica, Regular;
+}
+
+.faq-banner-section{
+    background-image: url(../images/faq-banner.png);
+    height: 360px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.faq-banner-section .faq-banner:before{
+    content: '';
+    background-image: url(../images/faq-back.svg);
+    height: 360px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.panel-group {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.faq-content .panel-group .panel:last-child {
+    border: 0;
+}
+
+section.faq-section.section-padding {
+    padding: 60px  0;
+}
+
+/*End Faq CSS  */
+
+/* Contact-us CSS*/
+.contact-banner-section{
+    background-image: url(../images/contact-back.png);
+    height: 360px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.contact-banner-section .contact-banner:before{
+    content: '';
+    background-image:linear-gradient(to left, #521155, #10575D);
+    opacity: 0.50;
+    height: 360px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0;
+}
+
+ .page-content-wrapper {
+    padding: 45px 0 70px 0;
+}
+
+.contact-us-section .form-control {
+    max-width: 320px;
+    height: 36px;
+}
+
+.contact-us-section .main-heading h3 {
+   padding:0 0 30px 0;
+}
+
+.form-group label {
+    font-size: 13px;
+    line-height: 30px;
+    font-family: Helvetica, Regular; 
+    margin-bottom: 0;
+}
+
+.contact-us-section .btn-yellow{
+    background-color: #F9C647;
+    margin-left: 20px;
+}
+
+.contact-us-section .btn{
+    border-radius: 4px;
+    min-width: 100px;
+}
+
+.contact-us-section .btn-defult {
+    background-color: #E9E9E9;
+}
+
+.contact-us-section .btn-padding{
+    padding: 20px 0 0 100px;
+}
+
+.form-control::placeholder{
+    color:#666666;
+    font-size: 12px;
+}
+
+.contact-us-section textarea.form-control {
+    height: 113px;
+    max-width: 320px;
+}
+
+.contact-us-section .form-container {
+    max-width: 890px;
+}
+
+.dropdown-arrow select {
+    -webkit-appearance: none;
+} 
+
+.dropdown-arrow {
+    display: block;
+    position: relative;
+    max-width: 320px;
+}
+
+.dropdown-arrow:after {
+    content: '';
+    position: absolute;
+    right: 17px;
+    top: 7px;
+     height: 16px;
+    width: 16px;
+    background-image: url('../images/dropdown-arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    pointer-events: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+/* End Contact-us CSS  */
+
+/*  About-us CSS  */
+.about-us-section .common-content p{
+    padding: 20px 0 10px 0;
+}
+
+/* Fixes end */

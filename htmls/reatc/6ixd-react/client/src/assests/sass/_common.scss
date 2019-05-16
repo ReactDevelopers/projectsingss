@@ -1,0 +1,148 @@
+//  Global CSS
+
+body{
+    font-family: 'Source Sans Pro', sans-serif ;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    margin: 0;
+    padding: 0;
+}
+
+.no-border{
+    border: 0;
+}
+
+ul, li{
+    margin:0;
+    padding: 0;
+    list-style-type: none;  
+}
+
+.label{
+    color: #999999;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 0;
+}
+
+textarea{
+    resize: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.btn{
+    transition: 0.4s ease-in-out;
+}
+
+.btn:focus,
+.btn:hover,
+.btn:visited{
+    outline: 0 !important;
+    box-shadow: none !important;
+    color: #ffffff;
+    background-color: #000000 !important;
+    transition: 0.4s ease-in-out;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+
+.btn[class*='bg-']:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.c-black{
+    color: #000000;
+}
+
+h1{
+    font-size: 24px;
+}
+
+.d-block{
+    display: block;
+}
+
+h2{
+    font-size: 22px;
+}
+
+.m-b-0{
+    margin-bottom: 0;
+}
+
+
+.m-r-0{
+    margin-right: 0;
+}
+
+
+.m-l-0{
+    margin-left: 0;
+}
+
+.m-t-0{
+    margin-top: 0;
+}
+
+.m-b-20{
+    margin-bottom: 20px;
+}
+
+.no-border{
+    border: none;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    outline: 0;
+    height: 50px;
+}
+
+.form-control{
+    box-shadow: none;
+    outline: 0;
+    height: 50px;
+    border: 1px solid #DADADA;
+}
+
+.btn{
+    background-color: #331D71;
+    color: #ffffff;
+}
+
+.orange{
+    color: #FF4300;
+}
+
+.fade{
+    opacity: 1;
+}
+
+.inline-block-middle{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.custom-row{
+    margin: 0 -10px;
+}
+
+.custom-padding{
+    padding: 0 10px;
+}
+
+//  Modal Popup css
+
+.transaction-poup .modal-dialog {
+    max-width: 360px;
+}

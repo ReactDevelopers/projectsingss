@@ -1,0 +1,491 @@
+
+//  Login CSS
+
+input:-webkit-autofill {
+    background-color: transparent !important;
+}
+
+.login-form-wrapper {
+    max-width: 440px;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    border-radius: 6px;
+    background-color: #ffffff;
+    padding: 60px 30px;
+    box-shadow: 0 10px 20px #867878;
+}
+
+.login-body:before, 
+.login-body:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #e9efee;
+    background-repeat: no-repeat;
+    background-image: url('../images/bgone.svg');
+    background-position: 63% 24%;
+}
+
+.form-wrapper {
+    padding-top: 20px;
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+.login-form-btn  .btn{
+    width: 100%;
+    background-color: #331D71 !important;
+    color: #ffffff;
+}
+
+.login-form-wrapper .signin-heading {
+    padding: 30px 0 16px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.form-group{
+    position: relative;
+}
+
+.login-form-btn .btn {
+    border-radius: 30px;
+    letter-spacing: 0.025em;
+    padding: 9px;
+}
+
+.form-wrapper label.label {
+    z-index: 999;
+    position: absolute;
+    top: -9px;
+    left: 15px;
+    background-color: #ffffff;
+    font-size: 13px;
+    line-height: 17px;
+    text-transform: uppercase;
+    display: block;
+    min-width: 72px;
+}
+
+.storeid-group {
+    margin-bottom: 28px;
+}
+
+//  Dashboard CSS start
+
+.header-logo {
+    max-width: 50px;
+}
+
+
+header.header-section {
+    padding: 10px 0;
+    box-shadow: 0 0 2px 3px #cebdbd;
+    position: relative;
+    z-index: 5;
+}
+
+.landing-panel-wrapper {
+    background-image: linear-gradient(#E4E9FF, #E9FFF7);
+    padding: 40px 0 55px 0;
+}
+
+.profile-image-data h4 {
+    font-size: 34px;
+    padding-bottom: 10px;
+}
+
+span.profile-image {
+    display: block;
+    max-width: 100px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    box-shadow: 0 3px 6px #bbaeae;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.profile-image-wrapper {
+    padding-left: 105px;
+}
+
+.profile-image-data span:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 20px;
+    background-image: url('../images/location.svg');
+    background-repeat: no-repeat;
+    top: 4px;
+    left: 0;
+}
+
+.profile-image-data span {
+    display: block;
+    max-width: 150px;
+    position: relative;
+    line-height: 19px;
+    padding-left: 20px;
+    color: #666666;
+    font-size: 15px;
+}
+
+.manual-button .btn {
+    min-width: 120px;
+    border-radius: 30px;
+}
+
+.manual-button {
+    padding-top: 37px;
+    text-align: right;
+}
+
+// Order Section CSS
+
+section.order-block {
+    padding: 34px 0 40px 0;
+}
+
+.order-block-head span:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-image: url('../images/arrow.svg');
+    top: 9px;
+    right: 0;
+    background-repeat: no-repeat;
+}
+
+.order-block-head span {
+    position: relative;
+    padding-right: 15px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.order-box {
+    padding-top: 10px;
+}
+
+.brand-block {
+    position: relative;
+    border-radius: 6px;
+    padding: 11px 15px 16px 15px;
+    box-shadow: 0px 2px 4px #bfb5b5;
+    margin-bottom: 20px;
+}
+
+.block-content {
+    padding-left: 50px;
+}
+
+.brand-block .block-name {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    max-width: 44px;
+    background-color: #BBFFB0;
+    padding: 8px 10px;
+    left: 15px;
+    top: 15px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.block-content h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.logout-btn-responsive {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    background-color: #f15b26;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    padding: 13px 0;
+    color: #ffffff;
+}
+
+.logout-btn-wrapper {
+    padding-top: 10px;
+}
+
+.error-message > .c-pink {
+    color: #f15a24;
+}
+
+.logout-btn-wrapper .logout-btn {
+    background-image: url('../images/logout.svg');
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: 31% 28%;
+    min-width: 100px;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    padding-left: 58px;
+}
+
+.storeid-group .form-control{
+    text-transform: uppercase;
+}
+
+//  Merchant Detail css
+
+.merchaant-wrapper {
+    position: relative;
+}
+
+.modal.fade .modal-dialog{
+    transform: translate(0,72%);
+}
+
+.merchaant-wrapper .profile-image {
+    max-width: 100%;
+    width: 80px;
+    font-size: 34px;
+    background-color: #BBFFB0;
+    padding: 26px 22px;
+    height: 80px;
+}
+
+.merchaant-wrapper .block-content {
+    padding-left: 0;
+}
+
+.modal-footer {
+    padding-top: 10px;
+}
+
+
+.footer-button-wrapper {
+    padding-bottom: 15px;
+}
+
+.form-wrapper.inner-box {
+    padding-top: 30px;
+}
+
+.form-wrapper-transaction {
+    background-color: #ffffff;
+    padding: 25px;
+    box-shadow: 0px 2px 4px #bfb5b5;
+    min-height: 500px;
+    margin-top: 20px;
+    z-index: 99;
+    position: relative;
+    border-radius: 6px;
+}
+
+section.transaction-wrapper {
+    position: relative;
+    z-index: 9;
+    padding-bottom: 50px;
+}
+
+section.transaction-wrapper:before {
+    content: '';
+    height: 180px;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(#E4E9FF, #E9FFF7);
+}
+
+.sub-head {
+    position: relative;
+}
+
+.form-box-wrapper {
+    background-color: #ffffff;
+}
+
+.form-wrapper-transaction .form-wrapper {
+    margin: 0;
+    max-width: 600px;
+    padding-left: 105px;
+}
+
+.merchant-btn .btn {
+    max-width: 120px;
+}
+
+.merchant-btn .btn:last-child {
+    background-color: transparent !important;
+    color: #331D71;
+    font-weight: 600;
+    min-width: 0;
+}
+
+.sub-head a {
+    padding: 10px 0;
+    display: block;
+}
+
+.sub-head h3 {
+    padding-top: 5px;
+}
+
+.merchant-group .label {
+    padding: 0 12px;
+}
+
+.merchaant-wrapper .block-content > span {
+    font-size: 16px;
+    color: #999999;
+}
+
+.merchaant-wrapper .block-content h3 {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.table{
+    display: table;
+}
+
+.table-cell{
+    display: table-cell;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.table-body .table-cell {
+    padding: 8px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.table-row .table-cell {
+    padding: 8px;
+}
+
+.table-body .table-row:first-child .table-cell {
+    border-top: 2px solid #eeeeee;
+}
+
+.table-head .table-cell {
+    font-weight: 700;
+}
+
+.table-body .table-row:nth-child(odd) {
+    background-color: #f9f7f7;
+}
+
+.table-head {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+
+.table-body {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.table-row {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.back-link {
+    position: relative;
+    padding-left: 27px !important;
+}
+
+.back-link:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/left-arrow.svg');
+    background-repeat: no-repeat;
+    top: 17px;
+    left: 0;
+}
+
+.body-wrapper .form-group {
+    margin-bottom: 0;
+}
+
+.body-wrapper {
+    max-width: 100%;
+    padding: 10px 15px;
+}
+
+.footer-button-wrapper .submit-btn {
+    min-width: 100px;
+    border-radius: 30px;
+    height: 40px;
+}
+
+.modal-title h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.footer-button-wrapper .close-btn {
+    background-color: transparent;
+    color: #331D71;
+    font-weight: 600;
+    margin-left: 14px !important;
+}
+
+.modal-backdrop.fade {
+    opacity: 1 !important;
+}
+
+.modal-backdrop {
+    background-color: #00000045;
+}
+
+.amount-wrapper .dollar-price {
+    color: #FF4300;
+}
+
+.amount-wrapper h3 {
+    font-size: 30px;
+}
+
+.footer-button-wrapper .close-btn:hover, .footer-button-wrapper .close-btn:focus {
+    background-color: transparent !important;
+    color: #331D71;
+}
+
+.amount-footer .submit-btn {
+    min-width: 0;
+    width: 100%;
+}
+
+.amount-footer {
+    padding-top: 10px;
+}
+
+.amount-footer .close-btn {
+    margin-left: 0 !important;
+}
+
+a.orange.back-link:hover {
+    color: #FF4300;
+}

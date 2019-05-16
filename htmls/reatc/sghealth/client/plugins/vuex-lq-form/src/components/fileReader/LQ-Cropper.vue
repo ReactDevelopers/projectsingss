@@ -1,0 +1,122 @@
+
+<template>
+    <vue-croppie 
+        ref="croppieRef"
+        v-bind="$attrs" 
+        :viewport="viewport"
+        :boundary="boundary"
+        @result="fn1"
+        @update="updateFileData">
+    </vue-croppie>
+</template>
+
+<script>
+import  helper, {isImage} from 'vuejs-object-helper';
+import {getFormName, updateFileName, getFileExt} from '../helper';
+
+export default {
+    name: 'LQ-Cropper',
+    props: {
+        elementName:{
+            type: String,
+            required: true
+        },
+        viewport: {
+            type: Object,
+            required: true
+        },
+        boundary: {
+            type: Object,
+            default() { return { width: 300, height: 300 }; }
+        },
+        circle: {
+            type: Boolean,
+            default:() => false,
+        },
+        size: {
+            type: [String, Object],
+            //validator: (val) => ['viewport', 'original'].includes(val),
+            default: () => { return 'original'}
+        },
+        thumbnailIndex: Number, // If thumbnailIndex is not undefined that means need to create the thubnials otherwise update the Main file data
+    },
+    data: function () {
+        return {
+            imageRawData: null,
+            loading: false,
+            formName: null
+        }
+    },
+    computed: {
+        file: function () {
+
+            return helper.getProp(this.$store.state.form, `${this.formName}.values.${this.elementName}.file`, null);
+        }
+    },
+    created() {
+        this.formName = getFormName(this);
+        this.readFile();
+    },
+    watch:{
+        imageRawData: function (newVal, oldVal) {
+            this.$nextTick(() => {
+                this.$refs.croppieRef.bind({
+                    url: newVal,
+                    zoom:0
+                })
+            })
+        },
+        file: function (newFile, oldFile) {
+           !oldFile || newFile.name !==  oldFile.name ? this.readFile() : null;
+        }
+    },
+    methods: {
+        fn1: function () {
+        },
+        updateFileData: function (a1,a2,a3) {
+            this.$refs.croppieRef.result({ 
+                type: 'blob', 
+                size: this.size, 
+                format: this.circle ? 'png' : getFileExt(this.file.name), 
+                quality: 1, 
+                circle: this.circle 
+            })
+            .then( (blobData) => {
+                
+                let name = this.thumbnailIndex !== undefined ?  updateFileName(this.file.name, '_thumb_'+this.thumbnailIndex) : this.file.name;
+                let newFile = new File([blobData], name , {type: this.circle ? 'png' : this.file.type });
+                let elementName = this.thumbnailIndex === undefined ? this.elementName+'.file' : this.elementName+'.thumbnails.'+this.thumbnailIndex+'.file';
+
+                this.$store.dispatch('form/setElementValue', {
+                    formName: this.formName,
+                    elementName: elementName,
+                    value: newFile
+                })
+            })
+
+        },
+        readFile: function () {
+            
+            if(!this.file) {
+                return;
+            }
+
+            let fReader = new FileReader();
+            this.loading = true;
+
+            fReader.onload = (e) => {
+
+                this.isImage  =  isImage(e.target.result) ? true : false;
+                this.loading = false;
+                this.imageRawData = e.target.result;
+            }
+            fReader.readAsDataURL(this.file);
+        },
+    }
+}
+</script>
+
+<style>
+
+</style>
+

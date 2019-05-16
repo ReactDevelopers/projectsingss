@@ -1,0 +1,30 @@
+#Options +FollowSymLinks -Indexes
+#RewriteEngine On
+
+#RewriteCond %{HTTP:Authorization} .
+#RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^ index.html [L]
+
+#RewriteEngine On
+#RewriteRule ^/?devdist/ https://store.6ixd.net/? [R=301,L]
+
+#####################################################
+RewriteEngine on
+
+
+# Change 'subfolder' to be the folder you will use for your primary domain.
+RewriteCond %{REQUEST_URI} !^/devdist/
+
+# Don't change this line.
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ /devdist/$1
+
+# Change yourdomain.com to be your primary domain again. 
+# Change 'subfolder' to be the folder you will use for your primary domain 
+# followed by / then the main file for your site, index.php, index.html, etc.
+RewriteRule ^(/)?$ devdist/index.html [L]
