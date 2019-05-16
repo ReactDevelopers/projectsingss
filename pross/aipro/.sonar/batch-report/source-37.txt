@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
+
+class CompanyProfile extends Model
+{
+    protected $table = 'company_profile';
+    public static function com_Change($compid,$com_form_content)
+    {
+        DB::table('company_profile')->where('user_id',$compid)->update($com_form_content);
+        return $com_form_content; 
+    }
+    
+}

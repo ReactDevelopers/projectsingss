@@ -1,0 +1,176 @@
+<?php
+/*
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
+use App\Admin\Settings;
+use App\Common\Process;
+use App\Admin\Blog;
+use App\Admin\FeaturedPeople;
+use Illuminate\Support\Facades\Session;
+*/
+
+/** Get Application Setings **/
+function get_settings(){
+	/*
+  $settings = Settings::all();
+  foreach ($settings as $key => $value) {
+      $data['setting'][$value->key] = $value->value;
+  }
+  return (object)$data['setting'];
+  */
+	
+	return (object)[];
+}
+
+function getCategories(){
+	return ['animation' => 'Animation','corporate_films' => 'Corporate Films','digital' => 'Digital','documentary' => 'Documentary','kids' => 'Kids','motion_pictures' => 'Motion Pictures','vr_ar_video' => 'VR/AR Video','films' => 'films'];
+}
+
+function getServices(){
+    return ['production_accounting' => 'Production Accounting','equipment_rental' => 'Equipment Rental','distribution' => 'Distribution','executive_production' => 'Executive Production','producer' => 'Producer','post_production' => 'Post Production','location_shoot' => 'Location Shoot','indoor_shoot' => 'Indoor Shoot'];
+}
+
+
+
+function time_elapsed_string($datetime, $full = false) {
+    $now = new DateTime;
+    $ago = new DateTime($datetime);
+    $diff = $now->diff($ago);
+
+    $diff->w = floor($diff->d / 7);
+    $diff->d -= $diff->w * 7;
+
+    $string = array(
+        'y' => 'year',
+        'm' => 'month',
+        'w' => 'week',
+        'd' => 'day',
+        'h' => 'hour',
+        'i' => 'minute',
+        's' => 'second',
+    );
+    foreach ($string as $k => &$v) {
+        if ($diff->$k) {
+            $v = $diff->$k . ' ' . $v . ($diff->$k > 1 ? 's' : '');
+        } else {
+            unset($string[$k]);
+        }
+    }
+
+    if (!$full) $string = array_slice($string, 0, 1);
+    return $string ? implode(', ', $string) . ' ago' : 'just now';
+}
+
+
+
+function ___configuration($keys = []){
+   $config_table = \App\Models\Settings::Select('*');
+	
+   if(!empty($keys)){
+       $config_table->whereIn('key',$keys);
+   }
+
+   $configData = $config_table->get()->toArray();
+   $dataArray  = array();
+   foreach ($configData as $key => $value) {
+   		$dataArray[$value['key']] = $value['value'];
+   }
+ 	return $dataArray;
+
+  
+  
+}
+
+/** mail sender **/
+function send_email($email,$fullname,$template_code,$data,$attachment='') {
+   $template = \DB::table('email_template')->select(['subject','description'])->where('title',$template_code)->first();
+   
+   if(!empty($template_code)){
+
+       $configuration = ___configuration(['smtp_uName','site_title']);
+       // dd($configuration);
+       $subject    = $template->subject;           
+       $body       = $template->description;
+       
+   //     if($template_code == 'subscribe')
+   //     {
+   //          $patternFind[0] = '/{SITENAME}/';
+            
+   //          $replaceFind[0] = $configuration['site_title'];
+   //     }
+			 
+			//  if($template_code == 'contact_us')
+   //     {
+   //          $patternFind[0] = '/{NAME}/';
+   //          $patternFind[1] = '/{SITENAME}/';
+            
+   //          $replaceFind[0] = $data['name'];
+   //          $replaceFind[1] = $configuration['site_title'];
+   //     }
+			
+			// if($template_code == 'contact_us_admin')
+   //     {
+   //          $patternFind[0] = '/{NAME}/';
+   //          $patternFind[1] = '/{FROM_EMAIL}/';
+   //          $patternFind[2] = '/{MESSAGE}/';
+   //          $patternFind[3] = '/{SITENAME}/';
+            
+   //          $replaceFind[0] = $data['name'];
+   //          $replaceFind[1] = $data['email'];
+   //          $replaceFind[2] = $data['enquiry'];
+   //          $replaceFind[3] = $configuration['site_title'];
+
+   //          $email = $configuration['admin_email'];
+   //     }
+
+       if($template_code == 'contact_us_reply')
+       {
+            $patternFind[0] = '/{NAME}/';
+            $patternFind[1] = '/{SUBJECT}/';
+            $patternFind[2] = '/{MESSAGE}/';
+            $patternFind[3] = '/{REPLY}/';
+            $patternFind[4] = '/{SITENAME}/';
+            
+            $replaceFind[0] = $data['name'];
+            $replaceFind[1] = $data['subject'];
+            $replaceFind[2] = $data['message'];
+            $replaceFind[3] = $data['reply'];
+            $replaceFind[4] = $configuration['site_title'];
+       }
+
+       
+
+        $subject = $template->subject;
+        $txtdesc    = stripslashes($template->description);
+        $ebody      = nl2br(preg_replace($patternFind, $replaceFind, $txtdesc));
+        $striptags  = strip_tags($ebody);
+        $body = html_entity_decode(stripslashes($striptags));  
+			
+       // \Config::set(['port' => $configuration['smtp_port_number'],'host' => $configuration['smtp_server_host'],'username' => $configuration['smtp_uName'],'password' => $configuration['smtp_uPass']]);
+
+        // $configuration['smtp_uName']=env('MAIL_USERNAME');
+        // $configuration['smtp_uName']='singsys17@gmail.com';
+        // $configuration['site_title']=env('');
+       $message = $subject;
+       $sender = ['subject' => $subject,'email' => $email,'name' => $data['name'],'attachment'=>$attachment,'from' => ['address' => $configuration['smtp_uName'],'name' => $configuration['site_title']]];
+
+       if(!empty($body) && !empty($email)){
+           Mail::send(array('text'=>'email.mail'), ['body' => $body], function($message) use ($sender){
+               $message->to(
+                   $sender['email'], 
+                   $sender['name']
+               )
+               ->subject($sender['subject'])
+               ->from(
+                   $sender['from']['address'],
+                   $sender['from']['name']
+               );
+           });
+       }
+   }
+}
+
+
+
+?>

@@ -1,0 +1,1 @@
+6app/Http/Controllers/Admin/StaticContentController.php 2phpX«

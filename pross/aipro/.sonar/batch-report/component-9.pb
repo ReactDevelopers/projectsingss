@@ -1,0 +1,1 @@
+	4app/Http/Controllers/Admin/ComTemplateController.php 2phpX¯

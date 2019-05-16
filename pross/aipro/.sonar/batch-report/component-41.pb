@@ -1,0 +1,1 @@
+)app/Models/StaticContent.php 2phpX&

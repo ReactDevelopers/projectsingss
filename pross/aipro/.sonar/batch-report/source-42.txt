@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
+
+class Users extends Model
+{
+    public static function change($userid,$form_content)
+    {
+        DB::table('users')->where('id',$userid)->update($form_content);
+    }
+    
+}

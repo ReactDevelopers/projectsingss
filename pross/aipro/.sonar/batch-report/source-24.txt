@@ -1,0 +1,286 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Models\Users;
+use App\Models\CompanyProfile;
+use Auth;
+
+class UserController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $userid=\Auth::User()->id;
+        $user_company_data = CompanyProfile::where('user_id',$userid)
+          ->join('users', 'users.id', '=', 'company_profile.user_id')->select('users.name','users.designation','users.bios','users.designation',
+            \DB::raw("DATE_FORMAT(users.created_at, '%b %d,%Y') as date "),
+            'company_profile.com_name','company_profile.com_url','users.surname',
+            'users.facebook_url','users.linkedIn_url','users.twitter_url',
+            'company_profile.categories','company_profile.services',
+            'company_profile.com_testimony','company_profile.testimonial_name','company_profile.testimonial_designation',
+            'company_profile.com_headline', 'company_profile.com_write_up')->first()->toArray();
+        // dd($rrrr);
+        // $company_data=DB::table('company_profile')->where('user_id',$ii)->select('*')->get();
+        $pageData['comdata'] = $user_company_data;
+        $pageData['title'] = 'Connect';
+        return view('userpages/user-profile')->with($pageData); 
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        $pageData['title'] = 'Connect';
+        return view('userpages/user-profile-edit', compact('pageData')); 
+        
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
+    }
+
+    public function userProfileEdit () 
+    {
+        $userId = \Auth::User()->id;
+        $userData = Users::leftjoin('company_profile', 'users.id', '=', 'company_profile.user_id')
+                ->where('users.id',$userId)->select('*')
+                ->first()->toArray();
+        if($userData['comphone_number']=='')
+        {
+            $userData['comphone_number']='+65';
+        }  
+        if($userData['userphone_number']=='')
+        {
+            $userData['userphone_number']='+65';
+        }        
+        $pageData['categories']= getCategories();
+        $pageData['services']= getServices();
+        $pageData['userdata'] = $userData;
+       
+        return view('userpages/user-profile-edit')->with($pageData); 
+        
+    }
+    
+    /*
+     * Member Details
+    */
+    public function userProfileEditSave (Request $request)
+    {
+        $userid=\Auth::User()->id;
+        $validator = \Validator::make($request->all(), [
+           'member_first_name' => 'required|max:255|regex:/^[A-Za-z0-9 ]*$/',
+           'member_surname' => 'required|max:255|regex:/^[A-Za-z0-9 ]*$/',
+           'member_designation' => 'required|max:255|regex:/^[A-Za-z0-9 ]*$/',
+           'member_email' => 'required|email|unique:users,email,'.$userid,
+           'member_phone' => 'required|regex:/^[0-9\+]{11,11}$/',
+           'member_profilepic' => 'required',
+           'member_profilepic' => 'required_if:member_profilepic_old,'.null,
+           'member_profilepic_old' => 'required_if:member_profilepic,'.null,
+           'member_bios' => 'required',
+           'member_facebook' => 'nullable|url',
+           'member_twitter' => 'nullable|url',
+           'member_linkedin' => 'nullable|url',
+          
+           // 'feature_tagline' => 'required'
+        ], [], [
+           // 'member_first_name.required' => 'Please enter name.',
+           // 'featur->first()->toArray()e_tagline.required' => 'Please enter Description.',
+        ]);
+
+        \Session::put('activeTab', $request->form_name);
+
+        $mainImage = $request->file('member_profilepic');
+        $validator->after(function ($v) use ($request, $mainImage) {
+        $allowExt = ['png'];
+        if ($mainImage) { 
+        $ext = $request->member_profilepic->getClientOriginalExtension();
+        $imageSize = @($mainImage->getSize()/1024); // Kb
+        list($width ,$height) = getimagesize($mainImage->getPathName());
+        $ext = strtolower($ext);
+        if(!in_array($ext, $allowExt)){
+        $v->errors()->add('member_profilepic', "Please upload a image file instead of a .".$ext." file!");
+        } else if($imageSize > 200){
+        $v->errors()->add('member_profilepic', "Your image size must be less then 200 KB");
+        }else if($width > 300 || $height >300 ){
+        $v->errors()->add('member_profilepic', "Please Select 300 (w) x 300 (h) pixels");
+        }
+        }
+        });
+
+        if ($validator->fails()) 
+        { 
+            return redirect()->back()->withErrors($validator, 'feature1')->withInput();
+        } 
+        else 
+        {
+            
+            // $check=$request->file('member_profilepic');
+            // $ext = $check->getClientOriginalExtension();
+            // $ext = $check->getClientOriginalName();
+            // $check->move(public_path('/uploads/memberdetailspics/'), $ext);
+
+            $form_content = array(
+                'name'           => $request->get('member_first_name'),
+                'surname'        => $request->get('member_surname'),
+                'designation'   => $request->get('member_designation'),
+                'email'   => $request->get('member_email'),
+                'userphone_number'   => $request->get('member_phone'),
+                //'profile_picture'    => $imageName,
+                'bios'    => $request->get('member_bios'),
+                'facebook_url'   => $request->get('member_facebook'),
+                'twitter_url'   => $request->get('member_twitter'),
+                'linkedin_url'   => $request->get('member_linkedin'), 
+            );
+            $mainImage = $request->file('member_profilepic');
+            if($mainImage)
+            {
+                $imageName = $mainImage->getClientOriginalName();
+                $mainImage->move(public_path('/uploads/memberdetailspics/'), $imageName);
+                $form_content['profile_picture'] = $imageName;
+                if($request->member_profilepic_old && file_exists(public_path('/uploads/memberdetailspics/').$request->member_profilepic_old)) 
+                {
+                    unlink(public_path('/uploads/memberdetailspics/').$request->member_profilepic_old);
+                } 
+            }
+            
+            $data=Users::change($userid,$form_content);
+            // DB::table('users')->where('id',$i)->update($form_content);
+            // dd();
+             return redirect('user/profileedit');
+        }
+       
+   // }
+        // $pageData['title'] = 'Connect';
+       // return view('userpages/user-profile-edit', compact('pageData')); 
+    }
+    
+    /*
+     *Company Details
+     */
+    public function empProfileEditSave (Request $request) 
+    {
+         $validator = \Validator::make($request->all(), [
+            'company_name' => 'required|max:255|regex:/^[A-Za-z0-9 ]*$/',
+            'comany_url' => 'required|url',
+            'comany_roadaddress' => 'required|max:255|regex:/^[A-Za-z0-9 ]*$/',
+            'comany_unitaddress' => 'required|max:255|regex:/^[A-Za-z0-9 ]*$/',
+            'company_postalcode_address' => 'required|digits:5',
+            'company_email' => 'nullable|email',
+            'company_phone' => 'required|regex:/^[0-9\+]{11,11}$/',
+            'company_fax' => 'nullable|numeric',
+            'company_facebook' => 'nullable|url',
+            'company_twitter' => 'nullable|url',
+            'company_linkedin' => 'nullable|url', 
+            'company_headline' => 'nullable|max:140',
+            'activity' => 'required|min:5',
+            'service' => 'required|min:5',
+            'company_testimony' => 'nullable|max:140',
+            'company_bios' => 'required|max:1500',
+            'testimony_name' => 'required|max:255|regex:/^[A-Za-z0-9 ]*$/',
+            'testimony_designation' => 'required|max:255|regex:/^[A-Za-z0-9 ]*$/',
+           
+        ], [], [
+              // 'activity[].required' => 'Please enter min 5.',
+              // 'min.required' => 'Please enter min 5.',
+        ]);
+
+        \Session::put('activeTab', $request->form_name);
+
+        if ($validator->fails()) 
+        { 
+            //dd('err');
+            return redirect()->back()->withErrors($validator, 'feature1')->withInput();
+        } 
+        else 
+        {
+            $compid=\Auth::User()->id;
+            
+            $com_form_content = array(
+            // 'user_id'    => $ii,
+            'com_name'    => $request->get('company_name'),
+            'com_url'   => $request->get('comany_url'),
+            'road_address'   => $request->get('comany_roadaddress'),
+            'unit_address'   => $request->get('comany_unitaddress'),
+            'postal_code'   => $request->get('company_postalcode_address'),
+            'general_email'    => $request->get('company_email'),
+            'comphone_number'    => $request->get('company_phone'),
+            'fax_number'   => $request->get('company_fax'),
+            'com_facebook_url'   => $request->get('company_facebook'),
+            'com_twitter_url'   => $request->get('company_twitter'), 
+            'com_linkedIn_url'   => $request->get('company_linkedin'), 
+            'com_headline'   => $request->get('company_headline'),
+            'categories'     => implode(',', (array) $request->get('activity')),
+            'services'       => implode(',', (array) $request->get('service')),
+            'com_testimony'   => $request->get('company_testimony'), 
+            'com_write_up'   => $request->get('company_bios'), 
+            'testimonial_name'   => $request->get('testimony_name'), 
+            'testimonial_designation'   => $request->get('testimony_designation'), 
+            );
+            CompanyProfile::com_Change($compid,$com_form_content);
+            
+            return redirect('user/profileedit');
+        }
+    }
+}

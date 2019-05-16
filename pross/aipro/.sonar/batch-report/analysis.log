@@ -1,0 +1,164 @@
+Environment variables:
+  - CLUTTER_IM_MODULE=xim
+  - COLORTERM=gnome-terminal
+  - COMPIZ_BIN_PATH=/usr/bin/
+  - COMPIZ_CONFIG_PROFILE=ubuntu
+  - COMP_WORDBREAKS= 	
+"'><;|&(:
+  - DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-nuuVJeWTrP
+  - DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path
+  - DERBY_HOME=/usr/lib/jvm/java-8-oracle/db
+  - DESKTOP_SESSION=ubuntu
+  - DISPLAY=:0
+  - GDMSESSION=ubuntu
+  - GDM_LANG=en_US
+  - GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+  - GNOME_KEYRING_CONTROL=/run/user/1000/keyring-heDQ6o
+  - GNOME_KEYRING_PID=1857
+  - GPG_AGENT_INFO=/run/user/1000/keyring-heDQ6o/gpg:0:1
+  - GTK_IM_MODULE=ibus
+  - GTK_MODULES=overlay-scrollbar:unity-gtk-module
+  - HOME=/home/sl139
+  - IM_CONFIG_PHASE=1
+  - INSTANCE=
+  - J2REDIR=/usr/lib/jvm/java-8-oracle/jre
+  - J2SDKDIR=/usr/lib/jvm/java-8-oracle
+  - JAVA_HOME=/usr/lib/jvm/java-8-oracle
+  - JOB=dbus
+  - LANG=en_IN
+  - LANGUAGE=en_IN:en
+  - LESSCLOSE=/usr/bin/lesspipe %s %s
+  - LESSOPEN=| /usr/bin/lesspipe %s
+  - LOGNAME=sl139
+  - LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+  - MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path
+  - NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat
+  - OLDPWD=/home/sl139
+  - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/sonar-runner/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+  - PWD=/var/www/html/aipro
+  - QT4_IM_MODULE=xim
+  - QT_IM_MODULE=ibus
+  - QT_QPA_PLATFORMTHEME=appmenu-qt5
+  - SELINUX_INIT=YES
+  - SESSION=ubuntu
+  - SESSIONTYPE=gnome-session
+  - SESSION_MANAGER=local/SL139:@/tmp/.ICE-unix/1994,unix/SL139:/tmp/.ICE-unix/1994
+  - SHELL=/bin/bash
+  - SHLVL=1
+  - SSH_AUTH_SOCK=/run/user/1000/keyring-heDQ6o/ssh
+  - TERM=xterm
+  - TEXTDOMAIN=im-config
+  - TEXTDOMAINDIR=/usr/share/locale/
+  - UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/1859
+  - USER=sl139
+  - VTE_VERSION=3409
+  - WINDOWID=71303179
+  - XAUTHORITY=/home/sl139/.Xauthority
+  - XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg
+  - XDG_CURRENT_DESKTOP=Unity
+  - XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/
+  - XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/sl139
+  - XDG_MENU_PREFIX=gnome-
+  - XDG_RUNTIME_DIR=/run/user/1000
+  - XDG_SEAT=seat0
+  - XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+  - XDG_SESSION_ID=c2
+  - XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+  - XDG_VTNR=7
+  - XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt
+  - XMODIFIERS=@im=ibus
+  - _=/opt/sonar-runner/bin/sonar-runner
+System properties:
+  - ROOT_LOGGER_LEVEL=DEBUG
+  - awt.toolkit=sun.awt.X11.XToolkit
+  - file.encoding=UTF-8
+  - file.encoding.pkg=sun.io
+  - file.separator=/
+  - java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+  - java.awt.printerjob=sun.print.PSPrinterJob
+  - java.class.path=/opt/sonar-runner/lib/sonar-runner-dist-2.4.jar
+  - java.class.version=52.0
+  - java.endorsed.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/endorsed
+  - java.ext.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext
+  - java.home=/usr/lib/jvm/java-8-oracle/jre
+  - java.io.tmpdir=/tmp
+  - java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+  - java.runtime.name=Java(TM) SE Runtime Environment
+  - java.runtime.version=1.8.0_144-b01
+  - java.specification.name=Java Platform API Specification
+  - java.specification.vendor=Oracle Corporation
+  - java.specification.version=1.8
+  - java.vendor=Oracle Corporation
+  - java.vendor.url=http://java.oracle.com/
+  - java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+  - java.version=1.8.0_144
+  - java.vm.info=mixed mode
+  - java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+  - java.vm.specification.name=Java Virtual Machine Specification
+  - java.vm.specification.vendor=Oracle Corporation
+  - java.vm.specification.version=1.8
+  - java.vm.vendor=Oracle Corporation
+  - java.vm.version=25.144-b01
+  - line.separator=
+
+  - os.arch=amd64
+  - os.name=Linux
+  - os.version=3.13.0-129-generic
+  - path.separator=:
+  - project.home=/var/www/html/aipro
+  - runner.home=/opt/sonar-runner
+  - sun.arch.data.model=64
+  - sun.boot.class.path=/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes
+  - sun.boot.library.path=/usr/lib/jvm/java-8-oracle/jre/lib/amd64
+  - sun.cpu.endian=little
+  - sun.cpu.isalist=
+  - sun.desktop=gnome
+  - sun.io.unicode.encoding=UnicodeLittle
+  - sun.java.command=org.sonar.runner.Main -X
+  - sun.java.launcher=SUN_STANDARD
+  - sun.jnu.encoding=UTF-8
+  - sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+  - sun.os.patch.level=unknown
+  - user.country=IN
+  - user.dir=/var/www/html/aipro
+  - user.home=/home/sl139
+  - user.language=en
+  - user.name=sl139
+  - user.timezone=Asia/Kolkata
+SonarQube plugins:
+  - CSS / SCSS / Less 3.1 (css)
+  - PMD 2.6 (pmd)
+  - Android 1.1 (android)
+  - AEM Rules for SonarQube 0.9 (aemrules)
+  - SVN 1.3 (scmsvn)
+  - SonarJS 3.1.1.5128 (javascript)
+  - C# 6.3.0.2862 (csharp)
+  - SonarJava 4.12.0.11033 (java)
+  - Web 2.5.0.476 (web)
+  - SonarXML 1.4.3.1027 (xml)
+  - Git 1.2 (scmgit)
+  - SonarPHP 2.10.0.2087 (php)
+  - GitLab 2.0.1 (gitlab)
+  - SonarTS 1.0.0.340 (typescript)
+Global properties:
+  - sonar.core.id=20171120175201
+  - sonar.core.startTime=2017-11-20T17:52:01+0530
+  - sonar.core.version=6.0
+  - sonar.permission.template.default=default_template
+  - sonar.qualitygate=1
+Settings for module: PHP::AIPRO
+  - sonar.exclusions=app/libraries/** bootstrap/** storage/** tests/** vendor/**
+  - sonar.host.url=http://192.168.1.100:9000/sonar
+  - sonar.jdbc.password=******
+  - sonar.jdbc.url=jdbc:mysql://192.168.1.100:3306/sonar?useUnicode=true&amp;characterEncoding=utf8
+  - sonar.jdbc.username=sonar
+  - sonar.login=******
+  - sonar.password=******
+  - sonar.projectBaseDir=/var/www/html/aipro/.
+  - sonar.projectKey=PHP::AIPRO
+  - sonar.projectName=AIPRO
+  - sonar.projectVersion=1.0
+  - sonar.sourceEncoding=UTF-8
+  - sonar.sources=app
+  - sonar.verbose=true
+  - sonar.working.directory=/var/www/html/aipro/./.sonar

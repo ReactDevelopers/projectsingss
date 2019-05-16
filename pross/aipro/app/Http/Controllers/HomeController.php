@@ -1,0 +1,252 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\StaticContent;
+use App\Models\Users;
+use App\Models\CompanyProfile;
+use App\Models\OfficeBearer;
+use Response;
+
+class HomeController extends Controller
+{
+    public function index()
+    {
+        return view('front/index');
+    }
+    
+    public function WhoWeAre () {
+        $pageData = StaticContent::select()->where('alias', 'whoweare')->first()->toArray();
+        return view('front/whoweare', compact('pageData'));
+    }
+
+    public function allmembers () {
+        $user_company_data= CompanyProfile::join('users', 'users.id', '=', 'company_profile.user_id')
+        ->where('users.user_type','company')->where('users.status','Active')
+          ->select('users.id','users.name',
+            \DB::raw("DATE_FORMAT(users.created_at, '%b %d,%Y') as date "),
+            'company_profile.com_name','company_profile.categories','company_profile.user_id')->get()->toArray();
+        // dd($user_company_data); 
+        // dd($user_company_data);  
+        $pageData['comdata'] = $user_company_data;
+         $pageData['title'] = 'full Members';
+         $pageData['categories']= getCategories();
+         //dd($pageData);
+        return view('front/allmembers')->with($pageData);
+        // return view('front/allmembers', compact('pageData'));
+    }
+
+    public function loadDataAjax(Request $request){
+        // $output = '';
+        $id = $request->id;
+        $appendimgdata = CompanyProfile::where('id','<',$id)->orderBy('id','DESC')->select('company_profile.id','company_profile.user_id','company_profile.com_name','company_profile.categories')->limit(2)->get();
+        // dd($appendimgdata);
+        $output='';
+        if(!$appendimgdata->isEmpty())
+        {
+            foreach($appendimgdata as $post)
+            {
+                // $url = 'membercompany.html';//url('blog/'.$post->slug);
+                 // $body = substr(strip_tags($post->body),0,500);
+                 // $body .= strlen(strip_tags($post->body))>500?"...":"";
+                                
+                $output .= '<div class="isotope-item col-lg-3 col-md-4 col-sm-6'.str_replace(",", " ", $post->categories) .'">
+                                    <article class="vertical-item content-padding post format-standard text-center">
+
+                                        <div class="item-media">
+                                            <a href="membercompany.html">
+                                            <img src="'.url("images/gallery/02.jpg").'" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="item-content">
+                                            <header class="entry-header">
+                                                <p class="categories-links small-text"><a href="'.url("membercompany/".$post->user_id).'">'.$post->com_name.'
+                                               </a></p>
+                                            </header>
+                                        </div>
+
+                                    </article>
+                                </div>';
+            }
+            
+        //     $output .= '<div id="remove-row">
+        //                     <button id="btn-more" data-id="'.$post->id.'" class="nounderline btn-block mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" > Load More </button>
+        //                 </div>';
+            
+            echo $output;
+        }
+    }    
+    
+    public function associatemembers () {
+        $user_company_data= CompanyProfile::join('users', 'users.id', '=', 'company_profile.user_id')
+        ->where('users.user_type','company')->where('users.status','Active')
+          ->select('users.name',
+            \DB::raw("DATE_FORMAT(users.created_at, '%b %d,%Y') as date "),
+            'company_profile.com_name','company_profile.categories','company_profile.user_id')->get()->toArray();
+        // dd($user_company_data); 
+        // dd($user_company_data);  
+        $pageData['comdata'] = $user_company_data;
+         $pageData['title'] = 'Associate Members';
+         $pageData['categories']= getCategories();
+         //dd($pageData);
+        return view('front/allmembers')->with($pageData);
+        // return view('front/allmembers', compact('pageData'));
+    }
+    
+    public function membercompany ($id) {
+         // echo $id;
+        $user_company_data= CompanyProfile::join('users', 'users.id', '=', 'company_profile.user_id')
+        ->where('users.user_type','company')->where('users.status','Active')->where('users.id',$id)
+          ->select('company_profile.user_id','users.name','users.designation','users.bios','users.facebook_url','users.linkedIn_url','users.twitter_url','company_profile.com_linkedIn_url',
+            \DB::raw("DATE_FORMAT(users.created_at, '%b %d,%Y') as date "),
+            'company_profile.com_name','company_profile.com_url','company_profile.com_testimony','company_profile.categories','company_profile.services','company_profile.testimonial_name','company_profile.testimonial_designation')->first()->toArray();
+        // dd($user_company_data); 
+        $pageData['comdata'] = $user_company_data;
+        $pageData['title'] = 'full Members';
+        // dd($comdata['date']);
+         // dd($pageData['date']);
+        $prev_company_data=CompanyProfile::where('company_profile.user_id','<',$id)->select('company_profile.user_id','company_profile.com_name')->orderBy('id','desc')->first();
+        // dd($prev_company_data);
+        $next_company_data=CompanyProfile::where('company_profile.user_id','>',$id)->select('company_profile.user_id','company_profile.com_name')->orderBy('id','asc')->first();
+        // dd($next_company_data);
+        $pageData['prevdata'] = $prev_company_data;
+        $pageData['nxtdata'] = $next_company_data;
+        return view('front/membercompany')->with($pageData);
+    }
+    public function WhatWeDo () {
+        $pageData = StaticContent::select()->where('alias', 'whatwedo')->first()->toArray();
+        return view('front/whoweare', compact('pageData'));
+    }
+    
+    public function industryReports () {
+        $pageData = StaticContent::select()->where('alias', 'reports')->first()->toArray();
+        return view('front/agreements', compact('pageData'));
+    }
+    
+    public function personnelAgreements () {
+        $pageData = StaticContent::select()->where('alias', 'legalpersonnel')->first()->toArray();
+        return view('front/agreements', compact('pageData'));
+    }
+    
+    public function commercialAgreements () {
+        $pageData = StaticContent::select()->where('alias', 'legalcommercial')->first()->toArray();
+        return view('front/agreements', compact('pageData'));
+    }
+    
+    public function coProductionTreaties () {
+        $pageData = StaticContent::select()->where('alias', 'treaties')->first()->toArray();
+        
+        return view('front/agreements', compact('pageData'));
+    }
+    public function Connect (){
+       $pageData['title'] = 'Connect';
+       return view('front/connect', compact('pageData')); 
+    }
+    
+    public function ConnectSave (Request $request){
+        if (!$request->ajax()) {
+        return redirect()->back()->with('success', 'Please try again.');
+        }
+
+        $validator = \Validator::make($request->all(), ['name' => 'required', 'email' => 'required|email', 'subject' => 'required', 'message' => 'required'],
+        [], ['name' => 'Name', 'email' => 'Email', 'subject' => 'subject', 'message' => 'message' ]);
+        if ($validator->fails()) {
+        return Response::json(['errors'=>implode('<br>',$validator->errors()->all()),'status'=>'failed']);
+        }
+        $data = $request->only('subject', 'message');
+        $data['user_name'] = $request->name;
+        $data['user_email'] = $request->email;
+        
+        \App\Models\Contact::create($data);
+
+        // $emailData['enquiry'] = $request->message;
+        // $emailData['email'] = $data['user_email'];
+        // $emailData['name'] = $data['user_name'];
+
+        // send_email($data['user_email'],sprintf("%s",$data['user_name'],'contact_us_admin',$emailData);
+        // send_email($data['user_email'],sprintf("%s",$data['user_name'],'contact_us',$emailData);
+
+
+        return Response::json(['status' => 'success', 'message' => 'Your inquiry has been posted successfully.']);
+    }
+    
+    public function Download ($fileName){
+       
+        $file = public_path('uploads/documents/').$fileName;
+        if (file_exists($file)) {
+            header('Content-Description: File Transfer');
+            header('Content-Type: application/octet-stream');
+            header('Content-Disposition: attachment; filename="'.basename($file).'"');
+            header('Expires: 0');
+            header('Cache-Control: must-revalidate');
+            header('Pragma: public');
+            header('Content-Length: ' . filesize($file));
+            readfile($file);
+            exit;
+        }
+        
+    }
+
+    public function OfficeBearer () {
+        $office_bearer_data= OfficeBearer::select(['*'])->get()->toArray();
+        $pageData['comdata'] = $office_bearer_data;
+        // dd($pageData['comdata']);   
+        $pageData['title'] = 'OFFICE BEARERS';
+        return view('front/officebearer')->with($pageData);
+    }
+    
+    public function MemberBearer ($id) {
+        $office_bearer_data= OfficeBearer::select(['*'])->where('id',$id)->get()->toArray();
+        $pageData['comdata'] = $office_bearer_data;
+        $pageData['title'] = $office_bearer_data[0]['name'];
+        // dd($pageData['title']);   
+        return view('front/memberbearer')->with($pageData);
+    }
+    
+    public function memberbearersendmsg (Request $request){
+        if (!$request->ajax()) 
+        {
+            return redirect()->back()->with('success', 'Please try again.');
+        }
+        $validator = \Validator::make($request->all(), ['name' => 'required',
+            'email' => 'required|email',
+            'message' => 'required'
+        ],
+        [], ['email' => 'Email']);
+        if ($validator->fails()) 
+        {
+            return Response::json(['errors'=>implode('<br>',$validator->errors()->all()),'status'=>'failed']);
+        }
+       
+        else
+        {
+            // $data=$request->email;
+            // echo $request->hidemail.$request->name.$request->message;
+            // dd($data);
+            // $email=OfficeBearer::where('email', $data)->select('email')->first();
+            // echo $email['email']; 
+            // dd($email);
+            // if($email!='')
+            // {    
+                // $emailData['reply'] = $email[''];
+                $emailData['name'] = $request->name;
+                $emailData['email'] = $request->email;
+                $emailData['message'] = $request->message;
+                $emailData['hidemail'] = $request->hidemail;
+                send_memberbearer_email($request->hidemail,sprintf("%s",$request->name),'memeberbearer_sendmsg',$emailData); 
+                // $request->session()->flash('success', 'Mail has been send to your email successfully.');
+                return Response::json(['status' => 'success', 'message' => 'Your Email has been sent successfully.']);
+                // return redirect('admin/adminchange-password');
+            // }
+            // else
+            // {
+            //     return Response::json(['errors' => 'Your email is not correct.']);
+            //     // dd('Wrong Email');
+            //     // return redirect('admin/adminchange-password'); 
+            // }    
+        }
+    }
+}
+

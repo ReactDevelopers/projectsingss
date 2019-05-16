@@ -1,0 +1,198 @@
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\DB;
+use Mail;
+
+use App\Models\Contact;
+
+class ContactusTemplateController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $data['page_title'] = 'Contact Template';
+        return view('admin.contact-template.index')->with($data);
+    }
+
+    public function getContactTemplate(Request $request)
+    {
+        return \Datatables::of(Contact::select(['id','user_name','user_email','subject','message','created_at']))->make(true);       
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        $data['page_title'] = 'Edit Email Template';
+        
+        $data['template'] = EmailTemplate::select(['email_template_id','subject','description'])->where(['email_template_id'=>$id])->first();
+        return view('admin.email-template.edit')->with($data);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        $this->validate($request, [
+                'title' => 'required',
+                'description' => 'required',
+                ],
+                [
+                    'title.required' => 'Please enter Title.',
+                    'description.required' => 'Please enter Description.',
+                ]
+        );
+
+        EmailTemplate::where('email_template_id', $id)
+            ->update([
+                        'subject' => $request->title, 
+                        'description' => $request->description,
+                    ]
+        );
+
+        $request->session()->flash('success', 'Email Template updated successfully.');
+        return redirect('admin/email-template');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+
+    public function reply($id)
+    {
+         // dd('hellcdc');
+        $data['page_title'] = 'Edit Contactus Content';
+        
+        $data['static'] = Contact::select(['id','user_name','user_email','subject','message'])->where(['id'=>$id])->first();
+        // dd($data['static']);
+        //dd($data['static']->alias); // edit-agreements.blade.php
+        // switch ($data['static']->alias) {
+        //     case 'reports':
+                // $data['page_title'] = 'Edit Industry Reports';
+                return view('admin.contact-template.edit')->with($data);
+            // break;
+            // case 'legalpersonnel':
+            //     $data['page_title'] = 'Edit Personnel Agreements';
+            //     return view('admin.static.edit-agreements')->with($data);
+            // case 'legalcommercial':
+            //     $data['page_title'] = 'Edit Commercial Agreements';
+            //     return view('admin.static.edit-agreements')->with($data);
+            // case 'treaties':
+            //     $data['page_title'] = 'Edit Co-Production Treaties';
+            //     return view('admin.static.edit-agreements')->with($data);
+            // break;
+            // default:
+            //     return view('admin.static.edit')->with($data);
+        // }
+    }
+
+    public function delete($id)
+    {
+         // dd('deletee');
+        // $data['page_title'] = 'Edit Contactus Content';
+        
+        $data['static'] = Contact::where('id',$id)->delete();
+        // return true;
+        // return view('admin.contact-template.edit')->with($data);
+            
+    }
+
+    public function basic_email(Request $request,$id)
+    {
+        $this->validate($request, [
+                'reply' => 'required',
+                ],
+                [
+                    'reply.required' => 'Please enter Reply.',
+                ]
+        );
+
+        $emailData['reply'] = $request->reply;
+        $emailData['name'] = $request->name;
+        $emailData['message'] = $request->message;
+        $emailData['subject'] = $request->subject;
+        // dd($emailData['reply']);
+        send_email($request->email,sprintf("%s",$request->name),'contact_us_reply',$emailData);
+        
+        $request->session()->flash('success', 'Contact Us reply send successfully.');
+        return redirect('admin/contact-template');
+        // $form_content = array(
+        //         'name'           => $request->get('name'),
+        //         'email'   => $request->get('email'),
+        //         'subject'        => $request->get('subject'),
+        //         'message'   => $request->get('message'),
+        //         'reply'   => $request->get('reply'),
+        // ); 
+        // dd($form_content);
+        // $data = array('name'=>$request->name,
+        //     'subject' => $request->subject,
+        //     'message' => $request->message,
+        //     'reply'   => $request->reply,
+        // );
+        // // dd($data);
+        // Mail::send(['mail'], $data, function($message) use ($request) {
+        //     $message->to($request->get('email'), 'Tutorials Point')->subject
+        //     ($request->get('subject'));
+        //     $message->from('xyz@gmail.com','Virat Gandhi');
+        // });
+        // echo "Basic Email Sent. Check your inbox.";
+    }
+
+    public function destroy($id)
+    {
+        //
+    }
+}

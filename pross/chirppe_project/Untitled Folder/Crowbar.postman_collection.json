@@ -1,0 +1,1591 @@
+{
+	"id": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+	"name": "Crowbar",
+	"description": "",
+	"order": [
+		"14b63071-84b0-4b63-9454-90b811c1a55e",
+		"2da89955-3952-44d2-3ff7-6ad62a8f7bbc",
+		"ebb51512-4786-89d0-71b5-6151d479a981",
+		"de95881a-3589-6620-e67f-8d228a37fde9",
+		"50e51527-f740-bd5f-e1c2-4c057fc13659",
+		"f14aa570-1bb8-4fe0-8ee2-d320b35df69f",
+		"98b99d28-e8b4-07de-9257-406f81cf9558",
+		"cc951982-2628-376a-2b1c-6fa1f193ed4e",
+		"d0849d7d-e683-f15f-4535-249d3b6a6b4e",
+		"e2916899-55fd-4933-ca5c-830a916e8de6",
+		"8b4dab14-2468-65a3-c887-c07c28873b98",
+		"2acb4ccc-3a91-4379-ecaa-babc64bb1cbe",
+		"16235399-1538-a631-0a61-21bb64e2c3fc",
+		"63b965f9-3bd5-ce5f-6a62-df9770dd684d",
+		"3528ca0d-0865-d0dc-a9dd-a6b26b3c2d74",
+		"326ea22e-da0a-773c-6f84-87a3306142dd",
+		"66f2b476-528a-3b07-db34-05e88a28525c",
+		"a11f78fb-5b97-6ba4-308a-55a352cc9968",
+		"9df2df8b-c803-b7fc-f9f3-e14e20ee9e66",
+		"42c9499b-9594-e884-415d-ee9893733274",
+		"c8d07a13-9009-403d-9a9b-015337274107",
+		"789d0b4d-a50f-d808-1d6b-5cc9bb94651f",
+		"a52320a7-47c6-8f83-6ddb-d39080617612",
+		"04a1ffcb-f8c0-560c-25fc-2d40d1b7cd6f",
+		"4d53e73c-d0cd-1a7d-e9b8-500c65fc17e9",
+		"7b0f29fb-8d6c-fa92-854c-aff71f8daad1",
+		"31b201b1-5aaf-5bfa-b32e-4096e291e8b1",
+		"16723c9d-a665-25ad-072f-ea6ee0909f82",
+		"a4bf0116-8d8e-2281-3e7a-9ffa45aaf313",
+		"49f3993a-3c09-207e-ebb9-09fe75da25da",
+		"3a6b46b3-83bf-5ab8-4504-d2d49d4a7de3",
+		"1bf58e3c-7a01-ca66-b205-fe00acc0b1c8",
+		"ff19b4d8-b608-06ca-630f-975fc32b7f8c",
+		"f512f8e7-2cb2-eb85-523d-7ff129d1dc82"
+	],
+	"folders": [
+		{
+			"name": "Group 3",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"order": [
+				"48c666ce-af61-4500-906e-0172ec340f98",
+				"eb713a5c-6885-d5de-7e50-1f904b47286f",
+				"0676af0b-0ca7-e746-f890-c73575852ec8",
+				"f163de88-9f57-1752-b6d4-cbedfe626669",
+				"a311350f-8299-be8e-68c7-997e02235f40",
+				"50c3e178-a812-edc5-6b28-e98e79df14c5",
+				"df04fe51-da6a-f8fe-e4be-b9130251aa09"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "2806e2c4-1943-6e27-dd8b-168947a6ca71"
+		}
+	],
+	"folders_order": [
+		"2806e2c4-1943-6e27-dd8b-168947a6ca71"
+	],
+	"timestamp": 1538115782686,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "04a1ffcb-f8c0-560c-25fc-2d40d1b7cd6f",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$CDmnF0jNoYd9mOhuCFf7fu9HlbXFgyD4Uwh0lp0KYD2YL1xbGFyde\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$CDmnF0jNoYd9mOhuCFf7fu9HlbXFgyD4Uwh0lp0KYD2YL1xbGFyde",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/addRsvp",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540546236665,
+			"name": "Talent Add Rsvp",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"event_id\":\"76\"\n}"
+		},
+		{
+			"id": "0676af0b-0ca7-e746-f890-c73575852ec8",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$kzqKlvK0tsmIJPIVDfdOOuXoMwWclSxt/.RpP/OQe4mhYGqlOFx.u\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$kzqKlvK0tsmIJPIVDfdOOuXoMwWclSxt/.RpP/OQe4mhYGqlOFx.u",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/talent-connect/remove",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"data": [],
+			"dataMode": "raw",
+			"name": "[Remove Added talent ] talent/talent-connect/remove",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1541052907036,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "2806e2c4-1943-6e27-dd8b-168947a6ca71",
+			"rawModeData": "{\n\t\"talent_id\":\"9\"\n}"
+		},
+		{
+			"id": "14b63071-84b0-4b63-9454-90b811c1a55e",
+			"headers": "",
+			"headerData": [],
+			"url": "{{PHP_BASE_URL}}login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "email",
+					"value": "azeem+talent@singsys.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "1Crowbar##",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "device_name",
+					"value": "wertyui",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "device_type",
+					"value": "android",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "latitude",
+					"value": "1.1234567",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "longitude",
+					"value": "2.234567",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "device_uuid",
+					"value": "qwert",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "device_token",
+					"value": "wertyui",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1538217464206,
+			"name": "Login",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": []
+		},
+		{
+			"id": "16235399-1538-a631-0a61-21bb64e2c3fc",
+			"headers": "",
+			"headerData": [],
+			"url": "{{PHP_BASE_URL}}talentsignup",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1541055731660,
+			"name": "Talent Signup",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\"first_name\":\"tetsing 500\",\"last_name\":\"masnisha laste\",\"email\":\"chetandeep+manisha12@gmail.com\",\"password\":\"1Crowbar##\",\"confirm_password\":\"1Crowbar##\",\"type\":\"none\",\"device_name\":\"Z60\",\"device_type\":\"android\",\"device_token\":\"\",\"work_type\":\"company\",\"agree\":\"yes\",\"newsletter_acceptance \":\"no\",\"company_name\":\"test check ococococ\"}"
+		},
+		{
+			"id": "16723c9d-a665-25ad-072f-ea6ee0909f82",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$Amr/l5VmdyNLXm568Zs6/eFkS0q/esQhiJV8V6tDF6i2EELbTEzmO\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$Amr/l5VmdyNLXm568Zs6/eFkS0q/esQhiJV8V6tDF6i2EELbTEzmO",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/network/home/get-group",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540786121822,
+			"name": "Talent Network Home Get Group",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": []
+		},
+		{
+			"id": "1bf58e3c-7a01-ca66-b205-fe00acc0b1c8",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$ZkGGydiuZTd.tqnCQtidnOmXy58Z3udQhDwvGFcBzKvu7Gw747Lvu\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$ZkGGydiuZTd.tqnCQtidnOmXy58Z3udQhDwvGFcBzKvu7Gw747Lvu",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/get-invite-emails",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540553606083,
+			"name": "Get Invite Members Emails",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": []
+		},
+		{
+			"id": "2acb4ccc-3a91-4379-ecaa-babc64bb1cbe",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$96QDKR/qZsnMILdyTTenXOVAb0S24oIvw7Xx7UnfBR1pzMH64I3bC\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$96QDKR/qZsnMILdyTTenXOVAb0S24oIvw7Xx7UnfBR1pzMH64I3bC",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}employer/payment/checkout",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"data": [],
+			"dataMode": "raw",
+			"name": "{{PHP_BASE_URL}}employer/payment/checkout",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1538759571880,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\"project_id\":\"260\",\"proposal_id\":\"241\",\"user_id\":\"140\"}\n"
+		},
+		{
+			"id": "2da89955-3952-44d2-3ff7-6ad62a8f7bbc",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$JKmirdhKcLAt4VlrSpxY0u9NXvjI37ngMMapQ/mgegs9LnGlhIy.O\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$JKmirdhKcLAt4VlrSpxY0u9NXvjI37ngMMapQ/mgegs9LnGlhIy.O",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/viewprofile",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1541072125197,
+			"name": "Talent View Profile",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "31b201b1-5aaf-5bfa-b32e-4096e291e8b1",
+			"headers": "",
+			"headerData": [],
+			"url": "{{PHP_BASE_URL}}user_type?api_token=$2y$10$ua/Ee6hM8KpFf5BG9sfriuAjmXoZqIQIkZdRDpbsgALUlnFSY5Sf6&language=en&currency=USD\n",
+			"queryParams": [
+				{
+					"key": "api_token",
+					"value": "$2y$10$ua/Ee6hM8KpFf5BG9sfriuAjmXoZqIQIkZdRDpbsgALUlnFSY5Sf6",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "language",
+					"value": "en",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "currency",
+					"value": "USD\n",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540818863143,
+			"name": "User Type",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"user_id\":\"290\",\n\t\"user_type\":\"talent\"\n}"
+		},
+		{
+			"id": "326ea22e-da0a-773c-6f84-87a3306142dd",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$HLzguvhzOG8uF0HHMRjRPeHudTCqwmKpP8xc6mr.96GWN5bEqhRAK\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$HLzguvhzOG8uF0HHMRjRPeHudTCqwmKpP8xc6mr.96GWN5bEqhRAK",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/forum/follow-question",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Follow Question Forum User",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1539231923454,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"user_id\":\"140\"\n}"
+		},
+		{
+			"id": "3528ca0d-0865-d0dc-a9dd-a6b26b3c2d74",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$pWsusIUdRCrbSbn2eVuiouO.6i0hmkRTmNXqaG.9FZOjp25OVHd.u\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$pWsusIUdRCrbSbn2eVuiouO.6i0hmkRTmNXqaG.9FZOjp25OVHd.u",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/forum/question/list",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540991150781,
+			"name": "Question List",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"search\":\"\",\n\t\"page\":\"1\"\n}"
+		},
+		{
+			"id": "3a6b46b3-83bf-5ab8-4504-d2d49d4a7de3",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$h/E3N7ojb9Gu9in2Ygwpm.AxbMFhIyapGr4nLRb50f/2YEbIvdZTi\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$h/E3N7ojb9Gu9in2Ygwpm.AxbMFhIyapGr4nLRb50f/2YEbIvdZTi",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/network/home/fav-event",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540783925246,
+			"name": "Home Bookmark Event",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"event_id\":\"76\"\n}"
+		},
+		{
+			"id": "42c9499b-9594-e884-415d-ee9893733274",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$52ftvr1De0nMC9iVtDettOIskLINz0yB1FH21BFJirWO/DwscgKK2\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$52ftvr1De0nMC9iVtDettOIskLINz0yB1FH21BFJirWO/DwscgKK2",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/network/article/answer/add",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539605525005,
+			"name": "Article Answer Add",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"id_parent\":\"\",\n\t\"type\":\"\",\n\t\"answer_description\":\"\",\n\t\"id_answer\":\"\"\n}"
+		},
+		{
+			"id": "48c666ce-af61-4500-906e-0172ec340f98",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$MKjQVOPkXfioAMJ2yokCHuoOShf7/BVTWqwSXh9ChQhafdbqsfCAy\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$MKjQVOPkXfioAMJ2yokCHuoOShf7/BVTWqwSXh9ChQhafdbqsfCAy",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/talent-connect/send-mail",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1541067980963,
+			"name": "Talent-connect Send mail [Invitation]",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"send_to\":[\"13\",\"17\"]\n}"
+		},
+		{
+			"id": "49f3993a-3c09-207e-ebb9-09fe75da25da",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$V5HZdjPB5Pd6zwKVsjF3uuodkqqoO3MoibNbvhe1nW6lavAeZtrFS\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$V5HZdjPB5Pd6zwKVsjF3uuodkqqoO3MoibNbvhe1nW6lavAeZtrFS",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/network/article/follow-this-article",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540633643640,
+			"name": "follow-this-article",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"article_id\":\"24\"\n}"
+		},
+		{
+			"id": "4d53e73c-d0cd-1a7d-e9b8-500c65fc17e9",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$2k6CQnsw5sRVSYdwTmvaYuX34zy2eDkyqDx/qwbdCwLGDGk1B/mZ6\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$2k6CQnsw5sRVSYdwTmvaYuX34zy2eDkyqDx/qwbdCwLGDGk1B/mZ6",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/forum/vote_answer",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540447389850,
+			"name": "Talent Forum Vote Answer",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"answer_id\":\"43\",\n\t\"updown_vote\":\"downvote\"\n}"
+		},
+		{
+			"id": "50c3e178-a812-edc5-6b28-e98e79df14c5",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$JKmirdhKcLAt4VlrSpxY0u9NXvjI37ngMMapQ/mgegs9LnGlhIy.O\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$JKmirdhKcLAt4VlrSpxY0u9NXvjI37ngMMapQ/mgegs9LnGlhIy.O",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/talent-connect/unlink",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1541065236971,
+			"name": "[Unlink Added member]Talent-connect/unlink",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"user_id\":\"\"\n}"
+		},
+		{
+			"id": "50e51527-f740-bd5f-e1c2-4c057fc13659",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$QxhEiEefkdpHPzLInIJblefhrk1V20W/fS.7J6xQbPwsdFrAsNO0S\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$QxhEiEefkdpHPzLInIJblefhrk1V20W/fS.7J6xQbPwsdFrAsNO0S",
+					"description": ""
+				}
+			],
+			"url": "{{PHP_BASE_URL}}employer/project/payout/mgmt",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1538643376252,
+			"name": "{{PHP_BASE_URL}}employer/project/payout/mgmt",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\"project_id\":\"260\",\"proposal_id\":\"241\",\"user_id\":\"140\"}\n"
+		},
+		{
+			"id": "63b965f9-3bd5-ce5f-6a62-df9770dd684d",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$HLzguvhzOG8uF0HHMRjRPeHudTCqwmKpP8xc6mr.96GWN5bEqhRAK\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$HLzguvhzOG8uF0HHMRjRPeHudTCqwmKpP8xc6mr.96GWN5bEqhRAK",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/forum/question/add",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539692867384,
+			"name": "Question Add Post",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"question_description\":\"hello\",\n\t\"type\":\"firm\"\n}"
+		},
+		{
+			"id": "66f2b476-528a-3b07-db34-05e88a28525c",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$pWsusIUdRCrbSbn2eVuiouO.6i0hmkRTmNXqaG.9FZOjp25OVHd.u\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$pWsusIUdRCrbSbn2eVuiouO.6i0hmkRTmNXqaG.9FZOjp25OVHd.u",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/forum/question/detail",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1541043397489,
+			"name": "Question Detail , Answer List [Talent] ",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"id_question\":\"32\"\n}"
+		},
+		{
+			"id": "789d0b4d-a50f-d808-1d6b-5cc9bb94651f",
+			"headers": "//Content-Type: application/json\nAuthorization: Bearer $2y$10$F6fbGI2N1OgTVH7qQpr/Cu4ONPX6dIusx6Mq4qeN50fiRzyy3UP1K\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$F6fbGI2N1OgTVH7qQpr/Cu4ONPX6dIusx6Mq4qeN50fiRzyy3UP1K",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/network/article/add",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": "helelo articel titel",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "api",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "file",
+					"value": "about-banner_01.jpg",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540053778386,
+			"name": "Talent Article Add",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": []
+		},
+		{
+			"id": "7b0f29fb-8d6c-fa92-854c-aff71f8daad1",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$Lt6bGyL7y0/TRpGtvkY5MezcDoqXdCV2SBoJdRRSTgZ3vDPnGbcmu\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$Lt6bGyL7y0/TRpGtvkY5MezcDoqXdCV2SBoJdRRSTgZ3vDPnGbcmu",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}user_type",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540311629211,
+			"name": "Signup User Type",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"user_id\":\"269\",\n\t\"user_type\":\"none\"\n}"
+		},
+		{
+			"id": "8b4dab14-2468-65a3-c887-c07c28873b98",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$LTuf/jlDvxk6N.yUyGprxuVz2noMLQuEpILdVWQikgJFmwxNWaVU.\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$LTuf/jlDvxk6N.yUyGprxuVz2noMLQuEpILdVWQikgJFmwxNWaVU.",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/industry/listing/new",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539328905405,
+			"name": "Talent All Industry Listing",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": []
+		},
+		{
+			"id": "98b99d28-e8b4-07de-9257-406f81cf9558",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$M/q59jn4XEjw7As4tbA89OQLbFJSjzlI/FhfzHtuVbu.aGsdeUR.S\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$M/q59jn4XEjw7As4tbA89OQLbFJSjzlI/FhfzHtuVbu.aGsdeUR.S",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}employer/project/payout/mgmt",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"data": [],
+			"dataMode": "raw",
+			"name": "{{PHP_BASE_URL}}employer/project/payout/mgmt",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1538643373258,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"card_token\" : \"\",\n    \"payment_type\" : \"card_payment\",\n    \"project_id\" : 346,\n    \"proposal_id\" : 306,\n    \"user_id\" : 140\n}"
+		},
+		{
+			"id": "9df2df8b-c803-b7fc-f9f3-e14e20ee9e66",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$EhzAJl36PYkczMjCcAHNrexKbTxT10PLdAWevZrCjeUBs9JLnk64i\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$EhzAJl36PYkczMjCcAHNrexKbTxT10PLdAWevZrCjeUBs9JLnk64i",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/forum/question/answer/add",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539539378753,
+			"name": "Question Answer Add",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"id_parent\":\"\",\n\t\"type\":\"\",\n\t\"answer_description\":\"\",\n\t\"id_question\":\"\"\n}"
+		},
+		{
+			"id": "a11f78fb-5b97-6ba4-308a-55a352cc9968",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$pWsusIUdRCrbSbn2eVuiouO.6i0hmkRTmNXqaG.9FZOjp25OVHd.u\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$pWsusIUdRCrbSbn2eVuiouO.6i0hmkRTmNXqaG.9FZOjp25OVHd.u",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/network/article",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540991568725,
+			"name": "Article Listing",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"search\":\"\",\n\t\"page\":\"1\"\n}"
+		},
+		{
+			"id": "a311350f-8299-be8e-68c7-997e02235f40",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$JKmirdhKcLAt4VlrSpxY0u9NXvjI37ngMMapQ/mgegs9LnGlhIy.O\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$JKmirdhKcLAt4VlrSpxY0u9NXvjI37ngMMapQ/mgegs9LnGlhIy.O",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/talent-connect-added-members",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"data": null,
+			"dataMode": "params",
+			"name": "Talent Invite Added Members",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1541063925962,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "2806e2c4-1943-6e27-dd8b-168947a6ca71"
+		},
+		{
+			"id": "a4bf0116-8d8e-2281-3e7a-9ffa45aaf313",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$TLk0AujTW6TwsrZgXZ9IN.2pUglhHPv7tLFRSS21a0C6mVchBE6vi\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$TLk0AujTW6TwsrZgXZ9IN.2pUglhHPv7tLFRSS21a0C6mVchBE6vi",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/forum/question/follow-this-question",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540448028803,
+			"name": "follow-this-question",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"id_question\":\"\"\n}"
+		},
+		{
+			"id": "a52320a7-47c6-8f83-6ddb-d39080617612",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$yelby73W5Mu77n5k7Aq/b.O3q4lFmVYUZFFmp8OM.CJo2Q71JFqju\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$yelby73W5Mu77n5k7Aq/b.O3q4lFmVYUZFFmp8OM.CJo2Q71JFqju",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/network/home",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540990642736,
+			"name": "Talent Network Home My Feed",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"search\":\"\",\n\t\"page\":\"1\",\n\t\"get_group_id\":\"\"\n}"
+		},
+		{
+			"id": "c8d07a13-9009-403d-9a9b-015337274107",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$pWsusIUdRCrbSbn2eVuiouO.6i0hmkRTmNXqaG.9FZOjp25OVHd.u\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$pWsusIUdRCrbSbn2eVuiouO.6i0hmkRTmNXqaG.9FZOjp25OVHd.u",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/network/article/detail",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540993086077,
+			"name": "Article Detail , Answer List [Talent] ",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"id_article\":\"13\"\n}"
+		},
+		{
+			"id": "cc951982-2628-376a-2b1c-6fa1f193ed4e",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$QxhEiEefkdpHPzLInIJblefhrk1V20W/fS.7J6xQbPwsdFrAsNO0S\n",
+			"url": "{{PHP_BASE_URL}}employer/project/payout/mgmt",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"name": "{{PHP_BASE_URL}}employer/project/payout/mgmt copy",
+			"description": "",
+			"sandboxFiles": "",
+			"sendMethod": "xhr",
+			"time": 1538643383042,
+			"responses": [],
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"rawModeData": "{\"project_id\":\"260\",\"proposal_id\":\"241\",\"user_id\":\"140\"}\n"
+		},
+		{
+			"id": "d0849d7d-e683-f15f-4535-249d3b6a6b4e",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$QxhEiEefkdpHPzLInIJblefhrk1V20W/fS.7J6xQbPwsdFrAsNO0S\n",
+			"url": "{{PHP_BASE_URL}}employer/project/payout/mgmt",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"name": "{{PHP_BASE_URL}}employer/project/payout/mgmt copy",
+			"description": "",
+			"sandboxFiles": "",
+			"sendMethod": "xhr",
+			"time": 1538643387730,
+			"responses": [],
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"rawModeData": "{\"project_id\":\"260\",\"proposal_id\":\"241\",\"user_id\":\"140\"}\n"
+		},
+		{
+			"id": "de95881a-3589-6620-e67f-8d228a37fde9",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$YUH9g7O46c7YPLL8.1YSVe/v/W7f7vT1cZR.QFVm0oVhGdMPzD/ey\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$YUH9g7O46c7YPLL8.1YSVe/v/W7f7vT1cZR.QFVm0oVhGdMPzD/ey",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/profile/step/process/one",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1541073721067,
+			"name": "Talent Profile Step Process/one",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\"first_name\":\"Manish\",\"last_name\":\"Firm\",\"email\":\"manishprajapati+tfirm@singsys.com\",\"birthday\":\"\",\"gender\":\"\",\"mobile\":\"\",\"country_code\":\"\",\"address\":\"\",\"state\":\"\",\"country\":\"\",\"city\":\"\",\"postal_code\":\"\",\"company_profile\":\"company\",\"company_name\":\"Sng Crowvar\",\"company_website\":\"\",\"company_biography\":\"\",\"agree\":\"yes\"}\n"
+		},
+		{
+			"id": "df04fe51-da6a-f8fe-e4be-b9130251aa09",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$JKmirdhKcLAt4VlrSpxY0u9NXvjI37ngMMapQ/mgegs9LnGlhIy.O\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$JKmirdhKcLAt4VlrSpxY0u9NXvjI37ngMMapQ/mgegs9LnGlhIy.O",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/connect-with-talent",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1541074013084,
+			"name": "[Talent Invite Code Accept Process]talent/connect-with-talent",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"invite_code\":\"\"\n}"
+		},
+		{
+			"id": "e2916899-55fd-4933-ca5c-830a916e8de6",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$1qO5x9CvSVZsCsRg0ZZFZexPMBAuwqbKBOg6HJywnsX2uYrv/t07e\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$1qO5x9CvSVZsCsRg0ZZFZexPMBAuwqbKBOg6HJywnsX2uYrv/t07e",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}employer/hire/talent/process/five",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"data": [],
+			"dataMode": "raw",
+			"name": "{{PHP_BASE_URL}}employer/hire/talent/process/five",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1538643401994,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\"subindustry\":[\"Accounting\"],\"industry_id\":\"1\",\"other_perks\":\"1\",\"expertise\":\"novice\",\"talent_id\":\"\"}"
+		},
+		{
+			"id": "eb713a5c-6885-d5de-7e50-1f904b47286f",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$kzqKlvK0tsmIJPIVDfdOOuXoMwWclSxt/.RpP/OQe4mhYGqlOFx.u\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$kzqKlvK0tsmIJPIVDfdOOuXoMwWclSxt/.RpP/OQe4mhYGqlOFx.u",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/talent-connect/store",
+			"folder": "2806e2c4-1943-6e27-dd8b-168947a6ca71",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1541052185945,
+			"name": "[Add Invite ]talent/talent-connect/store",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\":\"testing\",\n\t\"email\":\"chetandeep+invite@singsys.com\"\n}"
+		},
+		{
+			"id": "ebb51512-4786-89d0-71b5-6151d479a981",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$NMDDxfxgSaPqLvZpAe6dyeqh0nXbDmNQ7EWb2C10HE5H8y4AhTSjq\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$NMDDxfxgSaPqLvZpAe6dyeqh0nXbDmNQ7EWb2C10HE5H8y4AhTSjq",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/profile/step/process/two",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540963720422,
+			"name": "Talent Profile Step Process/two",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"industry\":[\"5\"],\n\t\"skills\":[\"Abortion Policy\\/Pro-Abortion Rights\",\"Agribusiness\"],\n\t\"expertise\":\"proficient\",\n\t\"experience\":\"1.3\"\n\t\n}\n"
+		},
+		{
+			"id": "f14aa570-1bb8-4fe0-8ee2-d320b35df69f",
+			"headers": "//Content-Type: application/json\n//Authorization: Bearer  $2y$10$gWHnSEdGWJ1fFhGnuoNqh.1ZdnBXv5TjtJJmtvIp/oHnqmBr7kIE2\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer  $2y$10$gWHnSEdGWJ1fFhGnuoNqh.1ZdnBXv5TjtJJmtvIp/oHnqmBr7kIE2",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/jobs/submit-proposal\n?api_token=$2y$10$fyOdwr08Caj06VH/qDgl2eYlrcH88IoCUYrPVblKXpuNFIyfQWPZG&language=en&currency=USD",
+			"queryParams": [
+				{
+					"key": "api_token",
+					"value": "$2y$10$fyOdwr08Caj06VH/qDgl2eYlrcH88IoCUYrPVblKXpuNFIyfQWPZG",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "language",
+					"value": "en",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "currency",
+					"value": "USD",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539597639607,
+			"name": "Talent jobs submit-proposal",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"project_id\":258,\n    \"to_time\":\"15: 00: 00\",\n    \"submission_fee\":-1,\n    \"quoted_price\":10,\n    \"comments\":\"\",\n    \"working_hours\":\"\",\n    \"from_time\":\"13: 00: 00\",\n    \"currency\":\"USD\",\n    \"coupon_code\":\"\"\n}"
+		},
+		{
+			"id": "f163de88-9f57-1752-b6d4-cbedfe626669",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$JKmirdhKcLAt4VlrSpxY0u9NXvjI37ngMMapQ/mgegs9LnGlhIy.O\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$JKmirdhKcLAt4VlrSpxY0u9NXvjI37ngMMapQ/mgegs9LnGlhIy.O",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/talent-connect",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Talent Invite Member List",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1541062782903,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "2806e2c4-1943-6e27-dd8b-168947a6ca71",
+			"rawModeData": "{\n\t\"send_to\":\"\"\n}"
+		},
+		{
+			"id": "f512f8e7-2cb2-eb85-523d-7ff129d1dc82",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$zGoqKpt7SCGBkrMcxiIJh.PolWHYAlDU0n89pF0WJJSo2FJMvFkue\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$zGoqKpt7SCGBkrMcxiIJh.PolWHYAlDU0n89pF0WJJSo2FJMvFkue",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/network/events",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540870833976,
+			"name": "Events Listing",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "{\n\t\"search\":\"\",\n\t\"page\":\"1\",\n\t\"check\":\"\",\n\t\"event_date\":\"\"\n}"
+		},
+		{
+			"id": "ff19b4d8-b608-06ca-630f-975fc32b7f8c",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer $2y$10$p4yXtzUl5CycVx3Rn6EeUeJpnSQvBZv6QRdPc.wUvMTRvPOfYJDDS\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer $2y$10$p4yXtzUl5CycVx3Rn6EeUeJpnSQvBZv6QRdPc.wUvMTRvPOfYJDDS",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{PHP_BASE_URL}}talent/invite-member/process",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540634632873,
+			"name": "invite-member/process",
+			"description": "",
+			"collectionId": "e8162aa2-e68a-6dc4-a2f6-20d9d29645f7",
+			"responses": [],
+			"rawModeData": "\n\n{\n\t\"invite_from\":\"outside_circle\",\n\t\"event_id\":\"78\",\n\t\"outside_emails\":\"[{\\\"name\\\":\\\"Croname\\\",\\\"email\\\":\\\"crow@sing.com\\\"},{\\\"name\\\":\\\"Manish chandra\\\",\\\"email\\\":\\\"manishprajapati@singsys.com\\\"}]\"\n\t\n}"
+		}
+	]
+}
