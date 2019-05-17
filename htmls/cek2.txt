@@ -1,0 +1,134 @@
+modified:   app/Services/CustomRequest.php
+	modified:   bootstrap/app.php
+	modified:   bootstrap/autoload.php
+	modified:   bootstrap/cache/.gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	ldapMessage.txt
+
+
+modified:   app/Services/CustomRequest.php
+	modified:   bootstrap/app.php
+	modified:   bootstrap/autoload.php
+	modified:   bootstrap/cache/.gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	ldapMessage.txt
+
+mwemp
+
+
+
+sc wateraccount holder,consumption >60000,sp bill()
+
+sp , >60000 = = =qc
+
+
+
+
+
+
+
+
+to be sc 
+	>60000
+	water holder
+	sp bill
+
+
+Filter By Verification Date
+  SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'date_site_verified' in field list is ambiguous (SQL: select count(*) as aggregate from (select 
+
+Filter in report generation 
+
+
+SP not sp Water type  
+1 5 day
+2 
+ 
+3
+last 3 year 
+filter
+4
+ssic
+
+
+premise
+
+
+premis premise_yrconsu
+
+
+
+
+
+downstream button
+
+
+downstream table
+id,waterconsumption,premise_from,premise_to,year,created_by,updated_by,created_at,updated_at
+
+
+form model box
+water consumption
+premise
+year
+
+Listing 
+premise from and premise to(listing separate)
+
+
+
+
+			filter	
+from premise								to premise
+premise num consumptionamt created date     premise num consumptionamt created date  
+
+
+
+
+qc if >60000
+sc if qc && >60000 && sp bill (WM,NW)
+both 
+
+790
+
+
+
+https://www.google.com/search?q=double+moving+coil+f&oq=double+moving+coil+f&aqs=chrome..69i57.3876j0j1&sourceid=chrome&ie=UTF-8
+
+https://paytmmall.com/nabolang-f910-wired-headphones-double-moving-coil-in-ear-stereo-hifi-headset-sport-music-earphone-hands-free-w-microphone-black-for-running-gym-exercise-MOBNABOLANG-F91BRAV7761705D84980E-pdp
+https://www.amazon.in/Docooler-Headphones-Earphones-Microphone-Detachable/dp/B07MV18KYH?tag=googinhydr18418-21&tag=googinkenshoo-21&ascsubtag=_k_EAIaIQobChMIt5HEtPXA4QIVA6mWCh2WVgipEAQYASABEgJ7gvD_BwE_k_&gclid=EAIaIQobChMIt5HEtPXA4QIVA6mWCh2WVgipEAQYASABEgJ7gvD_BwE
+
+https://www.google.com/search?q=F4+Double+moving+coil+Headphones&oq=F4+Double+moving+coil+Headphones&aqs=chrome..69i57&sourceid=chrome&ie=UTF-8
+
+Cartoon - On & On (feat. Daniel Levi) [NCS Release]
+
+All stars kendall
+
+
+URL:-  http://14.98.73.11/pubmwemp/public
+
+DBURL:- http://14.98.73.11/phpdb
+
+Username:- mempub
+
+Password:- e2oE86mDvvaxjtOt
+
+Git Branch:- develop
+
+
+
+unit 
+feature [vue testing tools]
+integration [api endpoint]
+
+
+
+vue js modes & env :-
+https://medium.com/the-andela-way/understanding-environments-in-vuejs-74e94a139b8b
+

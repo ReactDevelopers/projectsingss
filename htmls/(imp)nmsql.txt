@@ -1,0 +1,434 @@
+nmsql
+
+nodeseeder
+
+realt
+
+infinityfreefree@yopmail.com
+123456
+
+https://app.infinityfree.net/accounts/epiz_23100730
+
+https://cpanel.epizy.com/panel/indexpl.php?id=3dc1d50bdf7508156011dc7b904ff6a4c5fe99c1
+
+https://app.infinityfree.net/accounts
+
+5224101946
+8420036205
+
+admin
+admin@singsys.com
+123456789
+
+phpdb
+obuhi*312
+
+admin@360reference.sg
+info@reference360.com
+
+sushant+01@singsys.com 2 id 
+
+->whereRaw(" IF(users.role_id = 2,users.first_name LIKE \"%{$request->name}%\" OR users.last_name LIKE \"%{$request->name}%\" OR CONCAT(users.first_name,' ',users.last_name) LIKE \"%{$request->name}%\",users.company_name LIKE \"%{$request->name}%\") ")
+
+http://localhost/360/public/other-individual-ratingreview/db1e52b542d30aefc9e08c8c3bd2f569241
+https://www.cloudways.com/blog/creating-hello-world-page-in-yii2/
+https://www.tutorialspoint.com/yii/yii_ajax_validation.htm
+http://localhost/basic/web/index.php?r=articles%2Fcontact
+http://webhtv.blogspot.com/2018/09/nba-2k16-mod-highly-compressed-for.html
+
+che_123_MICRO
+
+https://chaturbate.eu/couple-cams/
+https://xcamy.com/live-cams/
+https://reallifecam.com/en/view/08_1
+https://biqle.ru/video/Lily%20Carter
+https://www.datetime.io/age/1992/10/18
+http://www.foxporns.com/top-mia%20angel/1.html
+
+http://webhtv.blogspot.com/2018/09/nba-2k16-mod-highly-compressed-for.html
+
+https://docs.google.com/document/d/1hl1l7h-npUvbyre1myhsj1TkbaNQlVKF-xQpT6PwfvI/edit mail
+https://docs.google.com/document/d/1tC4hnox-DWSBIyhPYFLuQDS5iwNsblqWkJTPdMcg9lM/edit notif
+
+https://docs.google.com/document/d/1MQtU1_Ov7ib32V5BZEwKTmXJ7TvIi3L25459dKAUePk/edit?pli=1 update report
+https://docs.google.com/document/d/1o5genL_PikKsvNfjmkxi9mKpZ2k86_kWFxQArMD9VJg/edit?pli=1 sms notif
+
+https://docs.google.com/spreadsheets/d/1R0W0RNMtULXCXSUfOZkRsxd0HammxpGH-rcxyOLXvtQ/edit#gid=1358204769
+https://docs.google.com/spreadsheets/d/1UlvSPC1lr7lkOWxDgNunwQlJH9TmAKqAHV8F5YxAirk/edit?ts=5c1a3a41#gid=718762503
+https://docs.google.com/spreadsheets/d/1PacddBHPkUy1TDlbuHZDN9DkYx1xXNC_N92inMwvhSE/edit?ts=5be50ccc&pli=1#gid=923162623
+http://13.251.11.134/
+
+http://192.168.4.101/  sk ip
+http://192.168.4.101/seed/client/devdist/
+https://github.com/hitesh399/scooter/blob/master/server/test/routes.test.js
+
+gulshan 9651411522
+mohit   7905808159   8090113646
+sanjeet 9452981850   
+
+Git Branch Name:	staging
+Project URL:	http://13.251.11.134/360refence-server/html
+phpMyAdmin URL:	http://13.251.11.134/phpdb
+DB Name:	referencerds
+DB User Name:	referencerds
+DB Password:	9y_#TkHMjfYP_996
+
+
+Git Branch Name:	preprod
+Project URL:	https://360reference.sg
+phpMyAdmin URL:	https://360reference.sg/phpdb/
+DB Name:	ref360-prod-rds
+DB User Name:	ref360prodrds
+DB Password:	360_refrdS
+
+develop:- http://103.78.201.53/phpdb/
+
+
+preetikanaha@gmail.com
+
+Website URL : http://14.98.73.11/seed/client/devdist/
+
+LOGIN CREDENTIAL :
+Username : seed
+Password : Singsys@2019
+
+https://www.seedinstitute.edu.sg
+
+mE$tExig
+https://www.valentinog.com/blog/react-webpack-babel/
+react learning important babel defn
+
+https://www.yourquote.in/mahavir-bhansali-23v5/quotes
+sometimes people we like don't ;like us back its painful quote
+
+https://cms.mummyfiqueworld.com/auth/login
+mummy123@abc
+admin@admin.com
+
+https://medium.freecodecamp.org/how-to-deploy-a-nodejs-app-to-heroku-from-github-without-installing-heroku-on-your-machine-433bec770efe
+https://blog.cloudboost.io/learn-how-to-create-a-simple-blog-with-react-node-c05fa6889de3
+https://medium.com/@chloechong.us/how-to-deploy-a-create-react-app-with-an-express-backend-to-heroku-32decfee6d18
+https://medium.com/the-andela-way/how-to-deploy-your-react-application-to-github-pages-in-less-than-5-minutes-8c5f665a2d2a
+https://reactjsexample.com/the-unofficial-open-source-apple-music-webapp/
+https://reactjsexample.com/content-management-system-prototype-with-react-js/
+https://medium.com/@abventures/how-to-build-a-react-website-in-aws-within-15-minutes-9e9c37f85aeb
+
+slutan pass:-71046496
+[done:-
+ALTER TABLE `users` ADD `payment_by` ENUM('0','1') NULL DEFAULT NULL COMMENT '0="admin",1="normal"' AFTER `credibilty`;
+ALTER TABLE `industry` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT;
+INSERT INTO `email_template` (`email_template_id`, `title`, `subject`, `description`, `added_date`) VALUES (NULL, 'subscription_end', '360 Reference | Subscription End', '<p>Dear {NAME},</p>\r\n\r\n<p>Your Subscription Plan has been ended.</p>\r\n\r\n<p>{LINK}</p>\r\n\r\n<p>Regards,&nbsp;</p>\r\n\r\n<p>Your {SITENAME} Team</p>', CURRENT_TIMESTAMP);
+
+ALTER TABLE `users` ADD `last_login` TIMESTAMP NULL DEFAULT NULL AFTER `credibilty`;
+ALTER TABLE `users` ADD `user_activation` ENUM('0','1') NOT NULL DEFAULT '0' AFTER `credibilty`;
+INSERT INTO `email_template` (`email_template_id`, `title`, `subject`, `description`, `added_date`) VALUES (NULL, 'account_front_activation', '360 Reference - Account Front Activation', '<p>Dear {NAME},</p> <p>{MSG}</p> <p>Regards,&nbsp;</p> <p>Your {SITENAME} Team</p>', '2018-09-07 00:17:51');
+
+
+INSERT INTO `email_template` (`email_template_id`, `title`, `subject`, `description`, `added_date`) VALUES (NULL, 'account_deactivate', '360 Reference - Account Deactivate', '<p>Dear {NAME},</p> <p>We regret to inform you that your account has been deactivated.</p> <p>Regards,&nbsp;</p> <p>Your {SITENAME} team</p>', '2018-09-06 16:40:02');
+
+
+UPDATE `email_template` SET `title` = 'account_activate' WHERE `email_template`.`email_template_id` = 39;
+
+INSERT INTO `email_template` (`email_template_id`, `title`, `subject`, `description`, `added_date`) VALUES (NULL, 'account_activated', '360 Reference - Account Activated', '<p>Dear {NAME},</p> <p>We wish to inform you that your account has been activated. Go forth and conquer!</p> <p>Regards,&nbsp;</p> <p>Your {SITENAME} team</p>', '2018-09-06 16:42:33');
+
+ALTER TABLE `jobs` ADD `staff_id` VARCHAR(255) NULL DEFAULT NULL AFTER `status`;
+
+INSERT INTO `email_template` (`email_template_id`, `title`, `subject`, `description`, `added_date`) VALUES (NULL, 'job_matching_new', '360 Reference - Job Matching', '<p>Dear {NAME},</p>\r\n\r\n<p>{MSG}</p>\r\n\r\n<p>Regards,&nbsp;</p>\r\n\r\n<p>Your {SITENAME} Team</p>', '2018-09-07 00:17:51');
+
+CREATE TABLE `360stg`.`corpusers_verify` ( `id` INT(11) NOT NULL AUTO_INCREMENT ,  `company_name` VARCHAR(255) NOT NULL ,  `email` VARCHAR(255) NOT NULL ,  `mobile_code` VARCHAR(255) NOT NULL ,  `mobile` VARCHAR(255) NOT NULL ,  `user_id` INT(111) NOT NULL ,  `file` VARCHAR(255) NOT NULL ,  `status` ENUM('0','1') NOT NULL DEFAULT '0' ,  `created_at` TIMESTAMP NULL DEFAULT NULL ,  `updated_at` TIMESTAMP NULL DEFAULT NULL ,    PRIMARY KEY  (`id`)) ENGINE = InnoDB;
+ALTER TABLE `corpusers_verify` ADD UNIQUE(`user_id`);
+ALTER TABLE `corpusers_verify` ADD UNIQUE(`email`);
+ALTER TABLE `corpusers_verify` ADD UNIQUE(`mobile`);
+ALTER TABLE `corpusers_verify` CHANGE `user_id` `user_id` INT(11) NOT NULL;
+INSERT INTO `email_template` (`email_template_id`, `title`, `subject`, `description`, `added_date`) VALUES (NULL, 'corporate_card_verify', '360 Reference | Corporate Verification', '<p>Dear {NAME}, Your Account has been Verified by admin. Please login using your email and password 123456. </p> <p>Thanks {SITENAME}</p>', '2018-11-23 19:19:10');
+
+ALTER TABLE `users` ADD `idcard_image` VARCHAR(255) NULL DEFAULT NULL AFTER `last_login`;
+ALTER TABLE `users` ADD `idcard_verify` ENUM('0','1') NOT NULL DEFAULT '0' AFTER `idcard_image`;
+
+ALTER TABLE `corpusers_verify` ADD `action` ENUM('applied','notapplied') NULL DEFAULT NULL AFTER `status`;
+
+ALTER TABLE `users` ADD `unsubscribed` ENUM('0','1') NOT NULL DEFAULT '0' AFTER `idcard_verify`;
+
+INSERT INTO `email_template` (`email_template_id`, `title`, `subject`, `description`, `added_date`) VALUES (NULL, 'corporate_approval', '360 Reference - Corporate Approval', '<p>Dear {NAME},</p> <p>{MSG}</p> <p>Regards,&nbsp;</p> <p>Your {SITENAME} Team</p>', '2018-09-07 00:17:51');
+
+CREATE TABLE `stripe_webhook` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `stripe_response` TEXT NOT NULL , `created_at` TIMESTAMP NULL DEFAULT NULL , `updated_at` TIMESTAMP NULL DEFAULT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+ALTER TABLE `stripe_webhook` ADD `status` ENUM('0','1') NOT NULL DEFAULT '0' AFTER `stripe_response`;
+ALTER TABLE `stripe_webhook` CHANGE `status` `status` ENUM('failed','succeeded') CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;
+INSERT INTO `email_template` (`email_template_id`, `title`, `subject`, `description`, `added_date`) VALUES (NULL, 'subscriptions', '360 Reference - Subscribe', '<p>Dear {NAME},</p> <p>{MSG}</p> <p>Regards,&nbsp;</p> <p>Your {SITENAME} Team</p>', '2018-09-07 05:47:51');
+INSERT INTO `email_template` (`email_template_id`, `title`, `subject`, `description`, `added_date`) VALUES (NULL, 'deactivate_user_cron', '360 Reference - Deactivate User End Premium', '<p>Dear {NAME},</p> <p>{MSG}</p> <p>Regards,&nbsp;</p> <p>Your {SITENAME} Team</p>', '2018-09-07 00:17:51');
+
+INSERT INTO `email_template` (`email_template_id`, `title`, `subject`, `description`, `added_date`) VALUES (NULL, 'unsubscribe_user_cron', '360 Reference - Unsubscribe User End Premium', '<p>Dear {NAME},</p> <p>{MSG}</p> <p>Regards,&nbsp;</p> <p>Your {SITENAME} Team</p>', '2018-09-07 00:17:51');
+
+
+INSERT INTO `email_template` (`email_template_id`, `title`, `subject`, `description`, `added_date`) VALUES (NULL, 'subscription_end_advance', '360 Reference - Subscription Email Advance', '<p>Dear {NAME},</p> <p>{MSG}</p> <p>Regards,&nbsp;</p> <p>Your {SITENAME} Team</p>', '2018-09-07 00:17:51');
+
+UPDATE `email_template` SET `description` = '<p>Dear {NAME},</p> <p>{DATE}</p> <p>Regards,&nbsp;</p> <p>Your {SITENAME} Team</p>' WHERE `email_template`.`email_template_id` = 45;
+
+UPDATE `email_template` SET `description` = '<p>Dear {NAME},</p> <p>Your subscription plan will be renewed on {DATE}</p> <p>Regards,&nbsp;</p> <p>Your {SITENAME} Team</p>' WHERE `email_template`.`email_template_id` = 45;
+
+UPDATE `email_template` SET `description` = '<p>Dear {NAME},</p> <p>This is to notify you that your account will be auto renewed on {DATE}</p> <p>Regards,&nbsp;</p> <p>Your {SITENAME} Team</p>' WHERE `email_template`.`email_template_id` = 45;
+
+CREATE TABLE `indusers_verify` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `first_name` VARCHAR(255) NOT NULL , `last_name` VARCHAR(255) NOT NULL , `email` VARCHAR(255) NOT NULL , `mobile_code` VARCHAR(255) NOT NULL , `mobile` VARCHAR(255) NOT NULL , `user_id` INT(11) NOT NULL , `file` VARCHAR(255) NOT NULL , `status` ENUM('0','1') NOT NULL DEFAULT '0' , `action` ENUM('applied','notapplied') NULL DEFAULT NULL , `created_at` TIMESTAMP NULL DEFAULT NULL , `updated_at` TIMESTAMP NULL DEFAULT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+ALTER TABLE `indusers_verify`
+  ADD UNIQUE KEY `email` (`email`),
+  ADD UNIQUE KEY `user_id` (`user_id`),
+  ADD UNIQUE KEY `mobile` (`mobile`);
+
+  INSERT INTO `email_template` (`email_template_id`, `title`, `subject`, `description`, `added_date`) VALUES (NULL, 'individual_approval', '360 Reference - Individual Approval', '<p>Dear {NAME},</p> <p>{MSG}</p> <p>Regards,&nbsp;</p> <p>Your {SITENAME} Team</p>', '2018-09-07 00:17:51');
+
+INSERT INTO `email_template` (`email_template_id`, `title`, `subject`, `description`, `added_date`) VALUES (NULL, 'individual_card_verify', '360 Reference | Individual Verification', '<p>Dear {NAME}, Your Account has been Verified by admin. Please login using your email and password 123456. </p> <p>Thanks {SITENAME}</p>', '2018-11-23 19:19:10');
+ALTER TABLE `user_work_experience` ADD `corp_id` INT(10) NULL DEFAULT NULL AFTER `current_job_status`;
+ALTER TABLE `user_work_experience` CHANGE `corp_id` `corp_id` INT(10) UNSIGNED NULL DEFAULT NULL;
+ALTER TABLE `user_profile_logs` ADD `alias` ENUM('gift_360','get_360','sub_cat_rating','overall_rating','work_exp','strength','education') NULL DEFAULT NULL AFTER `activity`;
+
+INSERT INTO `email_template` (`email_template_id`, `title`, `subject`, `description`, `added_date`) VALUES (NULL, 'non_user_corp_approval', '360 Reference - Corporate Claim Approval', '<p>Dear {NAME},</p> <p>{MSG}</p> <p>Regards,&nbsp;</p> <p>Your {SITENAME} Team</p>', '2018-09-07 00:17:51');
+ALTER TABLE `user_profile_logs` CHANGE `alias` `alias` ENUM('gift_360','get_360','sub_cat_rating','overall_rating','work_exp','strength','education','work_exp_corp') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL;
+ALTER TABLE `user_profile_logs` ADD `reference_id` INT(11) UNSIGNED NULL DEFAULT NULL AFTER `alias`;
+ALTER TABLE `user_profile_logs` ADD `activity_detail` TEXT NULL DEFAULT NULL AFTER `reference_id`;
+]
+
+
+
+
+https://www.yiiframework.com/extension/yii2-migration-creator
+
+https://github.com/bcbi/Canvas-React-Node-MySQL
+
+
+react
+http://allenfang.github.io/react-bootstrap-table/example.html
+https://github.com/ziad-saab/react-github-api-project#challenge-infinite-scrolling
+https://www.techiediaries.com/react/
+https://codeburst.io/getting-started-with-react-router-5c978f70df91
+https://www.techiediaries.com/react/
+https://www.kirupa.com/react/creating_single_page_app_react_using_react_router.htm
+https://codeburst.io/build-simple-medium-com-on-node-js-and-react-js-a278c5192f47
+https://dzone.com/articles/building-dynamic-react-apps-with-database-data
+https://reacttraining.com/react-router/web/api/HashRouter
+https://github.com/mmax904/laravel-react
+https://medium.com/@juliuskoronci/react-interview-questions-13f8839f2711
+
+
+larvelreact
+https://github.com/ammezie/tasksman
+https://blog.pusher.com/react-laravel-application/
+https://github.com/sumityadavbadli/react-laravel-with-jwt-auth
+test :-https://codeunshackled.com/2018/11/03/React-File-Uploader-With-Node-Express/ , https://codesandbox.io/s/6y1py4x9nr , 
+
+react_github@yopmail.com
+123*react*123
+
+mccarthyandrews09@gmail.com
+
+
+react_spa
+rtodo
+
+http://localhost/yiitodo/web/index.php
+http://localhost/360/public/gift-a-360/db1e52b542d30aefc9e08c8c3bd2f56949
+https://github.com/
+
+https://id.heroku.com/login
+https://harlemsquirrel.github.io/resume
+https://stackoverflow.com/questions/40987309/react-display-loading-screen-while-dom-is-rendering/40989121
+https://stackoverflow.com/questions/40987309/react-display-loading-screen-while-dom-is-rendering
+https://reactjsexample.com/a-react-component-that-provides-loading-bar-for-long-running-tasks/
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sticky_header
+https://www.codeofaninja.com/2016/07/react-crud-tutorial.html
+
+https://remotemysql.com/phpmyadmin/
+Username: MroTURTXx0
+
+Password: vqWul3Mrc2
+
+Database Name: MroTURTXx0
+
+Server: remotemysql.com
+
+Port: 3306
+foodbox db
+Username: qEsoFMjiCN
+
+Password: nByzNE3Aoi
+
+Database Name: qEsoFMjiCN
+
+Server: remotemysql.com
+
+Port: 3306
+
+
+
+composer create-project --prefer-dist laravel/laravel laravelreact
+php artisan preset react
+npm install
+
+chetu,
+webkul,
+orangemintra
+
+http://localhost/yiitodo/web/index.php?r=todo%2Faddtodo
+https://myprogramming.blog/posts/setting-up-laravel-mix-for-a-react-project
+
+https://store.6ixd.net/
+6BXD
+123456
+
+094535 95737 recovery no
+developer.singsys@gmail.com email 
+recovery developer.singsys@yopmail.com
+
+instag
+developer.singsys@gmail.com
+Aviral
+aviral.rambo
+123*aviral*123
+
+https://home.openweathermap.org/api_keys
+developer.singsys@yopmail.com
+123*weather*123
+
+
+
+https://www.qcode.in/ready-to-use-uuid-in-your-next-laravel-app/
+
+https://www.qcode.in/easy-roles-and-permissions-in-laravel-5-4/
+
+https://www.codementor.io/okoroaforchukwuemeka/9-tips-to-set-up-multiple-authentication-in-laravel-ak3gtwjvt
+
+
+
+https://marvelapp.com/4dc523j/screen/52846587
+
+https://github.com/moeen-basra/laravel-react
+http://freedomains.com.sr/register.php?do=register2&domainname=freely&ext=com.sr
+
+
+http://jasonwatmore.com/post/2017/09/16/react-redux-user-registration-and-login-tutorial-example
+
+singsys@sl067:/var/www/html/360$ NODE_ENV=example node reference.js
+
+laravel/newtestplsdel$ 
+/Lar/reactlaravel$ 
+l/jwttest$ 
+
+
+php artisan make:controller Api/Sections/Cpd/CpdController
+
+php artisan make:model Models/Cpd
+
+php artisan make:factory CpdFactory --model="app\Models\Cpd"
+
+
+php artisan make:seeder CpdTableDataSeeder
+
+php artisan model:filter Universal/CpdFilter
+
+
+php artisan make:controller Api/Sections/EventAction/EventActionController --api
+
+
+php artisan make:controller Api/Sections/EventAction/EventMemberController --api
+
+php artisan make:migration remove_institute_id_from_application_event_table --table=application_event
+
+
+https://id.skokka.com/call-girls/lucknow/call-128242-128242-priya-prck257130257/\
+
+aryan
+
+https://www.1escorts.net/profile/131075/Call+Girls+In+Lucknow+Escort+Service+In+Lucknow.html
+
+new cms lucknow shaeed path 7706814662
+
+
+https://www.google.com/search?q=call+girls+lucknow+cash+on+delivery&ei=6nKgXN3cI5GavQSQz5HIDw&start=10&sa=N&ved=0ahUKEwjd-e-L9KvhAhURTY8KHZBnBPkQ8NMDCIEB&biw=1311&bih=656
+
+https://www.1escorts.net/Lucknow
+
+
+https://id.skokka.com/call-girls/lucknow/call-anushka-88748-36154-9gck243972081/
+
+https://id.skokka.com/call-girls/lucknow/call-shivani-no-advance-7nyx260189957/
+
+
+
+
+http://192.168.5.157/phpmyadmin
+http://192.168.5.157/PHP/
+
+
+https://www.codementor.io/okoroaforchukwuemeka/9-tips-to-set-up-multiple-authentication-in-laravel-ak3gtwjvt
+
+https://snappy.appypie.com/user/app/open-url/7a483c1b4a36
+
+https://gonative.io/success
+https://upcode.editor.multiscreensite.com/mb/home/site/foodboxx
+
+
+
+https://www.merixstudio.com/blog/laravel-5-tutorial/
+
+
+
+sandbox.paypal.com anksrizzz-buyer@gmail.com	system123
+id.keymetrics.io	chetandeepsingh		Lucknow@123
+cms.mummyfiqueworld.com
+crowbar.singsys.net
+graduateprojects.com
+https://cloud.mongodb.com/user#/atlas/login
+https://www.chirppe.com/admin/principal/add
+https://aipro.tv/admin
+https://store.6ixd.net/
+https://dashboard.stripe.com/login	360reference.services@gmail.com			360@Reference360reference.sg
+360reference.sg
+
+
+
+
+
+$userProfileData = DB::table('user_details')->select('users.id','users.name','users.email','user_details.image',\DB::raw('(CASE WHEN (user_details.image = "-") THEN "" ELSE user_details.image END) as gender_text'))->leftjoin('users','users.id','=','user_details.user_id')
+						->where('user_details.referrer_id','=',$referrer_id)
+						->where('user_id','!=',$user->id)
+						->get();
+
+
+
+						Congrats for your sangeet.
+If u like the gift why don't u weared and then show the photo while wearing it.Sorry I'm a little demanding becoz i got everything except u.
+Sorry what i'm gonna say below it's just i can't keep it too myself, I'm missing u a lot. Might i could stop u from being married. U are too strong and too perfect. Every time i'm in ofc i have a deceptive appearance as u were sitting in the meeting room ,moving here and there in ofc. I'm missing u a lot.
+tumhe miss karta hoon roz miss krta hoon bahut miss krta hoon.
+I know after this msg u don't want to talk to me but that's ok i respect u but i also know if there is any problem [any means any] be don't hesitate for taking my help u won't take it but where u are going to live near dwarka [delhi] if any problem occurs u can contact my bua she lives there.
+I'm gonna be sooner in delhi or gurgaon but don't worry i ain't going to show my face again.
+I'm missing u a lot , i don't want u to leave.Sorry i'm a little despo about u
+
+Encryption keys generated successfully.
+Personal access client created successfully.
+Client ID: 1
+Client secret: jWN6VfsHrDFnmUEtfejOEDatvPsbH7GYNM7OFLO3
+Password grant client created successfully.
+Client ID: 2
+Client secret: sm3sMZMJkyOoBddoDtAWfNrDJDCXKTiyUwB9k9Wl
+
+
+https://www.google.com/search?q=if+there+is+an+array+containg+months+if+in+this+array+a+month+is+missing+how+to+find+out&oq=if+there+is+an+array+containg+months+if+in+this+array+a+month+is+missing+how+to+find+out&aqs=chrome..69i57.45669j0j1&sourceid=chrome&ie=UTF-8
+
+https://stackoverflow.com/questions/18742998/how-to-list-all-months-between-two-dates`
+
+ssh singsys@192.168.1.53
+
+
+https://coderbyte.com/course/fullstack-web-development/
+https://reactjsexample.com/tag/player/
+https://medium.com/@abventures/how-to-build-a-react-website-in-aws-within-15-minutes-9e9c37f85aeb
+
+
+
+1)Usko code krna ata nhi hain saurabh sir ke sath lgi rehti 
+2)Din bhar bate krti rehti hain 
+4)main itna kaam krti hoon uske baad bhi recognition nhi milta wo itna hungama krti hain fir usko sb log encorage krte hain 
+5)sara kaam uska saurabh sir kr deta hain hme to kaam ke sath client bhi manage krna padta hain
+6)Coding ati nhi hain saurabh sir ke dam pe tkki hain
+....
